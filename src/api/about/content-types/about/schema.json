@@ -1,0 +1,39 @@
+{
+  "kind": "singleType",
+  "collectionName": "abouts",
+  "info": {
+    "singularName": "about",
+    "pluralName": "abouts",
+    "displayName": "About",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "header": {
+      "type": "component",
+      "repeatable": false,
+      "component": "header.header-accueil"
+    },
+    "titrePage": {
+      "type": "string"
+    },
+    "binome": {
+      "type": "component",
+      "repeatable": false,
+      "component": "section.section"
+    },
+    "introPresentation": {
+      "type": "component",
+      "repeatable": false,
+      "component": "section.section"
+    },
+    "presentation": {
+      "type": "component",
+      "repeatable": false,
+      "component": "section.section"
+    }
+  }
+}

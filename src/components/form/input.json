@@ -1,0 +1,31 @@
+{
+  "collectionName": "components_form_inputs",
+  "info": {
+    "displayName": "input",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "input": {
+      "type": "richtext",
+      "required": false
+    },
+    "titre": {
+      "type": "text",
+      "default": "Nom de l'entreprise"
+    },
+    "question": {
+      "type": "richtext"
+    },
+    "legend": {
+      "type": "richtext"
+    },
+    "placeholder": {
+      "type": "string",
+      "default": "Votre message"
+    },
+    "errorMessage": {
+      "type": "string"
+    }
+  }
+}

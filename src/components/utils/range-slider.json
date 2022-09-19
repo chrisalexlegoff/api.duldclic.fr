@@ -1,0 +1,39 @@
+{
+  "collectionName": "components_utils_range_sliders",
+  "info": {
+    "displayName": "rangeSlider",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "titre": {
+      "type": "string"
+    },
+    "minValue": {
+      "type": "integer"
+    },
+    "maxValue": {
+      "type": "integer"
+    },
+    "iconRange": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": [
+        "images"
+      ]
+    },
+    "question": {
+      "type": "richtext"
+    },
+    "legend": {
+      "type": "richtext"
+    },
+    "questionDeux": {
+      "type": "richtext"
+    },
+    "errorMessage": {
+      "type": "string"
+    }
+  }
+}

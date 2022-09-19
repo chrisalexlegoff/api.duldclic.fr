@@ -1,0 +1,24 @@
+{
+  "collectionName": "components_utils_flip_cards",
+  "info": {
+    "displayName": "FlipCard",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "front": {
+      "type": "richtext"
+    },
+    "back": {
+      "type": "richtext"
+    },
+    "icons": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": [
+        "images"
+      ]
+    }
+  }
+}

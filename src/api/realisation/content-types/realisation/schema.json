@@ -1,0 +1,29 @@
+{
+  "kind": "singleType",
+  "collectionName": "realisations",
+  "info": {
+    "singularName": "realisation",
+    "pluralName": "realisations",
+    "displayName": "realisation",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "titrePage": {
+      "type": "string"
+    },
+    "header": {
+      "type": "component",
+      "repeatable": false,
+      "component": "header.header-accueil"
+    },
+    "realisations": {
+      "type": "component",
+      "repeatable": true,
+      "component": "section.realisations"
+    }
+  }
+}

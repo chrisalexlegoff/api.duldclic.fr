@@ -1,0 +1,24 @@
+{
+  "collectionName": "components_utils_services",
+  "info": {
+    "displayName": "services",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "icons": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": [
+        "images"
+      ]
+    },
+    "legend": {
+      "type": "richtext"
+    },
+    "paragraphe": {
+      "type": "richtext"
+    }
+  }
+}

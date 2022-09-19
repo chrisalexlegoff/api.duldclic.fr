@@ -1,0 +1,13 @@
+{
+  "collectionName": "components_form_success_messages",
+  "info": {
+    "displayName": "successMessage",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "successMessage": {
+      "type": "richtext"
+    }
+  }
+}

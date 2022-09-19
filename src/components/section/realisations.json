@@ -1,0 +1,31 @@
+{
+  "collectionName": "components_section_realisations",
+  "info": {
+    "displayName": "realisations"
+  },
+  "options": {},
+  "attributes": {
+    "titre": {
+      "type": "richtext"
+    },
+    "annee": {
+      "type": "richtext"
+    },
+    "paragraphe": {
+      "type": "richtext"
+    },
+    "button": {
+      "type": "string"
+    },
+    "outils": {
+      "type": "component",
+      "repeatable": true,
+      "component": "utils.competences"
+    },
+    "carousel": {
+      "type": "component",
+      "repeatable": false,
+      "component": "utils.carousel"
+    }
+  }
+}
