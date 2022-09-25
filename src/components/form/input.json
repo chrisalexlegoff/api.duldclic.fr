@@ -1,0 +1,27 @@
+{
+  "collectionName": "components_form_inputs",
+  "info": {
+    "displayName": "Input"
+  },
+  "options": {},
+  "attributes": {
+    "input": {
+      "type": "richtext"
+    },
+    "titre": {
+      "type": "string"
+    },
+    "question": {
+      "type": "richtext"
+    },
+    "legend": {
+      "type": "richtext"
+    },
+    "placeholder": {
+      "type": "string"
+    },
+    "errorMessage": {
+      "type": "string"
+    }
+  }
+}

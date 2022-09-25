@@ -1,0 +1,29 @@
+{
+  "collectionName": "components_form_checkboxes",
+  "info": {
+    "displayName": "Checkbox"
+  },
+  "options": {},
+  "attributes": {
+    "icon": {
+      "allowedTypes": [
+        "images"
+      ],
+      "type": "media",
+      "multiple": true
+    },
+    "input": {
+      "type": "richtext"
+    },
+    "text": {
+      "type": "richtext"
+    },
+    "checked": {
+      "type": "boolean",
+      "default": false
+    },
+    "placeholder": {
+      "type": "string"
+    }
+  }
+}

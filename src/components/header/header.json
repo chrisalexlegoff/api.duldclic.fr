@@ -1,0 +1,53 @@
+{
+  "collectionName": "components_header_headers",
+  "info": {
+    "displayName": "Header",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "imageDeco": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": [
+        "images"
+      ]
+    },
+    "bg": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": [
+        "images"
+      ]
+    },
+    "paragraphe": {
+      "type": "richtext"
+    },
+    "enSavoirPlus": {
+      "type": "component",
+      "repeatable": false,
+      "component": "header.en-savoir-plus"
+    },
+    "titre": {
+      "type": "richtext"
+    },
+    "button": {
+      "type": "string"
+    },
+    "titrePage": {
+      "type": "richtext"
+    },
+    "titre2": {
+      "type": "richtext"
+    },
+    "LogoAccueil": {
+      "allowedTypes": [
+        "images"
+      ],
+      "type": "media",
+      "multiple": true
+    }
+  }
+}

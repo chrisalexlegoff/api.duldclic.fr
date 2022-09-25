@@ -1,0 +1,37 @@
+{
+  "kind": "singleType",
+  "collectionName": "success_forms",
+  "info": {
+    "singularName": "success-form",
+    "pluralName": "success-forms",
+    "displayName": "SuccessForm"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "titrePage": {
+      "type": "string"
+    },
+    "button": {
+      "type": "string"
+    },
+    "titre": {
+      "type": "richtext"
+    },
+    "paragraphe": {
+      "type": "richtext"
+    },
+    "bg": {
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ],
+      "type": "media",
+      "multiple": false
+    }
+  }
+}

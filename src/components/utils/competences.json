@@ -1,0 +1,12 @@
+{
+  "collectionName": "components_utils_competences",
+  "info": {
+    "displayName": "competences"
+  },
+  "options": {},
+  "attributes": {
+    "competence": {
+      "type": "string"
+    }
+  }
+}

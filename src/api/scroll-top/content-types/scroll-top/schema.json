@@ -1,0 +1,22 @@
+{
+  "kind": "singleType",
+  "collectionName": "scroll_tops",
+  "info": {
+    "singularName": "scroll-top",
+    "pluralName": "scroll-tops",
+    "displayName": "ScrollTop"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "bg": {
+      "allowedTypes": [
+        "images"
+      ],
+      "type": "media",
+      "multiple": false
+    }
+  }
+}
