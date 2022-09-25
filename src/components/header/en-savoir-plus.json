@@ -1,0 +1,19 @@
+{
+  "collectionName": "components_header_en_savoir_pluses",
+  "info": {
+    "displayName": "EnSavoirPlus"
+  },
+  "options": {},
+  "attributes": {
+    "text": {
+      "type": "string"
+    },
+    "image": {
+      "allowedTypes": [
+        "images"
+      ],
+      "type": "media",
+      "multiple": false
+    }
+  }
+}

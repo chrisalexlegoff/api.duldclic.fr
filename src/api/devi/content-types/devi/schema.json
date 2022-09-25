@@ -1,0 +1,34 @@
+{
+  "kind": "singleType",
+  "collectionName": "devis",
+  "info": {
+    "singularName": "devi",
+    "pluralName": "devis",
+    "displayName": "Devi",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "header": {
+      "type": "component",
+      "repeatable": false,
+      "component": "header.header"
+    },
+    "titrePage": {
+      "type": "string"
+    },
+    "preambule": {
+      "type": "component",
+      "repeatable": false,
+      "component": "section.section"
+    },
+    "devis": {
+      "type": "component",
+      "repeatable": false,
+      "component": "form.devis"
+    }
+  }
+}

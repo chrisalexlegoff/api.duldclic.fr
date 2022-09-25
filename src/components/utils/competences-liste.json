@@ -1,0 +1,14 @@
+{
+  "collectionName": "components_utils_competences_listes",
+  "info": {
+    "displayName": "CompetencesListe"
+  },
+  "options": {},
+  "attributes": {
+    "competencesListe": {
+      "type": "component",
+      "repeatable": true,
+      "component": "utils.competences"
+    }
+  }
+}

@@ -1,0 +1,29 @@
+{
+  "collectionName": "components_utils_reseaux",
+  "info": {
+    "displayName": "Reseaux"
+  },
+  "options": {},
+  "attributes": {
+    "icon": {
+      "allowedTypes": [
+        "images"
+      ],
+      "type": "media",
+      "multiple": false
+    },
+    "lien": {
+      "type": "string"
+    },
+    "slug": {
+      "type": "string"
+    },
+    "iconHover": {
+      "allowedTypes": [
+        "images"
+      ],
+      "type": "media",
+      "multiple": false
+    }
+  }
+}

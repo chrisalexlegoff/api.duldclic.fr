@@ -1,0 +1,26 @@
+{
+  "collectionName": "components_utils_check_terms",
+  "info": {
+    "displayName": "CheckTerms"
+  },
+  "options": {},
+  "attributes": {
+    "text": {
+      "type": "richtext"
+    },
+    "icons": {
+      "allowedTypes": [
+        "images"
+      ],
+      "type": "media",
+      "multiple": true
+    },
+    "checked": {
+      "type": "boolean",
+      "default": false
+    },
+    "errorMessage": {
+      "type": "string"
+    }
+  }
+}

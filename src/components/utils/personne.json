@@ -1,0 +1,75 @@
+{
+  "collectionName": "components_utils_personnes",
+  "info": {
+    "displayName": "Personne"
+  },
+  "options": {},
+  "attributes": {
+    "textUn": {
+      "type": "string"
+    },
+    "textDeux": {
+      "type": "string"
+    },
+    "textUnChecked": {
+      "type": "boolean",
+      "default": false
+    },
+    "textDeuxChecked": {
+      "type": "boolean",
+      "default": false
+    },
+    "titre": {
+      "type": "richtext"
+    },
+    "inputNom": {
+      "type": "string"
+    },
+    "inputPrenom": {
+      "type": "string"
+    },
+    "inputMail": {
+      "type": "string"
+    },
+    "placeholderNom": {
+      "type": "string"
+    },
+    "placeholderMail": {
+      "type": "string"
+    },
+    "icon": {
+      "allowedTypes": [
+        "images"
+      ],
+      "type": "media",
+      "multiple": true
+    },
+    "errorMessage": {
+      "type": "string"
+    },
+    "errorMessageInputNom": {
+      "type": "string"
+    },
+    "errorMessageInputPrenom": {
+      "type": "string"
+    },
+    "errorMessageInputMail": {
+      "type": "string"
+    },
+    "errorMessageInputMailRegex": {
+      "type": "string"
+    },
+    "inputMessage": {
+      "type": "string"
+    },
+    "errorMessageInputMessage": {
+      "type": "string"
+    },
+    "placeholderMessage": {
+      "type": "string"
+    },
+    "placeholderPrenom": {
+      "type": "string"
+    }
+  }
+}

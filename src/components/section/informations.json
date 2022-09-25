@@ -1,0 +1,42 @@
+{
+  "collectionName": "components_section_informations",
+  "info": {
+    "displayName": "Informations"
+  },
+  "options": {},
+  "attributes": {
+    "titre": {
+      "type": "richtext"
+    },
+    "iconAdresse": {
+      "allowedTypes": [
+        "images"
+      ],
+      "type": "media",
+      "multiple": false
+    },
+    "iconTelephone": {
+      "allowedTypes": [
+        "images"
+      ],
+      "type": "media",
+      "multiple": false
+    },
+    "iconMail": {
+      "allowedTypes": [
+        "images"
+      ],
+      "type": "media",
+      "multiple": false
+    },
+    "adresse": {
+      "type": "richtext"
+    },
+    "telephone": {
+      "type": "richtext"
+    },
+    "mail": {
+      "type": "richtext"
+    }
+  }
+}
