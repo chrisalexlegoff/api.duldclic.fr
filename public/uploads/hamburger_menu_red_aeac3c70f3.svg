@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<svg width="65" height="53" viewBox="0 0 65 53" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g clip-path="url(#clip0_2198_5926)">
+<path d="M0.84375 50.5C0.84375 49.1193 1.77633 48 2.92673 48H62.9166C64.067 48 64.9996 49.1193 64.9996 50.5C64.9996 51.8807 64.067 53 62.9166 53H2.92673C1.77633 53 0.84375 51.8807 0.84375 50.5Z" fill="#505050"/>
+<path d="M0.84375 39.0908C0.84375 37.7101 1.77633 36.5908 2.92673 36.5908H62.9166C64.067 36.5908 64.9996 37.7101 64.9996 39.0908C64.9996 40.4715 64.067 41.5908 62.9166 41.5908H2.92673C1.77633 41.5908 0.84375 40.4715 0.84375 39.0908Z" fill="#505050"/>
+<g filter="url(#filter0_i_2198_5926)">
+<path d="M1.01562 24.2725C1.01562 21.5111 2.90534 19.2725 5.2364 19.2725H60.9507C63.2817 19.2725 65.1715 21.5111 65.1715 24.2725C65.1715 27.0339 63.2817 29.2725 60.9507 29.2725H5.2364C2.90534 29.2725 1.01562 27.0339 1.01562 24.2725Z" fill="#FC5050"/>
+</g>
+<path fill-rule="evenodd" clip-rule="evenodd" d="M39.8811 12.9775H60.7788C63.1099 12.9775 64.9996 10.739 64.9996 7.97754C64.9996 5.21612 63.1099 2.97754 60.7788 2.97754H46.4093L39.8811 12.9775ZM41.0736 2.97754H5.06453C2.73346 2.97754 0.84375 5.21612 0.84375 7.97754C0.84375 10.739 2.73346 12.9775 5.06453 12.9775H34.7115C34.7842 12.7017 34.8989 12.4362 35.0569 12.1941L41.0736 2.97754Z" fill="#505050"/>
+</g>
+<defs>
+<filter id="filter0_i_2198_5926" x="1.01562" y="19.2725" width="64.1562" height="14" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+<feFlood flood-opacity="0" result="BackgroundImageFix"/>
+<feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape"/>
+<feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
+<feOffset dy="4"/>
+<feGaussianBlur stdDeviation="2"/>
+<feComposite in2="hardAlpha" operator="arithmetic" k2="-1" k3="1"/>
+<feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.25 0"/>
+<feBlend mode="normal" in2="shape" result="effect1_innerShadow_2198_5926"/>
+</filter>
+<clipPath id="clip0_2198_5926">
+<rect width="65" height="53" fill="white"/>
+</clipPath>
+</defs>
+</svg>
