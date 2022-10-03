@@ -28,11 +28,11 @@
         "images"
       ]
     },
-    "text": {
+    "titre": {
       "type": "richtext"
     },
-    "titrePage": {
-      "type": "string"
+    "paragraphe": {
+      "type": "richtext"
     }
   }
 }
