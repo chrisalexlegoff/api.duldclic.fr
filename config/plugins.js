@@ -1,5 +1,13 @@
-module.exports = () => {
+module.exports = ({ env }) => {
   return {
+    upload: {
+      config: {
+        provider: "local",
+        providerOptions: {
+          sizeLimit: 100000,
+        },
+      },
+    },
     ckeditor: {
       enabled: true,
       config: {
