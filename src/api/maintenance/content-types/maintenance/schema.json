@@ -1,0 +1,38 @@
+{
+  "kind": "singleType",
+  "collectionName": "maintenances",
+  "info": {
+    "singularName": "maintenance",
+    "pluralName": "maintenances",
+    "displayName": "Maintenance",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "logo": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": [
+        "images"
+      ]
+    },
+    "bg": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": [
+        "images"
+      ]
+    },
+    "text": {
+      "type": "richtext"
+    },
+    "titrePage": {
+      "type": "string"
+    }
+  }
+}
