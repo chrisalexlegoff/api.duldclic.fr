@@ -1,0 +1,63 @@
+{
+  "kind": "singleType",
+  "collectionName": "mentions_legales",
+  "info": {
+    "singularName": "mentions-legale",
+    "pluralName": "mentions-legales",
+    "displayName": "MentionsLegale"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "titrePage": {
+      "type": "string"
+    },
+    "titre": {
+      "type": "richtext"
+    },
+    "titreUn": {
+      "type": "richtext"
+    },
+    "paragrapheUn": {
+      "type": "richtext"
+    },
+    "titreDeux": {
+      "type": "richtext"
+    },
+    "paragrapheDeux": {
+      "type": "richtext"
+    },
+    "titreTrois": {
+      "type": "richtext"
+    },
+    "paragrapheTrois": {
+      "type": "richtext"
+    },
+    "titreQuatre": {
+      "type": "richtext"
+    },
+    "paragrapheQuatre": {
+      "type": "richtext"
+    },
+    "titreCinq": {
+      "type": "richtext"
+    },
+    "paragrapheCinq": {
+      "type": "richtext"
+    },
+    "titreSix": {
+      "type": "richtext"
+    },
+    "paragrapheSix": {
+      "type": "richtext"
+    },
+    "titreSept": {
+      "type": "richtext"
+    },
+    "paragrapheSept": {
+      "type": "richtext"
+    }
+  }
+}

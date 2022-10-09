@@ -17,6 +17,7 @@
     "@strapi/strapi": "4.3.8",
     "dotenv": "^16.0.2",
     "pg": "8.6.0",
+    "strapi-plugin-cookie-manager": "^1.0.7",
     "strapi-plugin-populate-deep": "^0.1.2"
   },
   "author": {
