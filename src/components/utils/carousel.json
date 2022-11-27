@@ -1,16 +1,34 @@
 {
   "collectionName": "components_utils_carousels",
   "info": {
-    "displayName": "Carousel"
+    "displayName": "Carousel",
+    "description": ""
   },
   "options": {},
   "attributes": {
     "item": {
+      "type": "media",
+      "multiple": true,
+      "required": false,
       "allowedTypes": [
         "images"
-      ],
+      ]
+    },
+    "arrowLeft": {
       "type": "media",
-      "multiple": true
+      "multiple": true,
+      "required": false,
+      "allowedTypes": [
+        "images"
+      ]
+    },
+    "arrowRight": {
+      "type": "media",
+      "multiple": true,
+      "required": false,
+      "allowedTypes": [
+        "images"
+      ]
     }
   }
 }

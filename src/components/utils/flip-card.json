@@ -1,7 +1,8 @@
 {
   "collectionName": "components_utils_flip_cards",
   "info": {
-    "displayName": "FlipCard"
+    "displayName": "FlipCard",
+    "description": ""
   },
   "options": {},
   "attributes": {
@@ -12,11 +13,12 @@
       "type": "richtext"
     },
     "icons": {
+      "type": "media",
+      "multiple": true,
+      "required": false,
       "allowedTypes": [
         "images"
-      ],
-      "type": "media",
-      "multiple": false
+      ]
     }
   }
 }
