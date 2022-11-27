@@ -4,7 +4,8 @@
   "info": {
     "singularName": "scroll-top",
     "pluralName": "scroll-tops",
-    "displayName": "ScrollTop"
+    "displayName": "ScrollTop",
+    "description": ""
   },
   "options": {
     "draftAndPublish": true
@@ -12,11 +13,12 @@
   "pluginOptions": {},
   "attributes": {
     "bg": {
+      "type": "media",
+      "multiple": true,
+      "required": false,
       "allowedTypes": [
         "images"
-      ],
-      "type": "media",
-      "multiple": false
+      ]
     }
   }
 }

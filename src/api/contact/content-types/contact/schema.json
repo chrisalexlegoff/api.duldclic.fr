@@ -29,6 +29,11 @@
       "type": "component",
       "repeatable": false,
       "component": "form.contact-form"
+    },
+    "seo": {
+      "type": "component",
+      "repeatable": false,
+      "component": "shared.seo"
     }
   }
 }

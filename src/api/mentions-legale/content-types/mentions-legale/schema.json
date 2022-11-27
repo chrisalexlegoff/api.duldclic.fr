@@ -4,7 +4,8 @@
   "info": {
     "singularName": "mentions-legale",
     "pluralName": "mentions-legales",
-    "displayName": "MentionsLegale"
+    "displayName": "MentionsLegale",
+    "description": ""
   },
   "options": {
     "draftAndPublish": true
@@ -58,6 +59,11 @@
     },
     "paragrapheSept": {
       "type": "richtext"
+    },
+    "seo": {
+      "type": "component",
+      "repeatable": false,
+      "component": "shared.seo"
     }
   }
 }

@@ -190,6 +190,16 @@
       "type": "component",
       "repeatable": false,
       "component": "utils.check-terms"
+    },
+    "entete": {
+      "type": "richtext"
+    },
+    "img": {
+      "allowedTypes": [
+        "images"
+      ],
+      "type": "media",
+      "multiple": true
     }
   }
 }

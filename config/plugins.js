@@ -1,5 +1,8 @@
 module.exports = ({ env }) => {
   return {
+    seo: {
+      enabled: true,
+    },
     upload: {
       config: {
         provider: "local",
