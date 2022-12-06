@@ -1,11 +1,5 @@
 module.exports = ({ env }) => {
   return {
-    "upload-plugin-cache": {
-      enabled: true,
-      config: {
-        maxAge: 86_400_000,
-      },
-    },
     seo: {
       enabled: true,
     },
