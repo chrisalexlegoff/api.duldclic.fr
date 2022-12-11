@@ -5,7 +5,7 @@
 -- Dumped from database version 14.5
 -- Dumped by pg_dump version 14.5
 
--- Started on 2022-12-05 22:31:44
+-- Started on 2022-12-06 18:59:16
 
 SET statement_timeout = 0;
 SET lock_timeout = 0;
@@ -4195,7 +4195,7 @@ ALTER TABLE ONLY public.upload_folders_parent_links ALTER COLUMN id SET DEFAULT 
 --
 
 COPY public.abouts (id, titre_page, created_at, updated_at, published_at, created_by_id, updated_by_id) FROM stdin;
-1	A propos de nous	2022-09-21 23:34:46.761	2022-12-05 22:29:20.687	2022-09-22 00:21:03.984	1	1
+1	A propos de nous	2022-09-21 23:34:46.761	2022-12-06 18:34:12.978	2022-09-22 00:21:03.984	1	1
 \.
 
 
@@ -4206,11 +4206,11 @@ COPY public.abouts (id, titre_page, created_at, updated_at, published_at, create
 --
 
 COPY public.abouts_components (id, entity_id, component_id, component_type, field, "order") FROM stdin;
-152	1	1	header.header	header	1
-153	1	1	section.section	binome	1
-154	1	2	section.section	introPresentation	1
-155	1	3	section.section	presentation	1
-156	1	2	shared.seo	seo	1
+157	1	1	header.header	header	1
+158	1	1	section.section	binome	1
+159	1	2	section.section	introPresentation	1
+160	1	3	section.section	presentation	1
+161	1	2	shared.seo	seo	1
 \.
 
 
@@ -4534,7 +4534,7 @@ COPY public.admin_roles (id, name, code, description, created_at, updated_at, cr
 --
 
 COPY public.admin_users (id, firstname, lastname, username, email, password, reset_password_token, registration_token, is_active, blocked, prefered_language, created_at, updated_at, created_by_id, updated_by_id) FROM stdin;
-1	Christophe	Le Goff	\N	legoffchristophealexandre@gmail.com	$2a$10$1D0HEDttB55NwqAZmP1BhuKP4rwSWkENsBpckoDirzdpcZ9M1y.4q	\N	\N	t	f	\N	2022-09-20 23:46:42.813	2022-09-20 23:46:42.813	\N	\N
+1	Christophe	Le Goff	\N	legoffchristophealexandre@gmail.com	$2a$10$1D0HEDttB55NwqAZmP1BhuKP4rwSWkENsBpckoDirzdpcZ9M1y.4q	\N	\N	t	f	fr	2022-09-20 23:46:42.813	2022-12-05 22:42:11.375	\N	\N
 \.
 
 
@@ -7281,8 +7281,8 @@ COPY public.components_form_contact_forms (id, titre, button, success_message, e
 --
 
 COPY public.components_form_contact_forms_components (id, entity_id, component_id, component_type, field, "order") FROM stdin;
-347	1	1	utils.personne	personne	1
-348	1	1	utils.check-terms	checkTerms	1
+349	1	1	utils.personne	personne	1
+350	1	1	utils.check-terms	checkTerms	1
 \.
 
 
@@ -8716,12 +8716,12 @@ COPY public.components_form_success_messages (id, success_message) FROM stdin;
 --
 
 COPY public.components_header_en_savoir_pluses (id, text) FROM stdin;
+1	En savoir plus
+2	En savoir plus
+4	En savoir plus
 6	En savoir plus
 5	En savoir plus
 3	En savoir plus
-4	En savoir plus
-1	En savoir plus
-2	En savoir plus
 \.
 
 
@@ -8733,9 +8733,9 @@ COPY public.components_header_en_savoir_pluses (id, text) FROM stdin;
 
 COPY public.components_header_headers (id, paragraphe, titre, button, titre_page, titre_2) FROM stdin;
 5	<p>De la gestion de projets jusqu’aux missions de maintenance, découvrez ci-dessous tous ce que nous pouvons faire pour vous !</p>		En savoir plus	<h1>besoin d’un e-commerce ou site vitrine pour <span style="color:#FC5050;">présenter votre entreprise ?</span></h1>	
-4	<h2><strong>Création de site web - UI/UX design - seo - webmarketing - supports imprimables&nbsp;</strong><br>en métropole lilloise et à distance sur le reste de la France</h2>		Demander un devis gratuit	<h1>Besoin d’un site web professionnel ? DualDclic s'en charge pour vous</h1>	
 1		<p>Présentation, compétences, expériences...&nbsp;</p><p>Qui sommes nous ?</p>	En savoir plus	<h1>Freelances web design <span style="color:#FC5050;">&amp; développement</span></h1>	
 2			Vous souhaitez un devis ? Par ici...	<h1>Contacter un freelance développeur et/ou <span style="color:#41EAD4;">un graphiste designer</span></h1>	
+4	<h2><strong>Création de site web - UI/UX design - seo - webmarketing - supports imprimables&nbsp;</strong><br>en métropole lilloise et à distance sur le reste de la France</h2>		Demander un devis gratuit	<h1>Besoin d’un site web professionnel ? DualDclic s'en charge pour vous</h1>	
 3	<p>Le questionnaire ci-dessous nous permettra de connaitre les besoins pour mener à bien votre projet.</p><p>&nbsp;</p><p>Grâce à vos informations, nous serons en mesure de vous faire un devis gratuit précisant le prix et la durée estimée du projet.</p>		Vous souhaitez juste discuter ? C’est par ici...	<h1>Devis gratuit pour la création<br><span style="color:#41EAD4;">d’un site internet, logo, flyers…</span></h1>	
 6	<p>Découvrez nos précédent projets... Et faites vous une idée de notre savoir-faire !</p>		En savoir plus	<h1>Nos <span style="color:#FC5050;">réalisations</span></h1>	
 \.
@@ -8750,9 +8750,9 @@ COPY public.components_header_headers (id, paragraphe, titre, button, titre_page
 COPY public.components_header_headers_components (id, entity_id, component_id, component_type, field, "order") FROM stdin;
 181	5	5	header.en-savoir-plus	enSavoirPlus	1
 195	3	3	header.en-savoir-plus	enSavoirPlus	1
-199	4	4	header.en-savoir-plus	enSavoirPlus	1
-200	1	1	header.en-savoir-plus	enSavoirPlus	1
-201	2	2	header.en-savoir-plus	enSavoirPlus	1
+203	1	1	header.en-savoir-plus	enSavoirPlus	1
+204	2	2	header.en-savoir-plus	enSavoirPlus	1
+205	4	4	header.en-savoir-plus	enSavoirPlus	1
 177	6	6	header.en-savoir-plus	enSavoirPlus	1
 \.
 
@@ -8831,15 +8831,15 @@ COPY public.components_section_realisations_components (id, entity_id, component
 --
 
 COPY public.components_section_sections (id, titre_2, titre_3, paragraphe, button, titre_2_bis, titre_3_bis, paragraphe_bis, titre_4, titre_4_bis, button_2, titre_5) FROM stdin;
-7	<h3>Pourquoi <span style="color:hsl(30,75%,60%);">créer</span> mon&nbsp;<br>site web&nbsp;</h3>		<p><strong>Elargir la visibilité</strong> de votre marque</p><p>&nbsp;</p><p><strong>Attirer </strong>de nouveaux clients</p><p>&nbsp;</p><p><strong>Démontrer </strong>votre expertise</p><p>&nbsp;</p><p><strong>Valoriser </strong>vos produits</p>	Créer mon site	<h3>Pourquoi <span style="color:hsl(0,75%,60%);">refondre</span> mon&nbsp;<br>site web</h3>		<p><strong>Optimiser </strong>un site en perte de vitesse</p><p>&nbsp;</p><p><strong>Maintenir </strong>votre compétitivité</p><p>&nbsp;</p><p><strong>Rebooster l’audience</strong> de votre site</p><p>&nbsp;</p><p>Augmenter/améliorer l’<strong>expérience utilisateur</strong></p>			Refondre mon site	
-1		<h2>DualDclic, c’est un binôme de freelances professionnels du web, créée en 2021.</h2>	<p>Nous développons pour vous et dans toute la France des sites web <strong>responsive</strong> (adaptable à tous les écrans), tout en soignant <strong>la conception graphique</strong> et en <strong>optimisant les stratégies</strong> de marketing digitale telle que le référencement naturel (appelé aussi SEO), l’e-mailing... Nous vous aidons et conseillons également sur l’<strong>optimisation de vos réseaux sociaux</strong>.</p>	\N				<h3>Basés en région Lilloise dans les Hauts-de-France…</h3>		\N	
-4	<h2>Notre façon de travailler <span style="color:#41EAD4;">vous convient ?</span></h2>		<p>Si vous avez encore besoin de vous décider,&nbsp;<br>rendez-vous sur :</p><p style="margin-left:80px;">&nbsp;</p><ul><li><a href="/prestation-web-print"><u>nos prestations</u></a></li><li><a href="/projet-internet-et-imprimable">nos précédentes <u>réalisations</u></a></li><li><a href="/webdesign-developpement-freelance-nord"><u>nos présentations</u></a></li></ul>	 C’est bon pour moi !						\N	
-2		<h2>Créer un site internet professionnel <span style="color:#FC5050;">pour mon entreprise…</span></h2>	<p>Composée de 2 professionnels associés et aux profils complémentaires (développeur et concepteur designer web), nous mettrons tout en œuvre pour vous fournir un<strong> service de qualité</strong> : nos diverses expériences dans d’anciennes vies professionnelles hors du milieu de l’informatique offrent une palette de <strong>compétences très variées</strong>.</p>	\N				<h3>... Pourquoi pas avec DualDclic ?</h3>	<h4>Nous sommes une petite équipe, mais ne dit-on pas que la quantité ne fait pas la qualité !</h4>	\N	
-8	<h2>Pourquoi <span style="color:#41EAD4;">choisir un freelance web ?</span></h2>	<h3>Vous êtes une TPE/PME, indépendant, une association...&nbsp;<br>Et vous cherchez une agence web ? &nbsp;nous vous proposons de travailler avec un freelance !</h3>	<p>Travailler avec un indépendant, c’est l’avantage d’avoir un interlocuteur <strong>plus en phase avec votre entreprise</strong>, pour <strong>un coût à la mesure de votre budget</strong> et dans des <strong>délais plus réduits</strong> qu’en agence web.</p><p>Passionnés et appliqués, nous mettrons toutes nos ressources pour vous donner satisfaction.</p><p>Les <strong>avantages de travailler avec un freelance </strong>sont nombreux, mais nous en retiendrons 3 :&nbsp;</p>	En savoir plus sur nous						\N	
-11	<h2>Nos <span style="color:hsl(0,75%,60%);">valeurs</span></h2>	<h2>Notre <span style="color:hsl(30,75%,60%);">mission</span></h2>	<p><span style="color:#FC5050;">En 5 min</span>, réalisez une demande de devis détaillé, à l’aide du questionnaire mis à votre disposition.</p>	Demander un devis gratuit	<h2>Vous êtes prêt à<br><span style="color:#4087FF;">démarrer votre projet ?</span></h2>	<h3>Vous souhaitez démarrer votre projet ?</h3>	<h3><br>Vous permettre d’atteindre vos objectifs de croissance pour votre entreprise</h3>	<h2>pourquoi <span style="color:hsl(30,75%,60%);">nous ?</span></h2>		\N	
 9	<h2>Nos <span style="color:#FC5050;">réalisations</span></h2>	<h3>Projets de e-commerce sur wordpress, packaging produit, carte de visite ou stratégie digitale...</h3>	<p><span style="color:hsl(0,75%,60%);">Voir et tester</span> nos précédentes créations sera plus parlant que de grands mots...</p><p>&nbsp;</p><p>Dans notre portefolio, nous avons de tout à vous montrer :</p><p>&nbsp;</p><p>Création de site <strong>E-commerce</strong> et site <strong>vitrine sur CMS en responsive, Logo</strong>, charte graphique, <strong>carte de visite</strong> professionnelle...</p>	En savoir plus sur nos réalisations			<p>Vous souhaitez avoir un aperçu de notre savoir-faire ?<br>C’est normal !</p>			\N	
+2		<h2>Créer un site internet professionnel <span style="color:#FC5050;">pour mon entreprise…</span></h2>	<p>Composée de 2 professionnels associés et aux profils complémentaires (développeur et concepteur designer web), nous mettrons tout en œuvre pour vous fournir un<strong> service de qualité</strong> : nos diverses expériences dans d’anciennes vies professionnelles hors du milieu de l’informatique offrent une palette de <strong>compétences très variées</strong>.</p>	\N				<h3>... Pourquoi pas avec DualDclic ?</h3>	<h4>Nous sommes une petite équipe, mais ne dit-on pas que la quantité ne fait pas la qualité !</h4>	\N	
+4	<h2>Notre façon de travailler <span style="color:#41EAD4;">vous convient ?</span></h2>		<p>Si vous avez encore besoin de vous décider,&nbsp;<br>rendez-vous sur :</p><p style="margin-left:80px;">&nbsp;</p><ul><li><a href="/prestation-web-print"><u>nos prestations</u></a></li><li><a href="/projet-internet-et-imprimable">nos précédentes <u>réalisations</u></a></li><li><a href="/webdesign-developpement-freelance-nord"><u>nos présentations</u></a></li></ul>	 C’est bon pour moi !						\N	
 6	<h2>Optimisez votre <span style="color:hsl(0,75%,60%);">communication visuelle</span></h2>		<p><strong>Aujourd’hui, près de</strong> <span style="color:hsl(0,75%,60%);">80% de la population française utilise internet</span>.</p>	\N			<p><strong>Ne pas avoir de site pour promouvoir son activité</strong>, c’est manquer l’opportunité d’obtenir et fidéliser de nouveaux clients !</p><p>&nbsp;</p><p>De même, <strong>ne pas profiter des médias sociaux</strong>, c’est limiter sa présence auprès de son public et manquer la communication autour de votre entreprise.</p><p>&nbsp;</p><p>Travailler votre communication est certes un <strong>investissement</strong> dans un premier temps, mais qui sera payant et vite rentabilisé !</p>			\N	
 10	<h2>Nos <span style="color:hsl(0,75%,60%);">services : web et print</span></h2>	<h3>experts de la communication visuelle</h3>	<p>Nous sommes <strong>spécialistes dans le domaine de la communication</strong>. Nous savons ce qu’il vous faut pour réussir votre communication auprès de vos prospects et fidéliser vos clients. Pour cela, nous avons des prestations à vous proposer selon vos besoins, conformes à la réglementation RGPD et sur l’intégralité de votre projet.&nbsp;</p>	En savoir plus sur nos prestations		<h3>Nos 5 domaines d’intervention</h3>				\N	
+1		<h2>DualDclic, c’est un binôme de freelances professionnels du web, créée en 2021.</h2>	<p>Nous développons pour vous et dans toute la France des sites web <strong>responsive</strong> (adaptable à tous les écrans), tout en soignant <strong>la conception graphique</strong> et en <strong>optimisant les stratégies</strong> de marketing digitale telle que le référencement naturel (appelé aussi SEO), l’e-mailing... Nous vous aidons et conseillons également sur l’<strong>optimisation de vos réseaux sociaux</strong>.</p>	\N				<h3>Basés en région Lilloise dans les Hauts-de-France…</h3>		\N	
+11	<h2>Nos <span style="color:hsl(0,75%,60%);">valeurs</span></h2>	<h2>Notre <span style="color:hsl(30,75%,60%);">mission</span></h2>	<p><span style="color:#FC5050;">En 5 min</span>, réalisez une demande de devis détaillé, à l’aide du questionnaire mis à votre disposition.</p>	Demander un devis gratuit	<h2>Vous êtes prêt à<br><span style="color:#4087FF;">démarrer votre projet ?</span></h2>	<h3>Vous souhaitez démarrer votre projet ?</h3>	<h3><br>Vous permettre d’atteindre vos objectifs de croissance pour votre entreprise</h3>	<h2>pourquoi <span style="color:hsl(30,75%,60%);">nous ?</span></h2>		\N	
+7	<h3>Pourquoi <span style="color:hsl(30,75%,60%);">créer</span> mon&nbsp;<br>site web&nbsp;</h3>		<p><strong>Elargir la visibilité</strong> de votre marque</p><p>&nbsp;</p><p><strong>Attirer </strong>de nouveaux clients</p><p>&nbsp;</p><p><strong>Démontrer </strong>votre expertise</p><p>&nbsp;</p><p><strong>Valoriser </strong>vos produits</p>	Créer mon site	<h3>Pourquoi <span style="color:hsl(0,75%,60%);">refondre</span> mon&nbsp;<br>site web</h3>		<p><strong>Optimiser </strong>un site en perte de vitesse</p><p>&nbsp;</p><p><strong>Maintenir </strong>votre compétitivité</p><p>&nbsp;</p><p><strong>Rebooster l’audience</strong> de votre site</p><p>&nbsp;</p><p>Augmenter/améliorer l’<strong>expérience utilisateur</strong></p>			Refondre mon site	
+8	<h2>Pourquoi <span style="color:#41EAD4;">choisir un freelance web ?</span></h2>	<h3>Vous êtes une TPE/PME, indépendant, une association...&nbsp;<br>Et vous cherchez une agence web ? &nbsp;nous vous proposons de travailler avec un freelance !</h3>	<p>Travailler avec un indépendant, c’est l’avantage d’avoir un interlocuteur <strong>plus en phase avec votre entreprise</strong>, pour <strong>un coût à la mesure de votre budget</strong> et dans des <strong>délais plus réduits</strong> qu’en agence web.</p><p>Passionnés et appliqués, nous mettrons toutes nos ressources pour vous donner satisfaction.</p><p>Les <strong>avantages de travailler avec un freelance </strong>sont nombreux, mais nous en retiendrons 3 :&nbsp;</p>	En savoir plus sur nous						\N	
 12	<h2>Ce que nous pouvons faire pour&nbsp;<br><span style="color:hsl(0,75%,60%);">votre communication</span></h2>	<h3>Vous apporter les solutions pour <span style="color:hsl(0,75%,60%);">convertir et fidéliser vos clients</span> grâce à une communication visible et efficace</h3>	<p>Nous vous proposons <strong>nos services ci-dessous</strong> pour le développement de votre entreprise :</p>	Demander un devis gratuit	<h2>Notre <span style="color:#41EAD4;">objectif</span></h2>	<h3>Vous souhaitez démarrer votre projet ?</h3>	<h3>Nous mettons en place <span style="color:hsl(0,75%,60%);">vos outils</span> qui permettent la conversion tout en vous valorisant auprès de vos clients... Que demander de plus ?</h3>	<h3>Une demande particulière ? Une question ? discutons en :</h3>		\N	
 14	<h3>Maison Mocquin, chocolatier</h3>			\N						\N	
 13	<h2><span style="color:#3F3F3F;">Notre</span> méthodologie</h2>		<h3>Les 5 étapes d’un projet réussi</h3>	Vous êtes prêt ? c’est parti !			<p>Chaque étape est validée par vos soins</p>			\N	
@@ -8855,6 +8855,32 @@ COPY public.components_section_sections (id, titre_2, titre_3, paragraphe, butto
 --
 
 COPY public.components_section_sections_components (id, entity_id, component_id, component_type, field, "order") FROM stdin;
+1872	3	28	utils.competences	competencesChris	1
+1873	3	1	utils.competences	competencesChris	2
+1874	3	2	utils.competences	competencesChris	3
+1875	3	4	utils.competences	competencesChris	4
+1876	3	5	utils.competences	competencesChris	5
+1877	3	7	utils.competences	competencesChris	6
+1878	3	6	utils.competences	competencesChris	7
+1879	3	3	utils.competences	competencesChris	8
+1880	3	8	utils.competences	competencesSab	1
+1881	3	9	utils.competences	competencesSab	2
+1882	3	10	utils.competences	competencesSab	3
+1883	3	11	utils.competences	competencesSab	4
+1884	3	12	utils.competences	competencesSab	5
+1885	3	13	utils.competences	competencesSab	6
+1886	3	14	utils.competences	competencesSab	7
+1887	3	15	utils.competences	competencesSab	8
+1888	8	1	utils.flip-card	flipCard	1
+1889	8	2	utils.flip-card	flipCard	2
+1890	8	3	utils.flip-card	flipCard	3
+1891	9	1	utils.carousel	carousel	1
+1892	10	1	utils.services	services	1
+1893	10	2	utils.services	services	2
+1894	10	3	utils.services	services	3
+1895	10	4	utils.services	services	4
+1896	10	5	utils.services	services	5
+1897	11	6	utils.services	services	1
 1723	12	1	utils.board	board	1
 1724	12	2	utils.board	board	2
 1725	12	3	utils.board	board	3
@@ -8868,35 +8894,9 @@ COPY public.components_section_sections_components (id, entity_id, component_id,
 1733	13	11	utils.board	board	3
 1734	13	12	utils.board	board	4
 1735	13	13	utils.board	board	5
-1830	8	1	utils.flip-card	flipCard	1
-1831	8	2	utils.flip-card	flipCard	2
-1832	8	3	utils.flip-card	flipCard	3
-1833	9	1	utils.carousel	carousel	1
-1834	10	1	utils.services	services	1
-1835	10	2	utils.services	services	2
-1836	10	3	utils.services	services	3
-1837	10	4	utils.services	services	4
-1838	10	5	utils.services	services	5
-1839	11	6	utils.services	services	1
-1840	11	7	utils.services	services	2
-1841	11	8	utils.services	services	3
-1842	11	9	utils.services	services	4
-1843	3	28	utils.competences	competencesChris	1
-1844	3	1	utils.competences	competencesChris	2
-1845	3	2	utils.competences	competencesChris	3
-1846	3	4	utils.competences	competencesChris	4
-1847	3	5	utils.competences	competencesChris	5
-1848	3	7	utils.competences	competencesChris	6
-1849	3	6	utils.competences	competencesChris	7
-1850	3	3	utils.competences	competencesChris	8
-1851	3	8	utils.competences	competencesSab	1
-1852	3	9	utils.competences	competencesSab	2
-1853	3	10	utils.competences	competencesSab	3
-1854	3	11	utils.competences	competencesSab	4
-1855	3	12	utils.competences	competencesSab	5
-1856	3	13	utils.competences	competencesSab	6
-1857	3	14	utils.competences	competencesSab	7
-1858	3	15	utils.competences	competencesSab	8
+1898	11	7	utils.services	services	2
+1899	11	8	utils.services	services	3
+1900	11	9	utils.services	services	4
 \.
 
 
@@ -8907,10 +8907,10 @@ COPY public.components_section_sections_components (id, entity_id, component_id,
 --
 
 COPY public.components_shared_meta_socials (id, social_network, title, description) FROM stdin;
-1	Facebook	Expert Freelance : site web UI/UX SEO print | Nord DualDclic	Spécialiste en communication digitale et print - Nord
-2	Twitter	twitter	twitter
 3	Facebook	L'équipe webdesign/développement - DualDclic Hauts de France	Créer un site internet pour mon entreprise... Avec DualDclic
 4	Facebook	Contact freelance pour création d'un site  | DualDclic Nord	Besoin d'un expert pour votre communication ? Pensez à DualDclic
+1	Facebook	Expert Freelance : site web UI/UX SEO print | Nord DualDclic	Spécialiste en communication digitale et print - Nord
+2	Twitter	twitter	twitter
 7	Facebook	Réalisation de projets web, flyers... | DualDclic Nord	Nos projets internet : e-commerce, site vitrine en WP ou Strapi
 6	Facebook	Prestations : site web, imprimables, SEO | DualDclic	Découvrez nos prestations/méthodologies selon vos besoins
 5	Facebook	Devis gratuit site web - SEO - charte graphique | DualDclic	Demandez un devis à un expert freelance pour votre communication
@@ -8924,11 +8924,11 @@ COPY public.components_shared_meta_socials (id, social_network, title, descripti
 --
 
 COPY public.components_shared_seos (id, meta_title, meta_description, keywords, meta_robots, structured_data, meta_viewport, canonical_url) FROM stdin;
-1	Expert Freelance : site web UI/UX SEO print | Nord DualDclic	TPE/PME, indépendant : besoin d'une communication visuelle efficace ? DuaDclic développe, design et optimise vos outils de com sur mesure. Nord Pas de Calais	dev seo freelance web	\N	\N	\N	https://dualdclic.fr/
+9	Réalisation de projets web, flyers... | DualDclic Nord	Nos projets internet, e-commerce, site vitrine, landing page, carte de visite, logo, sur WordPress ou Strapi (full Javascript) - Région Lilloise, Belgique	projets, e-commerce, vitrine, carte de visite	\N	\N	\N	https://dualdclic.fr/projet-internet-et-imprimable
 2	L'équipe webdesign/développement | DualDclic Hauts de France	Créer un site internet pour mon entreprise... Pourquoi pas avec DualDclic ? Travaillez avec des Freelances qui ont à cœur de réaliser ou revoir votre site web	site, professionnel, charte graphique, responsive, région lilloise, freelance, communication, nord, hauts de france	\N	\N	\N	https://dualdclic.fr/webdesign-developpement-freelance-nord
 3	Contact freelance pour création d'un site  | DualDclic Nord	Besoin d'un expert pour votre communication visuelle ? Création site web ui/ux, charte graphique, SEO, print	contacter, freelance, site web, DualDclic	\N	\N	\N	https://dualdclic.fr/contacter-freelance-nord
 5	Page d 'erreur DualDclic	Agence Communication visuelle | DualDclic Nord pas de Calais, métropole Lilloise, Lens, Arras, Douai, les weppes, Lille	\N	noindex, follow	\N	\N	https://dualdclic.fr/404
-9	Réalisation de projets web, flyers... | DualDclic Nord	Nos projets internet, e-commerce, site vitrine, landing page, carte de visite, logo, sur WordPress ou Strapi (full Javascript) - Région Lilloise, Belgique	projets, e-commerce, vitrine, carte de visite	\N	\N	\N	https://dualdclic.fr/projet-internet-et-imprimable
+1	Expert Freelance : site web UI/UX SEO print | Nord DualDclic	TPE/PME, indépendant : besoin d'une communication visuelle efficace ? DuaDclic développe, design et optimise vos outils de com sur mesure. Nord Pas de Calais	dev seo freelance web	\N	\N	\N	https://dualdclic.fr/
 8	Prestations : site web, imprimables, SEO | DualDclic	Nos prestations/méthodologies : Gestion de projet, supports de communication,  refonte, formation à l'utilisation, maintenance.  Selon vos besoins	prestation, méthodologie, site web, communication, projet, 	\N	\N	\N	https://dualdclic.fr/prestation-web-print
 10	Message envoyé	devis envoyé en cours de traitement, nous vous recontacterons	test	noindex, follow	\N	\N	https://dualdclic.fr/success-message
 7	Mentions légales | Dualdclic Nord pas de Calais, Lille	Mentions légales DualDclic, agence de communication Lilloise, dans les Weppes	\N	noindex, follow	\N	\N	https://dualdclic.fr/mentions-legales-dualdclic
@@ -8944,13 +8944,13 @@ COPY public.components_shared_seos (id, meta_title, meta_description, keywords, 
 --
 
 COPY public.components_shared_seos_components (id, entity_id, component_id, component_type, field, "order") FROM stdin;
+113	2	3	shared.meta-social	metaSocial	1
+114	3	4	shared.meta-social	metaSocial	1
+115	1	1	shared.meta-social	metaSocial	1
+116	1	2	shared.meta-social	metaSocial	2
 79	9	7	shared.meta-social	metaSocial	1
 83	8	6	shared.meta-social	metaSocial	1
 100	4	5	shared.meta-social	metaSocial	1
-107	1	1	shared.meta-social	metaSocial	1
-108	1	2	shared.meta-social	metaSocial	2
-109	2	3	shared.meta-social	metaSocial	1
-110	3	4	shared.meta-social	metaSocial	1
 \.
 
 
@@ -9011,20 +9011,10 @@ COPY public.components_utils_check_terms (id, text, checked, error_message) FROM
 COPY public.components_utils_competences (id, competence) FROM stdin;
 28	NodeJs
 1	ReactJs
-4	Strapi
 2	NextJs
+4	Strapi
 5	JS (Full/Natif)
 7	JQuery
-6	Html5/Css3
-3	Wordpress (HeadLess)
-8	Photoshop
-9	Figma
-11	Google Analytics
-10	Divi, Elementor
-12	Illustrator
-13	InDesign
-14	Wordpress
-15	Word, Excel ...
 16	Wordpress
 21	SEO
 17	Logo
@@ -9039,6 +9029,16 @@ COPY public.components_utils_competences (id, competence) FROM stdin;
 30	Strapi
 25	Conception graphique
 31	SEO
+6	Html5/Css3
+3	Wordpress (HeadLess)
+8	Photoshop
+9	Figma
+10	Divi, Elementor
+11	Google Analytics
+12	Illustrator
+13	InDesign
+14	Wordpress
+15	Word, Excel ...
 \.
 
 
@@ -9134,6 +9134,7 @@ COPY public.components_utils_personnes (id, text_un, text_deux, text_un_checked,
 313	\N	\N	f	f	\N				\N	\N	\N	\N	\N	\N	\N	\N	\N	\N	\N
 314	\N	\N	t	f	\N	s			\N	\N	\N	\N	\N	\N	\N	\N	\N	\N	\N
 315	\N	\N	f	t	\N				\N	\N	\N	\N	\N	\N	\N	\N	\N	\N	\N
+1	\N	\N	f	f		\N	\N	\N	Votre nom	Votre e-mail	\N	Le nom est obligatoire	\N	Merci de renseigner votre adresse email	L'adresse mail renseignée est invalide	\N	Merci de bien vouloir renseigner votre message	Votre message	\N
 292	\N	\N	f	t	\N	Yg	G	V	\N	\N	\N	\N	\N	\N	\N	\N	\N	\N	\N
 293	\N	\N	t	f	\N	I	K	N	\N	\N	\N	\N	\N	\N	\N	\N	\N	\N	\N
 295	\N	\N	t	f	\N	x	x	x	\N	\N	\N	\N	\N	\N	\N	\N	\N	\N	\N
@@ -9174,7 +9175,6 @@ COPY public.components_utils_personnes (id, text_un, text_deux, text_un_checked,
 339	\N	\N	t	f	\N	s	s	s@f.fr	\N	\N	\N	\N	\N	\N	\N	\N	\N	\N	\N
 340	\N	\N	f	t	\N	s	s	chrisalexlegoff@gmail.com	\N	\N	\N	\N	\N	\N	\N	\N	\N	\N	\N
 345	\N	\N	t	f	\N	c	c	chrisalexlegoff@gmail.com	\N	\N	\N	\N	\N	\N	\N	\N	\N	\N	\N
-1	\N	\N	f	f		\N	\N	\N	Votre nom	Votre e-mail	\N	Le nom est obligatoire	\N	Merci de renseigner votre adresse email	L'adresse mail renseignée est invalide	\N	Merci de bien vouloir renseigner votre message	Votre message	\N
 389	\N	\N	t	f	\N	ss	sss	chrisalexlegoff@gmail.com	\N	\N	\N	\N	\N	\N	\N	\N	\N	\N	\N
 390	\N	\N	f	t	\N	c	c	chrisalexlegoff@gmail.com	\N	\N	\N	\N	\N	\N	\N	\N	\N	\N	\N
 391	\N	\N	f	t	\N	s	s	chrisalexlegoff@gmail.com	\N	\N	\N	\N	\N	\N	\N	\N	\N	\N	\N
@@ -9664,15 +9664,15 @@ COPY public.components_utils_reseaux (id, lien, slug) FROM stdin;
 --
 
 COPY public.components_utils_services (id, legend, paragraphe) FROM stdin;
+6	<h3>Qualité</h3>	<p>Nous mettons du cœur dans notre travail et nous nous appliquons à le faire parfaitement !<br>La <strong>qualité </strong>de nos productions est <strong>primordiale</strong>.</p>
+8	<h3>Créativité</h3>	<p>Nous voulons inspirer dans nos projets <strong>beauté et simplicité</strong>, sans pour autant négliger &nbsp;<strong>l’expérience utilisateur, </strong>la fiabilité <strong>et la rapidité de votre site</strong>.</p>
+9	<h3>Écoute</h3>	<p>Nous sommes une petite équipe et donc seulement 2 interlocuteurs possibles. Nous <strong>connaissons bien votre projet</strong> et pouvons vous apporter des <strong>conseils avisés</strong>.</p>
+7	<h3>Confiance</h3>	<p>La <strong>transparence </strong>est de mise, pas de frais cachés.&nbsp;<br>Nous assurons au mieux la <strong>sécurité </strong>de votre site. <strong>Nous serons là</strong> en cas de nécessité.</p>
 1	<h4>Gestion de projets</h4>	
 3	<h4>Développement Tous supports</h4>	
 2	<h4>Conception graphique</h4>	
 4	<h4>marketing digital</h4>	
 5	<h4>Maintenance mise à jour</h4>	
-6	<h3>Qualité</h3>	<p>Nous mettons du cœur dans notre travail et nous nous appliquons à le faire parfaitement !<br>La <strong>qualité </strong>de nos productions est <strong>primordiale</strong>.</p>
-8	<h3>Créativité</h3>	<p>Nous voulons inspirer dans nos projets <strong>beauté et simplicité</strong>, sans pour autant négliger &nbsp;<strong>l’expérience utilisateur, </strong>la fiabilité <strong>et la rapidité de votre site</strong>.</p>
-9	<h3>Écoute</h3>	<p>Nous sommes une petite équipe et donc seulement 2 interlocuteurs possibles. Nous <strong>connaissons bien votre projet</strong> et pouvons vous apporter des <strong>conseils avisés</strong>.</p>
-7	<h3>Confiance</h3>	<p>La <strong>transparence </strong>est de mise, pas de frais cachés.&nbsp;<br>Nous assurons au mieux la <strong>sécurité </strong>de votre site. <strong>Nous serons là</strong> en cas de nécessité.</p>
 \.
 
 
@@ -9982,7 +9982,7 @@ COPY public.contact_forms_components (id, entity_id, component_id, component_typ
 --
 
 COPY public.contacts (id, titre_page, created_at, updated_at, published_at, created_by_id, updated_by_id) FROM stdin;
-1	Contactez-nous	2022-09-23 09:44:48.362	2022-12-05 22:29:47.877	2022-09-23 09:50:51.999	1	1
+1	Contactez-nous	2022-09-23 09:44:48.362	2022-12-06 18:34:25.945	2022-09-23 09:50:51.999	1	1
 \.
 
 
@@ -9993,10 +9993,10 @@ COPY public.contacts (id, titre_page, created_at, updated_at, published_at, crea
 --
 
 COPY public.contacts_components (id, entity_id, component_id, component_type, field, "order") FROM stdin;
-65	1	2	header.header	header	1
-66	1	1	section.informations	informations	1
-67	1	1	form.contact-form	contact	1
-68	1	3	shared.seo	seo	1
+69	1	2	header.header	header	1
+70	1	1	section.informations	informations	1
+71	1	1	form.contact-form	contact	1
+72	1	3	shared.seo	seo	1
 \.
 
 
@@ -10032,7 +10032,7 @@ COPY public.devis_components (id, entity_id, component_id, component_type, field
 --
 
 COPY public.error_pages (id, titre_page, button, titre, paragraphe, created_at, updated_at, published_at, created_by_id, updated_by_id) FROM stdin;
-1	Contenu introuvable	Retour à l’accueil	<h1>Page <span style="color:#41EAD4;">introuvable</span></h1>	<p>Désolé, cette page n’existe pas ou n’existe plus...</p>	2022-09-23 10:13:42.412	2022-12-05 22:30:15.301	2022-09-23 10:13:45.644	1	1
+1	Contenu introuvable	Retour à l’accueil	<h1>Page <span style="color:#41EAD4;">introuvable</span></h1>	<p>Désolé, cette page n’existe pas ou n’existe plus...</p>	2022-09-23 10:13:42.412	2022-12-06 18:34:59.485	2022-09-23 10:13:45.644	1	1
 \.
 
 
@@ -10043,7 +10043,7 @@ COPY public.error_pages (id, titre_page, button, titre, paragraphe, created_at, 
 --
 
 COPY public.error_pages_components (id, entity_id, component_id, component_type, field, "order") FROM stdin;
-8	1	5	shared.seo	seo	1
+9	1	5	shared.seo	seo	1
 \.
 
 
@@ -10057,7 +10057,9 @@ COPY public.files (id, name, alternative_text, caption, width, height, formats, 
 1	carres.svg	carres.svg	carres.svg	95	86	\N	carres_733dce6e9e	.svg	image/svg+xml	1.05	/uploads/carres_733dce6e9e.svg	\N	local	\N	/	2022-09-21 23:29:42.716	2022-09-21 23:29:42.716	1	1
 3	en-savoir-plus-orange.svg	en-savoir-plus-orange.svg	en-savoir-plus-orange.svg	85	83	\N	en_savoir_plus_orange_6676ae21b9	.svg	image/svg+xml	2.11	/uploads/en_savoir_plus_orange_6676ae21b9.svg	\N	local	\N	/	2022-09-21 23:31:25.632	2022-09-21 23:31:25.632	1	1
 5	carre.svg	carre.svg	carre.svg	91	84	\N	carre_7797d8d426	.svg	image/svg+xml	0.99	/uploads/carre_7797d8d426.svg	\N	local	\N	/	2022-09-22 00:12:02.685	2022-09-22 00:12:02.685	1	1
+521	logo-mobile-bleu.svg	logo-mobile-bleu.svg	logo-mobile-bleu.svg	244	42	\N	logo_mobile_bleu_9bf80dd6fa	.svg	image/svg+xml	5.43	/uploads/logo_mobile_bleu_9bf80dd6fa.svg	\N	local	\N	/	2022-12-06 17:56:52.659	2022-12-06 17:56:52.659	1	1
 8	carres.svg	carres.svg	carres.svg	95	86	\N	carres_f52b89d8c2	.svg	image/svg+xml	1.06	/uploads/carres_f52b89d8c2.svg	\N	local	\N	/	2022-09-23 09:40:36.774	2022-09-23 09:40:36.774	1	1
+522	logo-desktop-bleu.svg	logo-desktop-bleu.svg	logo-desktop-bleu.svg	244	42	\N	logo_desktop_bleu_9236aafac6	.svg	image/svg+xml	5.43	/uploads/logo_desktop_bleu_9236aafac6.svg	\N	local	\N	/	2022-12-06 17:57:36.755	2022-12-06 17:57:36.755	1	1
 10	en-savoir-plus-bleu.svg	en-savoir-plus-bleu.svg	en-savoir-plus-bleu.svg	85	83	\N	en_savoir_plus_bleu_3e4173ad64	.svg	image/svg+xml	2.11	/uploads/en_savoir_plus_bleu_3e4173ad64.svg	\N	local	\N	/	2022-09-23 09:41:30.789	2022-09-23 09:41:30.789	1	1
 11	checked.svg	checked.svg	checked.svg	30	30	\N	checked_3a90b35dd2	.svg	image/svg+xml	2.47	/uploads/checked_3a90b35dd2.svg	\N	local	\N	/	2022-09-23 09:48:38.611	2022-09-23 09:48:38.611	1	1
 12	unckeck.svg	unckeck.svg	unckeck.svg	30	30	\N	unckeck_e482d16384	.svg	image/svg+xml	0.96	/uploads/unckeck_e482d16384.svg	\N	local	\N	/	2022-09-23 09:48:44.612	2022-09-23 09:48:44.612	1	1
@@ -10073,37 +10075,47 @@ COPY public.files (id, name, alternative_text, caption, width, height, formats, 
 55	3-responsive.svg	responsive, adaptable 3 écrans	3-responsive.svg	104	83	\N	3_responsive_f7a4db58dc	.svg	image/svg+xml	4.20	/uploads/3_responsive_f7a4db58dc.svg	\N	local	\N	/	2022-09-23 11:52:27.089	2022-11-12 18:10:41.094	1	1
 56	4-marketing.svg	Webmarketing	4-marketing.svg	86	79	\N	4_marketing_b2c025f5cf	.svg	image/svg+xml	4.67	/uploads/4_marketing_b2c025f5cf.svg	\N	local	\N	/	2022-09-23 11:52:56.718	2022-11-12 18:10:54.834	1	1
 57	5-maintenance.svg	Maintenance de site	5-maintenance.svg	90	88	\N	5_maintenance_8bfce3cf75	.svg	image/svg+xml	4.31	/uploads/5_maintenance_8bfce3cf75.svg	\N	local	\N	/	2022-09-23 11:53:30.313	2022-11-12 18:11:04.643	1	1
+523	logo-desktop-vert.svg	logo-desktop-vert.svg	logo-desktop-vert.svg	245	42	\N	logo_desktop_vert_5f4ec7b1db	.svg	image/svg+xml	5.41	/uploads/logo_desktop_vert_5f4ec7b1db.svg	\N	local	\N	/	2022-12-06 17:58:30.976	2022-12-06 17:58:30.976	1	1
+524	logo-mobile-rouge.svg	logo-mobile-rouge.svg	logo-mobile-rouge.svg	244	42	\N	logo_mobile_rouge_954f00b67e	.svg	image/svg+xml	5.43	/uploads/logo_mobile_rouge_954f00b67e.svg	\N	local	\N	/	2022-12-06 17:59:12.152	2022-12-06 17:59:12.152	1	1
+525	logo-mobile-vert.svg	logo-mobile-vert.svg	logo-mobile-vert.svg	245	42	\N	logo_mobile_vert_5da01439de	.svg	image/svg+xml	5.41	/uploads/logo_mobile_vert_5da01439de.svg	\N	local	\N	/	2022-12-06 17:59:45.44	2022-12-06 17:59:45.44	1	1
 25	checked.svg	checked.svg	checked.svg	30	30	\N	checked_f9a6e3d4a9	.svg	image/svg+xml	0.95	/uploads/checked_f9a6e3d4a9.svg	\N	local	\N	/	2022-09-23 10:10:01.056	2022-09-23 10:10:01.056	1	1
 26	unchecked.svg	unchecked.svg	unchecked.svg	30	30	\N	unchecked_10a2872eab	.svg	image/svg+xml	0.17	/uploads/unchecked_10a2872eab.svg	\N	local	\N	/	2022-09-23 10:10:09.354	2022-09-23 10:10:09.354	1	1
 18	bg-demander-un-devis.webp	Démarrer un projet de communication : devis gratuit chez DualDclic	bg-demander-un-devis.webp	4504	3378	{"large": {"ext": ".webp", "url": "/uploads/large_bg_demander_un_devis_8694841b80.webp", "hash": "large_bg_demander_un_devis_8694841b80", "mime": "image/webp", "name": "large_bg-demander-un-devis.webp", "path": null, "size": 30.14, "width": 1000, "height": 750}, "small": {"ext": ".webp", "url": "/uploads/small_bg_demander_un_devis_8694841b80.webp", "hash": "small_bg_demander_un_devis_8694841b80", "mime": "image/webp", "name": "small_bg-demander-un-devis.webp", "path": null, "size": 13.29, "width": 500, "height": 375}, "medium": {"ext": ".webp", "url": "/uploads/medium_bg_demander_un_devis_8694841b80.webp", "hash": "medium_bg_demander_un_devis_8694841b80", "mime": "image/webp", "name": "medium_bg-demander-un-devis.webp", "path": null, "size": 21.29, "width": 750, "height": 562}, "thumbnail": {"ext": ".webp", "url": "/uploads/thumbnail_bg_demander_un_devis_8694841b80.webp", "hash": "thumbnail_bg_demander_un_devis_8694841b80", "mime": "image/webp", "name": "thumbnail_bg-demander-un-devis.webp", "path": null, "size": 4.6, "width": 208, "height": 156}}	bg_demander_un_devis_8694841b80	.webp	image/webp	202.56	/uploads/bg_demander_un_devis_8694841b80.webp	\N	local	\N	/	2022-09-23 09:51:44.842	2022-11-12 18:05:11.993	1	1
-502	image_accueil.png	image_accueil.png	image_accueil.png	488	398	{"thumbnail": {"ext": ".png", "url": "/uploads/thumbnail_image_accueil_74bb8f29a8.png", "hash": "thumbnail_image_accueil_74bb8f29a8", "mime": "image/png", "name": "thumbnail_image_accueil.png", "path": null, "size": 38.88, "width": 191, "height": 156}}	image_accueil_74bb8f29a8	.png	image/png	19.37	/uploads/image_accueil_74bb8f29a8.png	\N	local	\N	/	2022-12-05 19:57:55.929	2022-12-05 19:57:55.929	1	1
-503	image_accueil_mobile.png	image_accueil_mobile.png	image_accueil_mobile.png	322	263	{"thumbnail": {"ext": ".png", "url": "/uploads/thumbnail_image_accueil_mobile_fef347d69d.png", "hash": "thumbnail_image_accueil_mobile_fef347d69d", "mime": "image/png", "name": "thumbnail_image_accueil_mobile.png", "path": null, "size": 39.66, "width": 191, "height": 156}}	image_accueil_mobile_fef347d69d	.png	image/png	13.79	/uploads/image_accueil_mobile_fef347d69d.png	\N	local	\N	/	2022-12-05 19:58:50.682	2022-12-05 19:58:50.682	1	1
-504	en_savoir_plus.png	en_savoir_plus.png	en_savoir_plus.png	113	115	\N	en_savoir_plus_2d0c72da65	.png	image/png	1.70	/uploads/en_savoir_plus_2d0c72da65.png	\N	local	\N	/	2022-12-05 20:00:10.032	2022-12-05 20:00:10.032	1	1
+526	logo-desktop-rouge.svg	logo-desktop-rouge.svg	logo-desktop-rouge.svg	244	42	\N	logo_desktop_rouge_e43e85c038	.svg	image/svg+xml	5.43	/uploads/logo_desktop_rouge_e43e85c038.svg	\N	local	\N	/	2022-12-06 18:00:40.607	2022-12-06 18:00:40.607	1	1
+528	logo.svg	logo.svg	logo.svg	220	37	\N	logo_3b5fb0fcf5	.svg	image/svg+xml	5.34	/uploads/logo_3b5fb0fcf5.svg	\N	local	\N	/	2022-12-06 18:07:57.685	2022-12-06 18:07:57.685	1	1
 20	cursor.svg	cursor.svg	cursor.svg	48	47	\N	cursor_9340ae8941	.svg	image/svg+xml	1.06	/uploads/cursor_9340ae8941.svg	\N	local	\N	/	2022-09-23 10:05:03.818	2022-09-23 10:05:03.818	1	1
 21	trash.svg	trash.svg	trash.svg	22	27	\N	trash_27c159642b	.svg	image/svg+xml	3.06	/uploads/trash_27c159642b.svg	\N	local	\N	/	2022-09-23 10:06:45.948	2022-09-23 10:06:45.948	1	1
 22	nuage.svg	nuage.svg	nuage.svg	37	37	\N	nuage_b5d05d08ac	.svg	image/svg+xml	2.27	/uploads/nuage_b5d05d08ac.svg	\N	local	\N	/	2022-09-23 10:06:55.584	2022-09-23 10:06:55.584	1	1
 23	fichier.svg	fichier.svg	fichier.svg	28	32	\N	fichier_40b0bec9c7	.svg	image/svg+xml	1.29	/uploads/fichier_40b0bec9c7.svg	\N	local	\N	/	2022-09-23 10:07:07.464	2022-09-23 10:07:07.464	1	1
 24	error.svg	error.svg	error.svg	20	20	\N	error_05f6b89b41	.svg	image/svg+xml	0.98	/uploads/error_05f6b89b41.svg	\N	local	\N	/	2022-09-23 10:07:20.971	2022-09-23 10:07:20.971	1	1
+537	arrow-left.svg	arrow-left.svg	arrow-left.svg	45	46	\N	arrow_left_315751e62a	.svg	image/svg+xml	1.32	/uploads/arrow_left_315751e62a.svg	\N	local	\N	/	2022-12-06 18:27:56.741	2022-12-06 18:27:56.741	1	1
 29	facebook.svg	facebook.svg	facebook.svg	52	52	\N	facebook_176a638bb3	.svg	image/svg+xml	0.56	/uploads/facebook_176a638bb3.svg	\N	local	\N	/	2022-09-23 10:18:00.835	2022-09-23 10:18:00.835	1	1
 30	facebook-hover.svg	facebook-hover.svg	facebook-hover.svg	75	75	\N	facebook_hover_ceade3141a	.svg	image/svg+xml	0.58	/uploads/facebook_hover_ceade3141a.svg	\N	local	\N	/	2022-09-23 10:18:08.045	2022-09-23 10:18:08.045	1	1
 31	linkedin.svg	linkedin.svg	linkedin.svg	53	52	\N	linkedin_fc201b6160	.svg	image/svg+xml	1.25	/uploads/linkedin_fc201b6160.svg	\N	local	\N	/	2022-09-23 10:18:32.902	2022-09-23 10:18:32.902	1	1
 32	linkedin-hover.svg	linkedin-hover.svg	linkedin-hover.svg	75	75	\N	linkedin_hover_d7a2246db5	.svg	image/svg+xml	7.44	/uploads/linkedin_hover_d7a2246db5.svg	\N	local	\N	/	2022-09-23 10:18:40.029	2022-09-23 10:18:40.029	1	1
 33	pinterest.svg	pinterest.svg	pinterest.svg	52	52	\N	pinterest_50afdb4e6d	.svg	image/svg+xml	2.20	/uploads/pinterest_50afdb4e6d.svg	\N	local	\N	/	2022-09-23 10:19:04.082	2022-09-23 10:19:04.082	1	1
 34	pinterest-hover.svg	pinterest-hover.svg	pinterest-hover.svg	75	75	\N	pinterest_hover_362a9cd1b0	.svg	image/svg+xml	10.64	/uploads/pinterest_hover_362a9cd1b0.svg	\N	local	\N	/	2022-09-23 10:19:19.05	2022-09-23 10:19:19.05	1	1
+538	arrow-left-hover.svg	arrow-left-hover.svg	arrow-left-hover.svg	45	46	\N	arrow_left_hover_964b2de3dc	.svg	image/svg+xml	1.32	/uploads/arrow_left_hover_964b2de3dc.svg	\N	local	\N	/	2022-12-06 18:28:23.214	2022-12-06 18:28:23.214	1	1
 27	404.webp	Page 404 dualdclic	404.webp	3008	2000	{"large": {"ext": ".webp", "url": "/uploads/large_404_338b26f36e.webp", "hash": "large_404_338b26f36e", "mime": "image/webp", "name": "large_404.webp", "path": null, "size": 13.13, "width": 1000, "height": 665}, "small": {"ext": ".webp", "url": "/uploads/small_404_338b26f36e.webp", "hash": "small_404_338b26f36e", "mime": "image/webp", "name": "small_404.webp", "path": null, "size": 2.87, "width": 500, "height": 332}, "medium": {"ext": ".webp", "url": "/uploads/medium_404_338b26f36e.webp", "hash": "medium_404_338b26f36e", "mime": "image/webp", "name": "medium_404.webp", "path": null, "size": 6.28, "width": 750, "height": 499}, "thumbnail": {"ext": ".webp", "url": "/uploads/thumbnail_404_338b26f36e.webp", "hash": "thumbnail_404_338b26f36e", "mime": "image/webp", "name": "thumbnail_404.webp", "path": null, "size": 0.89, "width": 235, "height": 156}}	404_338b26f36e	.webp	image/webp	490.47	/uploads/404_338b26f36e.webp	\N	local	\N	/	2022-09-23 10:13:34.225	2022-11-12 18:07:20.697	1	1
 38	hamburger-menu-red.svg	Menu	hamburger-menu-red.svg	65	53	\N	hamburger_menu_red_aeac3c70f3	.svg	image/svg+xml	2.17	/uploads/hamburger_menu_red_aeac3c70f3.svg	\N	local	\N	/	2022-09-23 10:21:19.4	2022-11-12 18:14:32.287	1	1
 37	hamburger-menu-vert.svg	Menu	hamburger-menu-vert.svg	68	54	\N	hamburger_menu_vert_a3c6a856cb	.svg	image/svg+xml	1.55	/uploads/hamburger_menu_vert_a3c6a856cb.svg	\N	local	\N	/	2022-09-23 10:21:19.398	2022-11-12 18:14:39.679	1	1
 36	hamburger-menu-blue.svg	Menu	hamburger-menu-blue.svg	65	53	\N	hamburger_menu_blue_b06fbb650b	.svg	image/svg+xml	2.17	/uploads/hamburger_menu_blue_b06fbb650b.svg	\N	local	\N	/	2022-09-23 10:21:19.384	2022-11-12 18:14:46.805	1	1
 35	mobile-menu-close-icon.svg	fermer	mobile-menu-close-icon.svg	29	30	\N	mobile_menu_close_icon_332e19b120	.svg	image/svg+xml	0.49	/uploads/mobile_menu_close_icon_332e19b120.svg	\N	local	\N	/	2022-09-23 10:21:19.382	2022-11-12 18:14:54.795	1	1
+529	image_accueil.svg	image_accueil.svg	image_accueil.svg	488	398	\N	image_accueil_a8ddc468bd	.svg	image/svg+xml	34.81	/uploads/image_accueil_a8ddc468bd.svg	\N	local	\N	/	2022-12-06 18:08:52.284	2022-12-06 18:08:52.284	1	1
 48	mockupOrdi-1.webp	mockupOrdi-1.webp	mockupOrdi-1.webp	721	490	{"small": {"ext": ".webp", "url": "/uploads/small_mockup_Ordi_1_45cd11558a.webp", "hash": "small_mockup_Ordi_1_45cd11558a", "mime": "image/webp", "name": "small_mockupOrdi-1.webp", "path": null, "size": 14.24, "width": 500, "height": 340}, "thumbnail": {"ext": ".webp", "url": "/uploads/thumbnail_mockup_Ordi_1_45cd11558a.webp", "hash": "thumbnail_mockup_Ordi_1_45cd11558a", "mime": "image/webp", "name": "thumbnail_mockupOrdi-1.webp", "path": null, "size": 5.19, "width": 230, "height": 156}}	mockup_Ordi_1_45cd11558a	.webp	image/webp	25.71	/uploads/mockup_Ordi_1_45cd11558a.webp	\N	local	\N	/	2022-09-23 11:48:56.924	2022-09-23 11:48:56.924	1	1
+530	image_accueil_mobile.svg	image_accueil_mobile.svg	image_accueil_mobile.svg	414	338	\N	image_accueil_mobile_6a295a5199	.svg	image/svg+xml	34.22	/uploads/image_accueil_mobile_6a295a5199.svg	\N	local	\N	/	2022-12-06 18:09:25.4	2022-12-06 18:09:25.4	1	1
+531	en-savoir-plus.svg	en-savoir-plus.svg	en-savoir-plus.svg	85	83	\N	en_savoir_plus_fd228365ca	.svg	image/svg+xml	1.71	/uploads/en_savoir_plus_fd228365ca.svg	\N	local	\N	/	2022-12-06 18:10:16.799	2022-12-06 18:10:16.799	1	1
 52	services.webp	Services webmarketing - DualDclic	services.webp	4838	3225	{"large": {"ext": ".webp", "url": "/uploads/large_services_6028319bf6.webp", "hash": "large_services_6028319bf6", "mime": "image/webp", "name": "large_services.webp", "path": null, "size": 26.27, "width": 1000, "height": 667}, "small": {"ext": ".webp", "url": "/uploads/small_services_6028319bf6.webp", "hash": "small_services_6028319bf6", "mime": "image/webp", "name": "small_services.webp", "path": null, "size": 11.03, "width": 500, "height": 333}, "medium": {"ext": ".webp", "url": "/uploads/medium_services_6028319bf6.webp", "hash": "medium_services_6028319bf6", "mime": "image/webp", "name": "medium_services.webp", "path": null, "size": 18.5, "width": 750, "height": 500}, "thumbnail": {"ext": ".webp", "url": "/uploads/thumbnail_services_6028319bf6.webp", "hash": "thumbnail_services_6028319bf6", "mime": "image/webp", "name": "thumbnail_services.webp", "path": null, "size": 3.77, "width": 234, "height": 156}}	services_6028319bf6	.webp	image/webp	182.60	/uploads/services_6028319bf6.webp	\N	local	\N	/	2022-09-23 11:50:30.745	2022-11-12 17:50:44.183	1	1
 46	valeurs.webp	Nos valeurs chez DualDclic : accompagnement, réactifs, projets suivi de a à z	valeurs.webp	1920	1080	{"large": {"ext": ".webp", "url": "/uploads/large_valeurs_73c89e527c.webp", "hash": "large_valeurs_73c89e527c", "mime": "image/webp", "name": "large_valeurs.webp", "path": null, "size": 20.88, "width": 1000, "height": 562}, "small": {"ext": ".webp", "url": "/uploads/small_valeurs_73c89e527c.webp", "hash": "small_valeurs_73c89e527c", "mime": "image/webp", "name": "small_valeurs.webp", "path": null, "size": 7.6, "width": 500, "height": 281}, "medium": {"ext": ".webp", "url": "/uploads/medium_valeurs_73c89e527c.webp", "hash": "medium_valeurs_73c89e527c", "mime": "image/webp", "name": "medium_valeurs.webp", "path": null, "size": 14.03, "width": 750, "height": 422}, "thumbnail": {"ext": ".webp", "url": "/uploads/thumbnail_valeurs_73c89e527c.webp", "hash": "thumbnail_valeurs_73c89e527c", "mime": "image/webp", "name": "thumbnail_valeurs.webp", "path": null, "size": 2.51, "width": 245, "height": 138}}	valeurs_73c89e527c	.webp	image/webp	50.96	/uploads/valeurs_73c89e527c.webp	\N	local	\N	/	2022-09-23 11:43:37.383	2022-11-12 18:08:29.025	1	1
 50	3ecrans.webp	Mockup responsive site web DualDclic nord	3ecrans.webp	1628	1074	{"large": {"ext": ".webp", "url": "/uploads/large_3ecrans_2456e6f13d.webp", "hash": "large_3ecrans_2456e6f13d", "mime": "image/webp", "name": "large_3ecrans.webp", "path": null, "size": 36.55, "width": 1000, "height": 660}, "small": {"ext": ".webp", "url": "/uploads/small_3ecrans_2456e6f13d.webp", "hash": "small_3ecrans_2456e6f13d", "mime": "image/webp", "name": "small_3ecrans.webp", "path": null, "size": 13.42, "width": 500, "height": 330}, "medium": {"ext": ".webp", "url": "/uploads/medium_3ecrans_2456e6f13d.webp", "hash": "medium_3ecrans_2456e6f13d", "mime": "image/webp", "name": "medium_3ecrans.webp", "path": null, "size": 24.08, "width": 750, "height": 495}, "thumbnail": {"ext": ".webp", "url": "/uploads/thumbnail_3ecrans_2456e6f13d.webp", "hash": "thumbnail_3ecrans_2456e6f13d", "mime": "image/webp", "name": "thumbnail_3ecrans.webp", "path": null, "size": 4.79, "width": 236, "height": 156}}	3ecrans_2456e6f13d	.webp	image/webp	67.61	/uploads/3ecrans_2456e6f13d.webp	\N	local	\N	/	2022-09-23 11:48:58.032	2022-11-12 18:09:35.495	1	1
-505	logo-mobile.png	logo-mobile.png	logo-mobile.png	271	73	{"thumbnail": {"ext": ".png", "url": "/uploads/thumbnail_logo_mobile_d3e8cbe0e6.png", "hash": "thumbnail_logo_mobile_d3e8cbe0e6", "mime": "image/png", "name": "thumbnail_logo-mobile.png", "path": null, "size": 23.18, "width": 245, "height": 66}}	logo_mobile_d3e8cbe0e6	.png	image/png	4.32	/uploads/logo_mobile_d3e8cbe0e6.png	\N	local	\N	/	2022-12-05 20:11:12.124	2022-12-05 20:11:12.124	1	1
-209	logo dual complet.png	logo dual complet.png	logo dual complet.png	1225	322	{"large": {"ext": ".png", "url": "/uploads/large_logo_dual_complet_cd0c7b99c3.png", "hash": "large_logo_dual_complet_cd0c7b99c3", "mime": "image/png", "name": "large_logo dual complet.png", "path": null, "size": 72.34, "width": 1000, "height": 263}, "small": {"ext": ".png", "url": "/uploads/small_logo_dual_complet_cd0c7b99c3.png", "hash": "small_logo_dual_complet_cd0c7b99c3", "mime": "image/png", "name": "small_logo dual complet.png", "path": null, "size": 28.75, "width": 500, "height": 131}, "medium": {"ext": ".png", "url": "/uploads/medium_logo_dual_complet_cd0c7b99c3.png", "hash": "medium_logo_dual_complet_cd0c7b99c3", "mime": "image/png", "name": "medium_logo dual complet.png", "path": null, "size": 49.56, "width": 750, "height": 197}, "thumbnail": {"ext": ".png", "url": "/uploads/thumbnail_logo_dual_complet_cd0c7b99c3.png", "hash": "thumbnail_logo_dual_complet_cd0c7b99c3", "mime": "image/png", "name": "thumbnail_logo dual complet.png", "path": null, "size": 11.9, "width": 245, "height": 64}}	logo_dual_complet_cd0c7b99c3	.png	image/png	13.11	/uploads/logo_dual_complet_cd0c7b99c3.png	\N	local	\N	/	2022-11-21 11:13:36.076	2022-11-21 11:13:36.076	1	1
+532	logo-mobile.svg	logo-mobile.svg	logo-mobile.svg	274	93	\N	logo_mobile_4145021ee7	.svg	image/svg+xml	18.13	/uploads/logo_mobile_4145021ee7.svg	\N	local	\N	/	2022-12-06 18:13:10.981	2022-12-06 18:13:10.981	1	1
+533	logo (1).svg	logo (1).svg	logo (1).svg	459	156	\N	logo_1_09d3aee0c5	.svg	image/svg+xml	19.30	/uploads/logo_1_09d3aee0c5.svg	\N	local	\N	/	2022-12-06 18:13:48.867	2022-12-06 18:13:48.867	1	1
+534	pourquoi.svg	pourquoi.svg	pourquoi.svg	463	285	\N	pourquoi_d664119fcc	.svg	image/svg+xml	15.20	/uploads/pourquoi_d664119fcc.svg	\N	local	\N	/	2022-12-06 18:14:56.017	2022-12-06 18:14:56.017	1	1
+535	icon-flip-card.svg	icon-flip-card.svg	icon-flip-card.svg	30	26	\N	icon_flip_card_21f9b733ba	.svg	image/svg+xml	0.39	/uploads/icon_flip_card_21f9b733ba.svg	\N	local	\N	/	2022-12-06 18:26:05.358	2022-12-06 18:26:05.358	1	1
+536	icon-flip-card-hover.svg	icon-flip-card-hover.svg	icon-flip-card-hover.svg	30	26	\N	icon_flip_card_hover_e6cff794cd	.svg	image/svg+xml	0.38	/uploads/icon_flip_card_hover_e6cff794cd.svg	\N	local	\N	/	2022-12-06 18:26:39.032	2022-12-06 18:26:39.032	1	1
 59	1-qualite.svg	Qualité de notre travail	1-qualite.svg	95	94	\N	1_qualite_9c32db7717	.svg	image/svg+xml	3.50	/uploads/1_qualite_9c32db7717.svg	\N	local	\N	/	2022-09-23 11:55:34.585	2022-11-12 18:12:51.02	1	1
 62	4-ecoute-conseil.svg	Ecoute et conseil	4-ecoute-conseil.svg	99	91	\N	4_ecoute_conseil_a566f84000	.svg	image/svg+xml	5.08	/uploads/4_ecoute_conseil_a566f84000.svg	\N	local	\N	/	2022-09-23 11:57:14.372	2022-11-12 18:13:18.651	1	1
-506	logo.png	logo.png	logo.png	452	123	{"thumbnail": {"ext": ".png", "url": "/uploads/thumbnail_logo_0a6bf28f13.png", "hash": "thumbnail_logo_0a6bf28f13", "mime": "image/png", "name": "thumbnail_logo.png", "path": null, "size": 24.38, "width": 245, "height": 67}}	logo_0a6bf28f13	.png	image/png	7.43	/uploads/logo_0a6bf28f13.png	\N	local	\N	/	2022-12-05 20:11:12.129	2022-12-05 20:11:12.129	1	1
+539	arrow-right.svg	arrow-right.svg	arrow-right.svg	45	46	\N	arrow_right_2ee5570b2b	.svg	image/svg+xml	1.28	/uploads/arrow_right_2ee5570b2b.svg	\N	local	\N	/	2022-12-06 18:28:46.861	2022-12-06 18:28:46.861	1	1
 65	logo-mobile-rouge.svg	logo-mobile-rouge.svg	logo-mobile-rouge.svg	74	72	\N	logo_mobile_rouge_bdcaa93e6b	.svg	image/svg+xml	2.52	/uploads/logo_mobile_rouge_bdcaa93e6b.svg	\N	local	\N	/	2022-09-23 11:59:53.627	2022-09-23 11:59:53.627	1	1
 67	logo-mobile-bleu.svg	logo-mobile-bleu.svg	logo-mobile-bleu.svg	74	72	\N	logo_mobile_bleu_61a52f7871	.svg	image/svg+xml	2.52	/uploads/logo_mobile_bleu_61a52f7871.svg	\N	local	\N	/	2022-09-23 11:59:53.647	2022-09-23 11:59:53.647	1	1
 68	logo-mobile-vert.svg	logo-mobile-vert.svg	logo-mobile-vert.svg	75	72	\N	logo_mobile_vert_6b099bb077	.svg	image/svg+xml	2.53	/uploads/logo_mobile_vert_6b099bb077.svg	\N	local	\N	/	2022-09-23 11:59:53.648	2022-09-23 11:59:53.648	1	1
@@ -10117,15 +10129,9 @@ COPY public.files (id, name, alternative_text, caption, width, height, formats, 
 71	cible.svg	Mon objectif pour mon entreprise : une bonne communication visuelle	cible.svg	344	281	\N	cible_ba6a03359e	.svg	image/svg+xml	1.93	/uploads/cible_ba6a03359e.svg	\N	local	\N	/	2022-09-23 20:58:33.884	2022-11-12 18:11:41.118	1	1
 60	2-confiance.svg	Confiance mutuelle	2-confiance.svg	84	76	\N	2_confiance_0383e0943f	.svg	image/svg+xml	2.61	/uploads/2_confiance_0383e0943f.svg	\N	local	\N	/	2022-09-23 11:56:11.151	2022-11-12 18:13:00.963	1	1
 61	3-creativite.svg	Créativité	3-creativite.svg	113	107	\N	3_creativite_b26a2d86e8	.svg	image/svg+xml	2.93	/uploads/3_creativite_b26a2d86e8.svg	\N	local	\N	/	2022-09-23 11:56:42.883	2022-11-12 18:13:08.726	1	1
-507	pourquoi.png	pourquoi.png	pourquoi.png	463	285	{"thumbnail": {"ext": ".png", "url": "/uploads/thumbnail_pourquoi_5c7d878740.png", "hash": "thumbnail_pourquoi_5c7d878740", "mime": "image/png", "name": "thumbnail_pourquoi.png", "path": null, "size": 28.45, "width": 245, "height": 151}}	pourquoi_5c7d878740	.png	image/png	7.49	/uploads/pourquoi_5c7d878740.png	\N	local	\N	/	2022-12-05 21:16:15.813	2022-12-05 21:16:15.813	1	1
-508	icon_flip_card_hover.png	icon_flip_card_hover.png	icon_flip_card_hover.png	30	30	\N	icon_flip_card_hover_b3ad689805	.png	image/png	0.39	/uploads/icon_flip_card_hover_b3ad689805.png	\N	local	\N	/	2022-12-05 21:18:30.233	2022-12-05 21:18:30.233	1	1
-510	arrow_left_hover.png	arrow_left_hover.png	arrow_left_hover.png	45	46	\N	arrow_left_hover_da14998fce	.png	image/png	0.83	/uploads/arrow_left_hover_da14998fce.png	\N	local	\N	/	2022-12-05 21:21:09.363	2022-12-05 21:21:09.363	1	1
-511	arrow_left.png	arrow_left.png	arrow_left.png	45	46	\N	arrow_left_b18c865834	.png	image/png	0.84	/uploads/arrow_left_b18c865834.png	\N	local	\N	/	2022-12-05 21:21:09.453	2022-12-05 21:21:09.453	1	1
-512	arrow_right_hover.png	arrow_right_hover.png	arrow_right_hover.png	45	46	\N	arrow_right_hover_4bf7853ab8	.png	image/png	0.84	/uploads/arrow_right_hover_4bf7853ab8.png	\N	local	\N	/	2022-12-05 21:22:19.355	2022-12-05 21:22:19.355	1	1
-513	arrow_right.png	arrow_right.png	arrow_right.png	45	46	\N	arrow_right_ebe76ef829	.png	image/png	0.80	/uploads/arrow_right_ebe76ef829.png	\N	local	\N	/	2022-12-05 21:22:19.433	2022-12-05 21:22:19.433	1	1
 80	supports.webp	supports.webp	supports.webp	731	487	{"small": {"ext": ".webp", "url": "/uploads/small_supports_410b9c0502.webp", "hash": "small_supports_410b9c0502", "mime": "image/webp", "name": "small_supports.webp", "path": null, "size": 8.46, "width": 500, "height": 333}, "thumbnail": {"ext": ".webp", "url": "/uploads/thumbnail_supports_410b9c0502.webp", "hash": "thumbnail_supports_410b9c0502", "mime": "image/webp", "name": "thumbnail_supports.webp", "path": null, "size": 3.09, "width": 234, "height": 156}}	supports_410b9c0502	.webp	image/webp	15.34	/uploads/supports_410b9c0502.webp	\N	local	\N	/	2022-09-23 21:07:32.304	2022-09-23 21:07:32.304	1	1
 78	responsive.webp	Site en responsive grâce à DualDclic, Agence web Nord	responsive.webp	3456	5184	{"large": {"ext": ".webp", "url": "/uploads/large_responsive_38ec3ff0e5.webp", "hash": "large_responsive_38ec3ff0e5", "mime": "image/webp", "name": "large_responsive.webp", "path": null, "size": 25.8, "width": 667, "height": 1000}, "small": {"ext": ".webp", "url": "/uploads/small_responsive_38ec3ff0e5.webp", "hash": "small_responsive_38ec3ff0e5", "mime": "image/webp", "name": "small_responsive.webp", "path": null, "size": 9.66, "width": 333, "height": 500}, "medium": {"ext": ".webp", "url": "/uploads/medium_responsive_38ec3ff0e5.webp", "hash": "medium_responsive_38ec3ff0e5", "mime": "image/webp", "name": "medium_responsive.webp", "path": null, "size": 16.8, "width": 500, "height": 750}, "thumbnail": {"ext": ".webp", "url": "/uploads/thumbnail_responsive_38ec3ff0e5.webp", "hash": "thumbnail_responsive_38ec3ff0e5", "mime": "image/webp", "name": "thumbnail_responsive.webp", "path": null, "size": 2.04, "width": 104, "height": 156}}	responsive_38ec3ff0e5	.webp	image/webp	1270.17	/uploads/responsive_38ec3ff0e5.webp	\N	local	\N	/	2022-09-23 21:05:10.179	2022-11-12 17:31:35.981	1	1
-509	icon_flip_card.png	icon_flip_card.png	icon_flip_card.png	30	30	\N	icon_flip_card_fe450387cc	.png	image/png	0.39	/uploads/icon_flip_card_fe450387cc.png	\N	local	\N	/	2022-12-05 21:18:30.234	2022-12-05 21:18:30.234	1	1
+540	arrow-right-hover.svg	arrow-right-hover.svg	arrow-right-hover.svg	45	46	\N	arrow_right_hover_f80d88bd32	.svg	image/svg+xml	1.28	/uploads/arrow_right_hover_f80d88bd32.svg	\N	local	\N	/	2022-12-06 18:29:05.983	2022-12-06 18:29:05.983	1	1
 82	image-deco.svg	image-deco.svg	image-deco.svg	648	485	\N	image_deco_ce68067f7a	.svg	image/svg+xml	8.17	/uploads/image_deco_ce68067f7a.svg	\N	local	\N	/	2022-09-23 21:10:00.018	2022-09-23 21:10:00.018	1	1
 83	bg.webp	bg.webp	bg.webp	4608	3456	{"large": {"ext": ".webp", "url": "/uploads/large_bg_85d02bfb5c.webp", "hash": "large_bg_85d02bfb5c", "mime": "image/webp", "name": "large_bg.webp", "path": null, "size": 46.62, "width": 1000, "height": 750}, "small": {"ext": ".webp", "url": "/uploads/small_bg_85d02bfb5c.webp", "hash": "small_bg_85d02bfb5c", "mime": "image/webp", "name": "small_bg.webp", "path": null, "size": 18.17, "width": 500, "height": 375}, "medium": {"ext": ".webp", "url": "/uploads/medium_bg_85d02bfb5c.webp", "hash": "medium_bg_85d02bfb5c", "mime": "image/webp", "name": "medium_bg.webp", "path": null, "size": 32.12, "width": 750, "height": 562}, "thumbnail": {"ext": ".webp", "url": "/uploads/thumbnail_bg_85d02bfb5c.webp", "hash": "thumbnail_bg_85d02bfb5c", "mime": "image/webp", "name": "thumbnail_bg.webp", "path": null, "size": 4.8, "width": 208, "height": 156}}	bg_85d02bfb5c	.webp	image/webp	273.49	/uploads/bg_85d02bfb5c.webp	\N	local	\N	/	2022-09-23 21:10:02.7	2022-09-23 21:10:02.7	1	1
 85	un.svg	un.svg	un.svg	51	51	\N	un_87025ab91c	.svg	image/svg+xml	1.09	/uploads/un_87025ab91c.svg	\N	local	\N	/	2022-09-23 21:11:29.632	2022-09-23 21:11:29.632	1	1
@@ -10134,19 +10140,15 @@ COPY public.files (id, name, alternative_text, caption, width, height, formats, 
 84	analyse-projet.webp	Gestion de projet : planning, besoin du projet, délais, prix Cahier des charges	analyse-projet.webp	1394	1394	{"large": {"ext": ".webp", "url": "/uploads/large_analyse_projet_3568610bcc.webp", "hash": "large_analyse_projet_3568610bcc", "mime": "image/webp", "name": "large_analyse-projet.webp", "path": null, "size": 57.11, "width": 1000, "height": 1000}, "small": {"ext": ".webp", "url": "/uploads/small_analyse_projet_3568610bcc.webp", "hash": "small_analyse_projet_3568610bcc", "mime": "image/webp", "name": "small_analyse-projet.webp", "path": null, "size": 22.9, "width": 500, "height": 500}, "medium": {"ext": ".webp", "url": "/uploads/medium_analyse_projet_3568610bcc.webp", "hash": "medium_analyse_projet_3568610bcc", "mime": "image/webp", "name": "medium_analyse-projet.webp", "path": null, "size": 39.4, "width": 750, "height": 750}, "thumbnail": {"ext": ".webp", "url": "/uploads/thumbnail_analyse_projet_3568610bcc.webp", "hash": "thumbnail_analyse_projet_3568610bcc", "mime": "image/webp", "name": "thumbnail_analyse-projet.webp", "path": null, "size": 4.23, "width": 156, "height": 156}}	analyse_projet_3568610bcc	.webp	image/webp	96.86	/uploads/analyse_projet_3568610bcc.webp	\N	local	\N	/	2022-09-23 21:11:12.795	2022-11-12 17:29:15.775	1	1
 81	maintenance.webp	Maintenance de votre site internet par un pro	maintenance.webp	3353	2514	{"large": {"ext": ".webp", "url": "/uploads/large_maintenance_5330ec23e4.webp", "hash": "large_maintenance_5330ec23e4", "mime": "image/webp", "name": "large_maintenance.webp", "path": null, "size": 38.83, "width": 1000, "height": 750}, "small": {"ext": ".webp", "url": "/uploads/small_maintenance_5330ec23e4.webp", "hash": "small_maintenance_5330ec23e4", "mime": "image/webp", "name": "small_maintenance.webp", "path": null, "size": 16.81, "width": 500, "height": 375}, "medium": {"ext": ".webp", "url": "/uploads/medium_maintenance_5330ec23e4.webp", "hash": "medium_maintenance_5330ec23e4", "mime": "image/webp", "name": "medium_maintenance.webp", "path": null, "size": 27.2, "width": 750, "height": 562}, "thumbnail": {"ext": ".webp", "url": "/uploads/thumbnail_maintenance_5330ec23e4.webp", "hash": "thumbnail_maintenance_5330ec23e4", "mime": "image/webp", "name": "thumbnail_maintenance.webp", "path": null, "size": 5.68, "width": 208, "height": 156}}	maintenance_5330ec23e4	.webp	image/webp	247.75	/uploads/maintenance_5330ec23e4.webp	\N	local	\N	/	2022-09-23 21:08:33.089	2022-11-12 17:30:10.678	1	1
 79	marketing.webp	Méthode de webmarketing par DualDclic Hauts de france	marketing.webp	2426	1728	{"large": {"ext": ".webp", "url": "/uploads/large_marketing_4b2c59e32e.webp", "hash": "large_marketing_4b2c59e32e", "mime": "image/webp", "name": "large_marketing.webp", "path": null, "size": 36.59, "width": 1000, "height": 712}, "small": {"ext": ".webp", "url": "/uploads/small_marketing_4b2c59e32e.webp", "hash": "small_marketing_4b2c59e32e", "mime": "image/webp", "name": "small_marketing.webp", "path": null, "size": 15.84, "width": 500, "height": 356}, "medium": {"ext": ".webp", "url": "/uploads/medium_marketing_4b2c59e32e.webp", "hash": "medium_marketing_4b2c59e32e", "mime": "image/webp", "name": "medium_marketing.webp", "path": null, "size": 25.7, "width": 750, "height": 534}, "thumbnail": {"ext": ".webp", "url": "/uploads/thumbnail_marketing_4b2c59e32e.webp", "hash": "thumbnail_marketing_4b2c59e32e", "mime": "image/webp", "name": "thumbnail_marketing.webp", "path": null, "size": 5.54, "width": 219, "height": 156}}	marketing_4b2c59e32e	.webp	image/webp	92.71	/uploads/marketing_4b2c59e32e.webp	\N	local	\N	/	2022-09-23 21:06:25.433	2022-11-12 17:30:56.472	1	1
-514	logo-desktop-rouge.png	logo-desktop-rouge.png	logo-desktop-rouge.png	244	42	\N	logo_desktop_rouge_b41c021a86	.png	image/png	1.51	/uploads/logo_desktop_rouge_b41c021a86.png	\N	local	\N	/	2022-12-05 21:30:12.103	2022-12-05 21:30:12.103	1	1
 89	trois.svg	trois.svg	trois.svg	51	51	\N	trois_1126ce46ad	.svg	image/svg+xml	2.22	/uploads/trois_1126ce46ad.svg	\N	local	\N	/	2022-09-23 21:13:33.263	2022-09-23 21:13:33.263	1	1
+541	scroll-to-top.svg	scroll-to-top.svg	scroll-to-top.svg	46	46	\N	scroll_to_top_072d65d479	.svg	image/svg+xml	0.76	/uploads/scroll_to_top_072d65d479.svg	\N	local	\N	/	2022-12-06 18:36:35.104	2022-12-06 18:36:35.104	1	1
 91	quatre.svg	quatre.svg	quatre.svg	52	55	\N	quatre_c3781421f2	.svg	image/svg+xml	1.12	/uploads/quatre_c3781421f2.svg	\N	local	\N	/	2022-09-23 21:14:29.011	2022-09-23 21:14:29.011	1	1
 93	cinq.svg	cinq.svg	cinq.svg	51	51	\N	cinq_ba2abb1886	.svg	image/svg+xml	1.87	/uploads/cinq_ba2abb1886.svg	\N	local	\N	/	2022-09-23 21:15:26.749	2022-09-23 21:15:26.749	1	1
+542	scroll-to-top-hover.svg	scroll-to-top-hover.svg	scroll-to-top-hover.svg	46	46	\N	scroll_to_top_hover_4e23c673c5	.svg	image/svg+xml	0.76	/uploads/scroll_to_top_hover_4e23c673c5.svg	\N	local	\N	/	2022-12-06 18:36:59.618	2022-12-06 18:36:59.618	1	1
 95	en-savoir-plus-fond-bleu.svg	en-savoir-plus-fond-bleu.svg	en-savoir-plus-fond-bleu.svg	85	83	\N	en_savoir_plus_fond_bleu_5b8900a467	.svg	image/svg+xml	2.11	/uploads/en_savoir_plus_fond_bleu_5b8900a467.svg	\N	local	\N	/	2022-09-23 21:18:38.246	2022-09-23 21:18:38.246	1	1
 92	livraison.webp	formation à l'utilisation du site professionnel - DualDclic	livraison.webp	6702	4468	{"large": {"ext": ".webp", "url": "/uploads/large_livraison_c889b057e7.webp", "hash": "large_livraison_c889b057e7", "mime": "image/webp", "name": "large_livraison.webp", "path": null, "size": 28.09, "width": 1000, "height": 667}, "small": {"ext": ".webp", "url": "/uploads/small_livraison_c889b057e7.webp", "hash": "small_livraison_c889b057e7", "mime": "image/webp", "name": "small_livraison.webp", "path": null, "size": 12.18, "width": 500, "height": 333}, "medium": {"ext": ".webp", "url": "/uploads/medium_livraison_c889b057e7.webp", "hash": "medium_livraison_c889b057e7", "mime": "image/webp", "name": "medium_livraison.webp", "path": null, "size": 19.77, "width": 750, "height": 500}, "thumbnail": {"ext": ".webp", "url": "/uploads/thumbnail_livraison_c889b057e7.webp", "hash": "thumbnail_livraison_c889b057e7", "mime": "image/webp", "name": "thumbnail_livraison.webp", "path": null, "size": 4.74, "width": 234, "height": 156}}	livraison_c889b057e7	.webp	image/webp	751.02	/uploads/livraison_c889b057e7.webp	\N	local	\N	/	2022-09-23 21:15:16.777	2022-11-12 17:23:13.831	1	1
 96	smartphone.webp	Site adaptable sur mobile - DualDclic Hauts de France	smartphone.webp	1467	1100	{"large": {"ext": ".webp", "url": "/uploads/large_smartphone_af237fec7a.webp", "hash": "large_smartphone_af237fec7a", "mime": "image/webp", "name": "large_smartphone.webp", "path": null, "size": 39.22, "width": 1000, "height": 750}, "small": {"ext": ".webp", "url": "/uploads/small_smartphone_af237fec7a.webp", "hash": "small_smartphone_af237fec7a", "mime": "image/webp", "name": "small_smartphone.webp", "path": null, "size": 14.01, "width": 500, "height": 375}, "medium": {"ext": ".webp", "url": "/uploads/medium_smartphone_af237fec7a.webp", "hash": "medium_smartphone_af237fec7a", "mime": "image/webp", "name": "medium_smartphone.webp", "path": null, "size": 26.04, "width": 750, "height": 562}, "thumbnail": {"ext": ".webp", "url": "/uploads/thumbnail_smartphone_af237fec7a.webp", "hash": "thumbnail_smartphone_af237fec7a", "mime": "image/webp", "name": "thumbnail_smartphone.webp", "path": null, "size": 3.6, "width": 208, "height": 156}}	smartphone_af237fec7a	.webp	image/webp	75.54	/uploads/smartphone_af237fec7a.webp	\N	local	\N	/	2022-09-23 21:24:04.908	2022-11-12 17:47:17.084	1	1
 88	developpement.webp	Coder votre site professionnel responsive et ergonomique DualDclic Nord	Coder votre site professionnel responsive et ergonomique DualDclic Nord	5184	3888	{"large": {"ext": ".webp", "url": "/uploads/large_developpement_cec22be0bc.webp", "hash": "large_developpement_cec22be0bc", "mime": "image/webp", "name": "large_developpement.webp", "path": null, "size": 57.36, "width": 1000, "height": 750}, "small": {"ext": ".webp", "url": "/uploads/small_developpement_cec22be0bc.webp", "hash": "small_developpement_cec22be0bc", "mime": "image/webp", "name": "small_developpement.webp", "path": null, "size": 23.63, "width": 500, "height": 375}, "medium": {"ext": ".webp", "url": "/uploads/medium_developpement_cec22be0bc.webp", "hash": "medium_developpement_cec22be0bc", "mime": "image/webp", "name": "medium_developpement.webp", "path": null, "size": 39.47, "width": 750, "height": 562}, "thumbnail": {"ext": ".webp", "url": "/uploads/thumbnail_developpement_cec22be0bc.webp", "hash": "thumbnail_developpement_cec22be0bc", "mime": "image/webp", "name": "thumbnail_developpement.webp", "path": null, "size": 6.92, "width": 208, "height": 156}}	developpement_cec22be0bc	.webp	image/webp	374.70	/uploads/developpement_cec22be0bc.webp	\N	local	\N	/	2022-09-23 21:13:23.71	2022-11-12 17:27:15.777	1	1
-515	logo-mobile-bleu.png	logo-mobile-bleu.png	logo-mobile-bleu.png	244	42	\N	logo_mobile_bleu_a86a5851b2	.png	image/png	1.56	/uploads/logo_mobile_bleu_a86a5851b2.png	\N	local	\N	/	2022-12-05 21:30:31.34	2022-12-05 21:30:31.34	1	1
-516	logo-desktop-bleu.png	logo-desktop-bleu.png	logo-desktop-bleu.png	244	42	\N	logo_desktop_bleu_c2da6abc8f	.png	image/png	1.56	/uploads/logo_desktop_bleu_c2da6abc8f.png	\N	local	\N	/	2022-12-05 21:30:51.365	2022-12-05 21:30:51.365	1	1
-517	logo-desktop-vert.png	logo-desktop-vert.png	logo-desktop-vert.png	245	42	\N	logo_desktop_vert_9742c77e91	.png	image/png	1.57	/uploads/logo_desktop_vert_9742c77e91.png	\N	local	\N	/	2022-12-05 21:31:13.094	2022-12-05 21:31:13.094	1	1
-518	logo-mobile-rouge.png	logo-mobile-rouge.png	logo-mobile-rouge.png	244	42	\N	logo_mobile_rouge_6c0aec7bf8	.png	image/png	1.51	/uploads/logo_mobile_rouge_6c0aec7bf8.png	\N	local	\N	/	2022-12-05 21:31:33.336	2022-12-05 21:31:33.336	1	1
-519	logo-mobile-vert.png	logo-mobile-vert.png	logo-mobile-vert.png	245	42	\N	logo_mobile_vert_c364750c73	.png	image/png	1.57	/uploads/logo_mobile_vert_c364750c73.png	\N	local	\N	/	2022-12-05 21:31:52.559	2022-12-05 21:31:52.559	1	1
 99	mocquinShoppingBag3 (1).webp	Branding Logo sur shopping bag - DualDclic	mocquinShoppingBag3 (1).webp	1333	1000	{"large": {"ext": ".webp", "url": "/uploads/large_mocquin_Shopping_Bag3_1_5e9115451f.webp", "hash": "large_mocquin_Shopping_Bag3_1_5e9115451f", "mime": "image/webp", "name": "large_mocquinShoppingBag3 (1).webp", "path": null, "size": 15.65, "width": 1000, "height": 750}, "small": {"ext": ".webp", "url": "/uploads/small_mocquin_Shopping_Bag3_1_5e9115451f.webp", "hash": "small_mocquin_Shopping_Bag3_1_5e9115451f", "mime": "image/webp", "name": "small_mocquinShoppingBag3 (1).webp", "path": null, "size": 5.88, "width": 500, "height": 375}, "medium": {"ext": ".webp", "url": "/uploads/medium_mocquin_Shopping_Bag3_1_5e9115451f.webp", "hash": "medium_mocquin_Shopping_Bag3_1_5e9115451f", "mime": "image/webp", "name": "medium_mocquinShoppingBag3 (1).webp", "path": null, "size": 10.96, "width": 750, "height": 563}, "thumbnail": {"ext": ".webp", "url": "/uploads/thumbnail_mocquin_Shopping_Bag3_1_5e9115451f.webp", "hash": "thumbnail_mocquin_Shopping_Bag3_1_5e9115451f", "mime": "image/webp", "name": "thumbnail_mocquinShoppingBag3 (1).webp", "path": null, "size": 1.63, "width": 208, "height": 156}}	mocquin_Shopping_Bag3_1_5e9115451f	.webp	image/webp	26.82	/uploads/mocquin_Shopping_Bag3_1_5e9115451f.webp	\N	local	\N	/	2022-09-23 21:29:05.155	2022-11-12 17:48:30.948	1	1
 98	cartevisite-mockup.webp	Mockup carte de visite DualDclic (Sabrina dos santos)	cartevisite-mockup.webp	1000	1000	{"small": {"ext": ".webp", "url": "/uploads/small_cartevisite_mockup_40249ef76c.webp", "hash": "small_cartevisite_mockup_40249ef76c", "mime": "image/webp", "name": "small_cartevisite-mockup.webp", "path": null, "size": 12.23, "width": 500, "height": 500}, "medium": {"ext": ".webp", "url": "/uploads/medium_cartevisite_mockup_40249ef76c.webp", "hash": "medium_cartevisite_mockup_40249ef76c", "mime": "image/webp", "name": "medium_cartevisite-mockup.webp", "path": null, "size": 20.21, "width": 750, "height": 750}, "thumbnail": {"ext": ".webp", "url": "/uploads/thumbnail_cartevisite_mockup_40249ef76c.webp", "hash": "thumbnail_cartevisite_mockup_40249ef76c", "mime": "image/webp", "name": "thumbnail_cartevisite-mockup.webp", "path": null, "size": 2, "width": 156, "height": 156}}	cartevisite_mockup_40249ef76c	.webp	image/webp	32.56	/uploads/cartevisite_mockup_40249ef76c.webp	\N	local	\N	/	2022-09-23 21:29:05.089	2022-11-12 18:15:31.942	1	1
 111	logo.svg	logo.svg	logo.svg	375	127	\N	logo_9526387500	.svg	image/svg+xml	25.56	/uploads/logo_9526387500.svg	\N	local	\N	/	2022-10-02 13:51:38.669	2022-10-02 13:51:38.669	1	1
@@ -10186,7 +10188,6 @@ COPY public.files (id, name, alternative_text, caption, width, height, formats, 
 166	Isolated_pack_of_floating_business_cards.webp	Isolated_pack_of_floating_business_cards.webp	Isolated_pack_of_floating_business_cards.webp	1431	1000	{"large": {"ext": ".webp", "url": "/uploads/large_Isolated_pack_of_floating_business_cards_39665201d5.webp", "hash": "large_Isolated_pack_of_floating_business_cards_39665201d5", "mime": "image/webp", "name": "large_Isolated_pack_of_floating_business_cards.webp", "path": null, "size": 53.74, "width": 1000, "height": 699}, "small": {"ext": ".webp", "url": "/uploads/small_Isolated_pack_of_floating_business_cards_39665201d5.webp", "hash": "small_Isolated_pack_of_floating_business_cards_39665201d5", "mime": "image/webp", "name": "small_Isolated_pack_of_floating_business_cards.webp", "path": null, "size": 19.12, "width": 500, "height": 349}, "medium": {"ext": ".webp", "url": "/uploads/medium_Isolated_pack_of_floating_business_cards_39665201d5.webp", "hash": "medium_Isolated_pack_of_floating_business_cards_39665201d5", "mime": "image/webp", "name": "medium_Isolated_pack_of_floating_business_cards.webp", "path": null, "size": 35.16, "width": 750, "height": 524}, "thumbnail": {"ext": ".webp", "url": "/uploads/thumbnail_Isolated_pack_of_floating_business_cards_39665201d5.webp", "hash": "thumbnail_Isolated_pack_of_floating_business_cards_39665201d5", "mime": "image/webp", "name": "thumbnail_Isolated_pack_of_floating_business_cards.webp", "path": null, "size": 6.44, "width": 223, "height": 156}}	Isolated_pack_of_floating_business_cards_39665201d5	.webp	image/webp	94.52	/uploads/Isolated_pack_of_floating_business_cards_39665201d5.webp	\N	local	\N	/	2022-11-14 14:17:01.978	2022-11-14 14:17:01.978	1	1
 167	Logotheglassdoor.webp	Logotheglassdoor.webp	Logotheglassdoor.webp	2850	1900	{"large": {"ext": ".webp", "url": "/uploads/large_Logotheglassdoor_98e26c3780.webp", "hash": "large_Logotheglassdoor_98e26c3780", "mime": "image/webp", "name": "large_Logotheglassdoor.webp", "path": null, "size": 22.39, "width": 1000, "height": 667}, "small": {"ext": ".webp", "url": "/uploads/small_Logotheglassdoor_98e26c3780.webp", "hash": "small_Logotheglassdoor_98e26c3780", "mime": "image/webp", "name": "small_Logotheglassdoor.webp", "path": null, "size": 10.02, "width": 500, "height": 333}, "medium": {"ext": ".webp", "url": "/uploads/medium_Logotheglassdoor_98e26c3780.webp", "hash": "medium_Logotheglassdoor_98e26c3780", "mime": "image/webp", "name": "medium_Logotheglassdoor.webp", "path": null, "size": 16.38, "width": 750, "height": 500}, "thumbnail": {"ext": ".webp", "url": "/uploads/thumbnail_Logotheglassdoor_98e26c3780.webp", "hash": "thumbnail_Logotheglassdoor_98e26c3780", "mime": "image/webp", "name": "thumbnail_Logotheglassdoor.webp", "path": null, "size": 4.07, "width": 234, "height": 156}}	Logotheglassdoor_98e26c3780	.webp	image/webp	84.66	/uploads/Logotheglassdoor_98e26c3780.webp	\N	local	\N	/	2022-11-14 14:17:01.997	2022-11-14 14:17:01.997	1	1
 170	visuelPrestation.webp	visuelPrestation.webp	visuelPrestation.webp	1920	1162	{"large": {"ext": ".webp", "url": "/uploads/large_visuel_Prestation_396d14bfe1.webp", "hash": "large_visuel_Prestation_396d14bfe1", "mime": "image/webp", "name": "large_visuelPrestation.webp", "path": null, "size": 12.12, "width": 1000, "height": 605}, "small": {"ext": ".webp", "url": "/uploads/small_visuel_Prestation_396d14bfe1.webp", "hash": "small_visuel_Prestation_396d14bfe1", "mime": "image/webp", "name": "small_visuelPrestation.webp", "path": null, "size": 4.46, "width": 500, "height": 303}, "medium": {"ext": ".webp", "url": "/uploads/medium_visuel_Prestation_396d14bfe1.webp", "hash": "medium_visuel_Prestation_396d14bfe1", "mime": "image/webp", "name": "medium_visuelPrestation.webp", "path": null, "size": 8.08, "width": 750, "height": 454}, "thumbnail": {"ext": ".webp", "url": "/uploads/thumbnail_visuel_Prestation_396d14bfe1.webp", "hash": "thumbnail_visuel_Prestation_396d14bfe1", "mime": "image/webp", "name": "thumbnail_visuelPrestation.webp", "path": null, "size": 1.78, "width": 245, "height": 148}}	visuel_Prestation_396d14bfe1	.webp	image/webp	32.27	/uploads/visuel_Prestation_396d14bfe1.webp	\N	local	\N	/	2022-11-14 15:14:31.698	2022-11-14 15:14:31.698	1	1
-501	logo dual.png	logo dual.png	logo dual.png	223	69	\N	logo_dual_aea5435c3e	.png	image/png	1.28	/uploads/logo_dual_aea5435c3e.png	\N	local	\N	/	2022-12-05 19:22:12.059	2022-12-05 19:22:12.059	1	1
 \.
 
 
@@ -10207,9 +10208,9 @@ COPY public.files_folder_links (id, file_id, folder_id) FROM stdin;
 --
 
 COPY public.files_related_morphs (id, file_id, related_id, related_type, field, "order") FROM stdin;
-5061	514	1	api::logo.logo	logo	1
-5062	515	1	api::logo.logo	logo	2
-5063	516	1	api::logo.logo	logo	3
+5141	3	1	header.en-savoir-plus	image	1
+5142	1	1	header.header	imageDeco	1
+5143	2	1	header.header	bg	1
 4870	3	3	header.en-savoir-plus	image	1
 4871	17	3	header.header	imageDeco	1
 4872	18	3	header.header	bg	1
@@ -10217,9 +10218,8 @@ COPY public.files_related_morphs (id, file_id, related_id, related_type, field, 
 4874	11	2	form.checkbox	icon	1
 4875	12	2	form.checkbox	icon	2
 4876	20	1	utils.range-slider	iconRange	1
-5064	517	1	api::logo.logo	logo	4
-5065	518	1	api::logo.logo	logo	5
-5066	519	1	api::logo.logo	logo	6
+5144	5	1	section.section	images	1
+5145	6	1	section.section	images	2
 4877	21	1	utils.upload-files	iconTrash	1
 4878	22	1	utils.upload-files	iconNuage	1
 4879	23	1	utils.upload-files	iconFichier	1
@@ -10229,59 +10229,36 @@ COPY public.files_related_morphs (id, file_id, related_id, related_type, field, 
 4583	79	6	utils.board	bg	1
 4591	73	6	utils.board	icons	1
 4592	74	6	utils.board	icons	2
-5032	509	1	utils.flip-card	icons	1
-5033	508	1	utils.flip-card	icons	2
-5036	509	3	utils.flip-card	icons	1
-5037	508	3	utils.flip-card	icons	2
-5038	46	8	section.section	images	1
-5039	155	1	utils.carousel	item	1
-5040	156	1	utils.carousel	item	2
-5041	158	1	utils.carousel	item	3
-5042	49	1	utils.carousel	item	4
-5043	511	1	utils.carousel	arrowLeft	1
-5044	510	1	utils.carousel	arrowLeft	2
-5045	513	1	utils.carousel	arrowRight	1
-5046	512	1	utils.carousel	arrowRight	2
-5049	55	3	utils.services	icons	1
-5051	57	5	utils.services	icons	1
-4883	209	1	form.devis	img	1
 4884	18	5	shared.meta-social	image	1
 4885	18	4	shared.seo	metaImage	1
 57	35	1	api::hamburger.hamburger	hamburger	1
 58	36	1	api::hamburger.hamburger	hamburger	2
 59	37	1	api::hamburger.hamburger	hamburger	3
 60	38	1	api::hamburger.hamburger	hamburger	4
-4943	29	1	utils.reseaux	icon	1
-4945	33	3	utils.reseaux	icon	1
-4946	30	1	utils.reseaux	iconHover	1
-4948	34	3	utils.reseaux	iconHover	1
-5055	62	9	utils.services	icons	1
-5059	121	2	shared.meta-social	image	1
-5060	506	1	shared.seo	metaImage	1
-5067	3	1	header.en-savoir-plus	image	1
-5068	1	1	header.header	imageDeco	1
-5069	2	1	header.header	bg	1
-5070	5	1	section.section	images	1
-5071	6	1	section.section	images	2
-4944	31	2	utils.reseaux	icon	1
-4947	32	2	utils.reseaux	iconHover	1
+5146	122	3	section.section	images	1
+5147	121	3	section.section	images	2
+5148	125	3	section.section	images	3
+5149	124	3	section.section	images	4
+5150	125	3	shared.meta-social	image	1
+5151	534	2	shared.seo	metaImage	1
 4585	81	8	utils.board	bg	1
 4597	73	8	utils.board	icons	1
-5047	53	1	utils.services	icons	1
-5054	61	8	utils.services	icons	1
 4598	74	8	utils.board	icons	2
 4607	88	11	utils.board	bg	1
 4612	89	11	utils.board	icons	1
-5072	122	3	section.section	images	1
-5056	60	7	utils.services	icons	1
-5057	44	11	section.section	images	1
-5058	97	1	shared.meta-social	image	1
-4949	501	1	api::footer.footer	logo	1
-5073	121	3	section.section	images	2
-5074	125	3	section.section	images	3
-5075	124	3	section.section	images	4
-5076	125	3	shared.meta-social	image	1
-5077	209	2	shared.seo	metaImage	1
+5152	10	2	header.en-savoir-plus	image	1
+5153	142	2	header.header	imageDeco	1
+5154	9	2	header.header	bg	1
+5155	14	1	section.informations	iconAdresse	1
+5156	15	1	section.informations	iconTelephone	1
+5157	16	1	section.informations	iconMail	1
+5158	11	1	utils.check-terms	icons	1
+5159	12	1	utils.check-terms	icons	2
+5160	13	1	form.contact-form	imageDeco	1
+5161	117	4	shared.meta-social	image	1
+5162	533	3	shared.seo	metaImage	1
+5163	533	5	shared.seo	metaImage	1
+5164	27	1	api::error-page.error-page	bg	1
 4425	161	2	utils.carousel	item	1
 4426	96	2	utils.carousel	item	2
 4427	160	2	utils.carousel	item	3
@@ -10289,19 +10266,8 @@ COPY public.files_related_morphs (id, file_id, related_id, related_type, field, 
 4429	100	2	utils.carousel	item	5
 4430	99	2	utils.carousel	item	6
 4431	101	2	utils.carousel	item	7
-5078	10	2	header.en-savoir-plus	image	1
-5079	142	2	header.header	imageDeco	1
-5080	9	2	header.header	bg	1
-5081	14	1	section.informations	iconAdresse	1
-5082	15	1	section.informations	iconTelephone	1
-5083	16	1	section.informations	iconMail	1
-5084	11	1	utils.check-terms	icons	1
-5085	12	1	utils.check-terms	icons	2
-5086	13	1	form.contact-form	imageDeco	1
-5087	117	4	shared.meta-social	image	1
-5088	209	3	shared.seo	metaImage	1
-5089	209	5	shared.seo	metaImage	1
-5090	27	1	api::error-page.error-page	bg	1
+5165	541	1	api::scroll-top.scroll-top	bg	1
+5166	542	1	api::scroll-top.scroll-top	bg	2
 4422	95	6	header.en-savoir-plus	image	1
 4423	69	6	header.header	imageDeco	1
 4424	94	6	header.header	bg	1
@@ -10313,14 +10279,61 @@ COPY public.files_related_morphs (id, file_id, related_id, related_type, field, 
 4437	167	3	utils.carousel	item	6
 4446	70	7	shared.meta-social	image	1
 4447	94	9	shared.seo	metaImage	1
+5091	526	1	api::logo.logo	logo	1
+5092	521	1	api::logo.logo	logo	2
 4582	78	5	utils.board	bg	1
 4595	73	5	utils.board	icons	1
 4596	74	5	utils.board	icons	2
 4608	90	12	utils.board	bg	1
 4613	91	12	utils.board	icons	1
+5093	522	1	api::logo.logo	logo	3
+5094	523	1	api::logo.logo	logo	4
+5095	524	1	api::logo.logo	logo	5
+5096	525	1	api::logo.logo	logo	6
+5167	531	4	header.en-savoir-plus	image	1
+5168	529	4	header.header	imageDeco	1
+5169	530	4	header.header	bg	1
+5170	533	4	header.header	LogoAccueil	1
+5171	532	4	header.header	LogoAccueil	2
+5172	141	5	section.section	images	1
+5173	5	5	section.section	images	2
+5174	534	7	section.section	images	1
+5177	535	2	utils.flip-card	icons	1
+5178	536	2	utils.flip-card	icons	2
+5181	46	8	section.section	images	1
+5182	155	1	utils.carousel	item	1
+5183	156	1	utils.carousel	item	2
+5184	158	1	utils.carousel	item	3
+5185	49	1	utils.carousel	item	4
+5186	537	1	utils.carousel	arrowLeft	1
+5187	538	1	utils.carousel	arrowLeft	2
+5188	539	1	utils.carousel	arrowRight	1
+5189	540	1	utils.carousel	arrowRight	2
+5192	55	3	utils.services	icons	1
+5194	57	5	utils.services	icons	1
+5195	52	10	section.section	images	1
+5196	59	6	utils.services	icons	1
+5175	535	1	utils.flip-card	icons	1
+5176	536	1	utils.flip-card	icons	2
+5179	535	3	utils.flip-card	icons	1
+5180	536	3	utils.flip-card	icons	2
+5191	54	2	utils.services	icons	1
+5097	29	1	utils.reseaux	icon	1
+5099	33	3	utils.reseaux	icon	1
+5100	30	1	utils.reseaux	iconHover	1
+5102	34	3	utils.reseaux	iconHover	1
 4581	76	3	utils.board	bg	1
 4589	73	3	utils.board	icons	1
 4590	74	3	utils.board	icons	2
+5193	56	4	utils.services	icons	1
+5197	61	8	utils.services	icons	1
+5190	53	1	utils.services	icons	1
+5198	62	9	utils.services	icons	1
+5202	121	2	shared.meta-social	image	1
+5203	533	1	shared.seo	metaImage	1
+5098	31	2	utils.reseaux	icon	1
+5101	32	2	utils.reseaux	iconHover	1
+5103	528	1	api::footer.footer	logo	1
 4852	125	10	shared.seo	metaImage	1
 4853	9	1	api::success-form.success-form	bg	1
 4576	3	5	header.en-savoir-plus	image	1
@@ -10338,6 +10351,9 @@ COPY public.files_related_morphs (id, file_id, related_id, related_type, field, 
 4616	82	13	section.section	images	2
 4617	70	6	shared.meta-social	image	1
 4618	112	8	shared.seo	metaImage	1
+5199	60	7	utils.services	icons	1
+5200	44	11	section.section	images	1
+5201	97	1	shared.meta-social	image	1
 4584	77	4	utils.board	bg	1
 4599	73	4	utils.board	icons	1
 4600	74	4	utils.board	icons	2
@@ -10354,22 +10370,6 @@ COPY public.files_related_morphs (id, file_id, related_id, related_type, field, 
 4604	118	12	section.section	images	2
 4605	84	9	utils.board	bg	1
 4610	85	9	utils.board	icons	1
-5024	504	4	header.en-savoir-plus	image	1
-5025	502	4	header.header	imageDeco	1
-5026	503	4	header.header	bg	1
-1141	140	1	api::scroll-top.scroll-top	bg	1
-5027	505	4	header.header	LogoAccueil	1
-5028	506	4	header.header	LogoAccueil	2
-1142	139	1	api::scroll-top.scroll-top	bg	2
-5029	141	5	section.section	images	1
-5030	5	5	section.section	images	2
-5031	507	7	section.section	images	1
-5034	509	2	utils.flip-card	icons	1
-5035	508	2	utils.flip-card	icons	2
-5048	54	2	utils.services	icons	1
-5050	56	4	utils.services	icons	1
-5052	52	10	section.section	images	1
-5053	59	6	utils.services	icons	1
 \.
 
 
@@ -10380,7 +10380,7 @@ COPY public.files_related_morphs (id, file_id, related_id, related_type, field, 
 --
 
 COPY public.footers (id, paragraphe, titre_4, button, titre_4_bis, titre_4_tierce, titre_4_quarto, copyright, created_at, updated_at, published_at, created_by_id, updated_by_id) FROM stdin;
-1	<p>Passionnés par le monde du digital, nous réalisons et optimisons vos outils de communication. Nous sommes localisés dans les hauts de France, 59 - 62&nbsp;<br>(Lille, Lens, Arras, Douai...)</p>	<h3>Graphisme - Site web - Webmarketing - Print</h3>	Besoin d’un devis ? cliquez ici	<h4>Plan du site</h4>	<h4>Retrouvez-nous sur les réseaux sociaux</h4>	<h4>Infos contact</h4>	<p>Tous droits réservés © DualDclic 2022</p>	2022-09-23 10:20:06.672	2022-12-05 19:22:35.953	2022-09-23 10:20:11.054	1	1
+1	<p>Passionnés par le monde du digital, nous réalisons et optimisons vos outils de communication. Nous sommes localisés dans les hauts de France, 59 - 62&nbsp;<br>(Lille, Lens, Arras, Douai...)</p>	<h3>Graphisme - Site web - Webmarketing - Print</h3>	Besoin d’un devis ? cliquez ici	<h4>Plan du site</h4>	<h4>Retrouvez-nous sur les réseaux sociaux</h4>	<h4>Infos contact</h4>	<p>Tous droits réservés © DualDclic 2022</p>	2022-09-23 10:20:06.672	2022-12-06 18:08:01.935	2022-09-23 10:20:11.054	1	1
 \.
 
 
@@ -10391,18 +10391,18 @@ COPY public.footers (id, paragraphe, titre_4, button, titre_4_bis, titre_4_tierc
 --
 
 COPY public.footers_components (id, entity_id, component_id, component_type, field, "order") FROM stdin;
-71	1	1	nav.nav	nav	1
-72	1	2	nav.nav	nav	2
-73	1	3	nav.nav	nav	3
-74	1	4	nav.nav	nav	4
-75	1	5	nav.nav	nav	5
-76	1	6	nav.nav	nav	6
-77	1	1	utils.reseaux	reseaux	1
-78	1	2	utils.reseaux	reseaux	2
-79	1	3	utils.reseaux	reseaux	3
-80	1	1	utils.contact	contact	1
-81	1	7	nav.nav	navMobile	1
-82	1	8	nav.nav	navMobile	2
+83	1	1	nav.nav	nav	1
+84	1	2	nav.nav	nav	2
+85	1	3	nav.nav	nav	3
+86	1	4	nav.nav	nav	4
+87	1	5	nav.nav	nav	5
+88	1	6	nav.nav	nav	6
+89	1	1	utils.reseaux	reseaux	1
+90	1	2	utils.reseaux	reseaux	2
+91	1	3	utils.reseaux	reseaux	3
+92	1	1	utils.contact	contact	1
+93	1	7	nav.nav	navMobile	1
+94	1	8	nav.nav	navMobile	2
 \.
 
 
@@ -10444,7 +10444,7 @@ COPY public.hamburgers (id, created_at, updated_at, published_at, created_by_id,
 --
 
 COPY public.homes (id, titre_page, created_at, updated_at, published_at, created_by_id, updated_by_id) FROM stdin;
-1	Accueil	2022-09-23 11:57:49.104	2022-12-05 21:23:32.61	2022-09-23 11:57:52.993	1	1
+1	Accueil	2022-09-23 11:57:49.104	2022-12-06 18:46:27.743	2022-09-23 11:57:52.993	1	1
 \.
 
 
@@ -10455,15 +10455,15 @@ COPY public.homes (id, titre_page, created_at, updated_at, published_at, created
 --
 
 COPY public.homes_components (id, entity_id, component_id, component_type, field, "order") FROM stdin;
-599	1	4	header.header	header	1
-600	1	5	section.section	nous	1
-601	1	6	section.section	projet	1
-602	1	7	section.section	pourquoi	1
-603	1	8	section.section	valeurs	1
-604	1	9	section.section	realisations	1
-605	1	10	section.section	services	1
-606	1	11	section.section	mission	1
-607	1	1	shared.seo	seo	1
+617	1	4	header.header	header	1
+618	1	5	section.section	nous	1
+619	1	6	section.section	projet	1
+620	1	7	section.section	pourquoi	1
+621	1	8	section.section	valeurs	1
+622	1	9	section.section	realisations	1
+623	1	10	section.section	services	1
+624	1	11	section.section	mission	1
+625	1	1	shared.seo	seo	1
 \.
 
 
@@ -10485,7 +10485,7 @@ COPY public.i18n_locale (id, name, code, created_at, updated_at, created_by_id, 
 --
 
 COPY public.logos (id, created_at, updated_at, published_at, created_by_id, updated_by_id) FROM stdin;
-1	2022-09-23 12:00:54.477	2022-12-05 21:32:07.615	2022-09-23 12:00:56.796	1	1
+1	2022-09-23 12:00:54.477	2022-12-06 18:06:50.717	2022-09-23 12:00:56.796	1	1
 \.
 
 
@@ -10590,7 +10590,7 @@ COPY public.realisations_components (id, entity_id, component_id, component_type
 --
 
 COPY public.scroll_tops (id, created_at, updated_at, published_at, created_by_id, updated_by_id) FROM stdin;
-1	2022-09-23 21:29:59.202	2022-10-28 11:31:00.417	2022-09-23 21:30:00.753	1	1
+1	2022-09-23 21:29:59.202	2022-12-06 18:37:03.127	2022-09-23 21:30:00.753	1	1
 \.
 
 
@@ -10629,9 +10629,9 @@ COPY public.strapi_core_store_settings (id, key, value, type, environment, tag) 
 17	plugin_i18n_default_locale	"en"	string	\N	\N
 20	plugin_content_manager_configuration_components::utils.services	{"uid":"utils.services","settings":{"bulkable":true,"filterable":true,"searchable":true,"pageSize":10,"mainField":"id","defaultSortBy":"id","defaultSortOrder":"ASC"},"metadatas":{"id":{"edit":{},"list":{"label":"id","searchable":false,"sortable":false}},"icons":{"edit":{"label":"icons","description":"","placeholder":"","visible":true,"editable":true},"list":{"label":"icons","searchable":false,"sortable":false}},"legend":{"edit":{"label":"legend","description":"","placeholder":"","visible":true,"editable":true},"list":{"label":"legend","searchable":false,"sortable":false}},"paragraphe":{"edit":{"label":"paragraphe","description":"","placeholder":"","visible":true,"editable":true},"list":{"label":"paragraphe","searchable":false,"sortable":false}}},"layouts":{"list":["id","icons"],"edit":[[{"name":"icons","size":6}],[{"name":"legend","size":12}],[{"name":"paragraphe","size":12}]],"editRelations":[]},"isComponent":true}	object	\N	\N
 19	plugin_content_manager_configuration_components::utils.upload-files	{"uid":"utils.upload-files","settings":{"bulkable":true,"filterable":true,"searchable":true,"pageSize":10,"mainField":"titre","defaultSortBy":"titre","defaultSortOrder":"ASC"},"metadatas":{"id":{"edit":{},"list":{"label":"id","searchable":false,"sortable":false}},"titre":{"edit":{"label":"titre","description":"","placeholder":"","visible":true,"editable":true},"list":{"label":"titre","searchable":true,"sortable":true}},"question":{"edit":{"label":"question","description":"","placeholder":"","visible":true,"editable":true},"list":{"label":"question","searchable":false,"sortable":false}},"legend":{"edit":{"label":"legend","description":"","placeholder":"","visible":true,"editable":true},"list":{"label":"legend","searchable":false,"sortable":false}},"iconTrash":{"edit":{"label":"iconTrash","description":"","placeholder":"","visible":true,"editable":true},"list":{"label":"iconTrash","searchable":false,"sortable":false}},"iconNuage":{"edit":{"label":"iconNuage","description":"","placeholder":"","visible":true,"editable":true},"list":{"label":"iconNuage","searchable":false,"sortable":false}},"iconFichier":{"edit":{"label":"iconFichier","description":"","placeholder":"","visible":true,"editable":true},"list":{"label":"iconFichier","searchable":false,"sortable":false}},"iconError":{"edit":{"label":"iconError","description":"","placeholder":"","visible":true,"editable":true},"list":{"label":"iconError","searchable":false,"sortable":false}},"telecharger":{"edit":{"label":"telecharger","description":"","placeholder":"","visible":true,"editable":true},"list":{"label":"telecharger","searchable":true,"sortable":true}},"errorLenghtFile":{"edit":{"label":"errorLenghtFile","description":"","placeholder":"","visible":true,"editable":true},"list":{"label":"errorLenghtFile","searchable":true,"sortable":true}},"messageErrorLenghtFile":{"edit":{"label":"messageErrorLenghtFile","description":"","placeholder":"","visible":true,"editable":true},"list":{"label":"messageErrorLenghtFile","searchable":true,"sortable":true}},"fileUnName":{"edit":{"label":"fileUnName","description":"","placeholder":"","visible":true,"editable":true},"list":{"label":"fileUnName","searchable":true,"sortable":true}},"fileDeuxName":{"edit":{"label":"fileDeuxName","description":"","placeholder":"","visible":true,"editable":true},"list":{"label":"fileDeuxName","searchable":true,"sortable":true}},"fileTroisName":{"edit":{"label":"fileTroisName","description":"","placeholder":"","visible":true,"editable":true},"list":{"label":"fileTroisName","searchable":true,"sortable":true}}},"layouts":{"list":["id","titre","iconTrash","iconNuage"],"edit":[[{"name":"titre","size":6}],[{"name":"question","size":12}],[{"name":"legend","size":12}],[{"name":"iconTrash","size":6},{"name":"iconNuage","size":6}],[{"name":"iconFichier","size":6},{"name":"iconError","size":6}],[{"name":"telecharger","size":6},{"name":"errorLenghtFile","size":6}],[{"name":"messageErrorLenghtFile","size":6},{"name":"fileUnName","size":6}],[{"name":"fileDeuxName","size":6},{"name":"fileTroisName","size":6}]],"editRelations":[]},"isComponent":true}	object	\N	\N
+22	plugin_content_manager_configuration_components::utils.range-slider	{"uid":"utils.range-slider","settings":{"bulkable":true,"filterable":true,"searchable":true,"pageSize":10,"mainField":"titre","defaultSortBy":"titre","defaultSortOrder":"ASC"},"metadatas":{"id":{"edit":{},"list":{"label":"id","searchable":false,"sortable":false}},"titre":{"edit":{"label":"titre","description":"","placeholder":"","visible":true,"editable":true},"list":{"label":"titre","searchable":true,"sortable":true}},"minValue":{"edit":{"label":"minValue","description":"","placeholder":"","visible":true,"editable":true},"list":{"label":"minValue","searchable":true,"sortable":true}},"maxValue":{"edit":{"label":"maxValue","description":"","placeholder":"","visible":true,"editable":true},"list":{"label":"maxValue","searchable":true,"sortable":true}},"iconRange":{"edit":{"label":"iconRange","description":"","placeholder":"","visible":true,"editable":true},"list":{"label":"iconRange","searchable":false,"sortable":false}},"question":{"edit":{"label":"question","description":"","placeholder":"","visible":true,"editable":true},"list":{"label":"question","searchable":false,"sortable":false}},"legend":{"edit":{"label":"legend","description":"","placeholder":"","visible":true,"editable":true},"list":{"label":"legend","searchable":false,"sortable":false}},"questionDeux":{"edit":{"label":"questionDeux","description":"","placeholder":"","visible":true,"editable":true},"list":{"label":"questionDeux","searchable":false,"sortable":false}},"errorMessage":{"edit":{"label":"errorMessage","description":"","placeholder":"","visible":true,"editable":true},"list":{"label":"errorMessage","searchable":true,"sortable":true}}},"layouts":{"list":["id","titre","minValue","maxValue"],"edit":[[{"name":"titre","size":6},{"name":"minValue","size":4}],[{"name":"maxValue","size":4},{"name":"iconRange","size":6}],[{"name":"question","size":12}],[{"name":"legend","size":12}],[{"name":"questionDeux","size":12}],[{"name":"errorMessage","size":6}]],"editRelations":[]},"isComponent":true}	object	\N	\N
 1	strapi_content_types_schema	{"admin::permission":{"collectionName":"admin_permissions","info":{"name":"Permission","description":"","singularName":"permission","pluralName":"permissions","displayName":"Permission"},"options":{},"pluginOptions":{"content-manager":{"visible":false},"content-type-builder":{"visible":false}},"attributes":{"action":{"type":"string","minLength":1,"configurable":false,"required":true},"subject":{"type":"string","minLength":1,"configurable":false,"required":false},"properties":{"type":"json","configurable":false,"required":false,"default":{}},"conditions":{"type":"json","configurable":false,"required":false,"default":[]},"role":{"configurable":false,"type":"relation","relation":"manyToOne","inversedBy":"permissions","target":"admin::role"},"createdAt":{"type":"datetime"},"updatedAt":{"type":"datetime"},"createdBy":{"type":"relation","relation":"oneToOne","target":"admin::user","configurable":false,"writable":false,"visible":false,"useJoinTable":false,"private":true},"updatedBy":{"type":"relation","relation":"oneToOne","target":"admin::user","configurable":false,"writable":false,"visible":false,"useJoinTable":false,"private":true}},"kind":"collectionType","__schema__":{"collectionName":"admin_permissions","info":{"name":"Permission","description":"","singularName":"permission","pluralName":"permissions","displayName":"Permission"},"options":{},"pluginOptions":{"content-manager":{"visible":false},"content-type-builder":{"visible":false}},"attributes":{"action":{"type":"string","minLength":1,"configurable":false,"required":true},"subject":{"type":"string","minLength":1,"configurable":false,"required":false},"properties":{"type":"json","configurable":false,"required":false,"default":{}},"conditions":{"type":"json","configurable":false,"required":false,"default":[]},"role":{"configurable":false,"type":"relation","relation":"manyToOne","inversedBy":"permissions","target":"admin::role"}},"kind":"collectionType"},"modelType":"contentType","modelName":"permission","connection":"default","uid":"admin::permission","plugin":"admin","globalId":"AdminPermission"},"admin::user":{"collectionName":"admin_users","info":{"name":"User","description":"","singularName":"user","pluralName":"users","displayName":"User"},"pluginOptions":{"content-manager":{"visible":false},"content-type-builder":{"visible":false}},"attributes":{"firstname":{"type":"string","unique":false,"minLength":1,"configurable":false,"required":false},"lastname":{"type":"string","unique":false,"minLength":1,"configurable":false,"required":false},"username":{"type":"string","unique":false,"configurable":false,"required":false},"email":{"type":"email","minLength":6,"configurable":false,"required":true,"unique":true,"private":true},"password":{"type":"password","minLength":6,"configurable":false,"required":false,"private":true},"resetPasswordToken":{"type":"string","configurable":false,"private":true},"registrationToken":{"type":"string","configurable":false,"private":true},"isActive":{"type":"boolean","default":false,"configurable":false,"private":true},"roles":{"configurable":false,"private":true,"type":"relation","relation":"manyToMany","inversedBy":"users","target":"admin::role","collectionName":"strapi_users_roles"},"blocked":{"type":"boolean","default":false,"configurable":false,"private":true},"preferedLanguage":{"type":"string","configurable":false,"required":false},"createdAt":{"type":"datetime"},"updatedAt":{"type":"datetime"},"createdBy":{"type":"relation","relation":"oneToOne","target":"admin::user","configurable":false,"writable":false,"visible":false,"useJoinTable":false,"private":true},"updatedBy":{"type":"relation","relation":"oneToOne","target":"admin::user","configurable":false,"writable":false,"visible":false,"useJoinTable":false,"private":true}},"kind":"collectionType","__schema__":{"collectionName":"admin_users","info":{"name":"User","description":"","singularName":"user","pluralName":"users","displayName":"User"},"pluginOptions":{"content-manager":{"visible":false},"content-type-builder":{"visible":false}},"attributes":{"firstname":{"type":"string","unique":false,"minLength":1,"configurable":false,"required":false},"lastname":{"type":"string","unique":false,"minLength":1,"configurable":false,"required":false},"username":{"type":"string","unique":false,"configurable":false,"required":false},"email":{"type":"email","minLength":6,"configurable":false,"required":true,"unique":true,"private":true},"password":{"type":"password","minLength":6,"configurable":false,"required":false,"private":true},"resetPasswordToken":{"type":"string","configurable":false,"private":true},"registrationToken":{"type":"string","configurable":false,"private":true},"isActive":{"type":"boolean","default":false,"configurable":false,"private":true},"roles":{"configurable":false,"private":true,"type":"relation","relation":"manyToMany","inversedBy":"users","target":"admin::role","collectionName":"strapi_users_roles"},"blocked":{"type":"boolean","default":false,"configurable":false,"private":true},"preferedLanguage":{"type":"string","configurable":false,"required":false}},"kind":"collectionType"},"modelType":"contentType","modelName":"user","connection":"default","uid":"admin::user","plugin":"admin","globalId":"AdminUser"},"admin::role":{"collectionName":"admin_roles","info":{"name":"Role","description":"","singularName":"role","pluralName":"roles","displayName":"Role"},"options":{},"pluginOptions":{"content-manager":{"visible":false},"content-type-builder":{"visible":false}},"attributes":{"name":{"type":"string","minLength":1,"unique":true,"configurable":false,"required":true},"code":{"type":"string","minLength":1,"unique":true,"configurable":false,"required":true},"description":{"type":"string","configurable":false},"users":{"configurable":false,"type":"relation","relation":"manyToMany","mappedBy":"roles","target":"admin::user"},"permissions":{"configurable":false,"type":"relation","relation":"oneToMany","mappedBy":"role","target":"admin::permission"},"createdAt":{"type":"datetime"},"updatedAt":{"type":"datetime"},"createdBy":{"type":"relation","relation":"oneToOne","target":"admin::user","configurable":false,"writable":false,"visible":false,"useJoinTable":false,"private":true},"updatedBy":{"type":"relation","relation":"oneToOne","target":"admin::user","configurable":false,"writable":false,"visible":false,"useJoinTable":false,"private":true}},"kind":"collectionType","__schema__":{"collectionName":"admin_roles","info":{"name":"Role","description":"","singularName":"role","pluralName":"roles","displayName":"Role"},"options":{},"pluginOptions":{"content-manager":{"visible":false},"content-type-builder":{"visible":false}},"attributes":{"name":{"type":"string","minLength":1,"unique":true,"configurable":false,"required":true},"code":{"type":"string","minLength":1,"unique":true,"configurable":false,"required":true},"description":{"type":"string","configurable":false},"users":{"configurable":false,"type":"relation","relation":"manyToMany","mappedBy":"roles","target":"admin::user"},"permissions":{"configurable":false,"type":"relation","relation":"oneToMany","mappedBy":"role","target":"admin::permission"}},"kind":"collectionType"},"modelType":"contentType","modelName":"role","connection":"default","uid":"admin::role","plugin":"admin","globalId":"AdminRole"},"admin::api-token":{"collectionName":"strapi_api_tokens","info":{"name":"Api Token","singularName":"api-token","pluralName":"api-tokens","displayName":"Api Token","description":""},"options":{},"pluginOptions":{"content-manager":{"visible":false},"content-type-builder":{"visible":false}},"attributes":{"name":{"type":"string","minLength":1,"configurable":false,"required":true},"description":{"type":"string","minLength":1,"configurable":false,"required":false,"default":""},"type":{"type":"enumeration","enum":["read-only","full-access"],"configurable":false,"required":false,"default":"read-only"},"accessKey":{"type":"string","minLength":1,"configurable":false,"required":true},"createdAt":{"type":"datetime"},"updatedAt":{"type":"datetime"},"createdBy":{"type":"relation","relation":"oneToOne","target":"admin::user","configurable":false,"writable":false,"visible":false,"useJoinTable":false,"private":true},"updatedBy":{"type":"relation","relation":"oneToOne","target":"admin::user","configurable":false,"writable":false,"visible":false,"useJoinTable":false,"private":true}},"kind":"collectionType","__schema__":{"collectionName":"strapi_api_tokens","info":{"name":"Api Token","singularName":"api-token","pluralName":"api-tokens","displayName":"Api Token","description":""},"options":{},"pluginOptions":{"content-manager":{"visible":false},"content-type-builder":{"visible":false}},"attributes":{"name":{"type":"string","minLength":1,"configurable":false,"required":true},"description":{"type":"string","minLength":1,"configurable":false,"required":false,"default":""},"type":{"type":"enumeration","enum":["read-only","full-access"],"configurable":false,"required":false,"default":"read-only"},"accessKey":{"type":"string","minLength":1,"configurable":false,"required":true}},"kind":"collectionType"},"modelType":"contentType","modelName":"api-token","connection":"default","uid":"admin::api-token","plugin":"admin","globalId":"AdminApiToken"},"plugin::upload.file":{"collectionName":"files","info":{"singularName":"file","pluralName":"files","displayName":"File","description":""},"options":{},"pluginOptions":{"content-manager":{"visible":false},"content-type-builder":{"visible":false}},"attributes":{"name":{"type":"string","configurable":false,"required":true},"alternativeText":{"type":"string","configurable":false},"caption":{"type":"string","configurable":false},"width":{"type":"integer","configurable":false},"height":{"type":"integer","configurable":false},"formats":{"type":"json","configurable":false},"hash":{"type":"string","configurable":false,"required":true},"ext":{"type":"string","configurable":false},"mime":{"type":"string","configurable":false,"required":true},"size":{"type":"decimal","configurable":false,"required":true},"url":{"type":"string","configurable":false,"required":true},"previewUrl":{"type":"string","configurable":false},"provider":{"type":"string","configurable":false,"required":true},"provider_metadata":{"type":"json","configurable":false},"related":{"type":"relation","relation":"morphToMany","configurable":false},"folder":{"type":"relation","relation":"manyToOne","target":"plugin::upload.folder","inversedBy":"files","private":true},"folderPath":{"type":"string","min":1,"required":true,"private":true},"createdAt":{"type":"datetime"},"updatedAt":{"type":"datetime"},"createdBy":{"type":"relation","relation":"oneToOne","target":"admin::user","configurable":false,"writable":false,"visible":false,"useJoinTable":false,"private":true},"updatedBy":{"type":"relation","relation":"oneToOne","target":"admin::user","configurable":false,"writable":false,"visible":false,"useJoinTable":false,"private":true}},"indexes":[{"name":"upload_files_folder_path_index","columns":["folder_path"],"type":null}],"kind":"collectionType","__schema__":{"collectionName":"files","info":{"singularName":"file","pluralName":"files","displayName":"File","description":""},"options":{},"pluginOptions":{"content-manager":{"visible":false},"content-type-builder":{"visible":false}},"attributes":{"name":{"type":"string","configurable":false,"required":true},"alternativeText":{"type":"string","configurable":false},"caption":{"type":"string","configurable":false},"width":{"type":"integer","configurable":false},"height":{"type":"integer","configurable":false},"formats":{"type":"json","configurable":false},"hash":{"type":"string","configurable":false,"required":true},"ext":{"type":"string","configurable":false},"mime":{"type":"string","configurable":false,"required":true},"size":{"type":"decimal","configurable":false,"required":true},"url":{"type":"string","configurable":false,"required":true},"previewUrl":{"type":"string","configurable":false},"provider":{"type":"string","configurable":false,"required":true},"provider_metadata":{"type":"json","configurable":false},"related":{"type":"relation","relation":"morphToMany","configurable":false},"folder":{"type":"relation","relation":"manyToOne","target":"plugin::upload.folder","inversedBy":"files","private":true},"folderPath":{"type":"string","min":1,"required":true,"private":true}},"kind":"collectionType"},"modelType":"contentType","modelName":"file","connection":"default","uid":"plugin::upload.file","plugin":"upload","globalId":"UploadFile"},"plugin::upload.folder":{"collectionName":"upload_folders","info":{"singularName":"folder","pluralName":"folders","displayName":"Folder"},"options":{},"pluginOptions":{"content-manager":{"visible":false},"content-type-builder":{"visible":false}},"attributes":{"name":{"type":"string","min":1,"required":true},"pathId":{"type":"integer","unique":true,"required":true},"parent":{"type":"relation","relation":"manyToOne","target":"plugin::upload.folder","inversedBy":"children"},"children":{"type":"relation","relation":"oneToMany","target":"plugin::upload.folder","mappedBy":"parent"},"files":{"type":"relation","relation":"oneToMany","target":"plugin::upload.file","mappedBy":"folder"},"path":{"type":"string","min":1,"required":true},"createdAt":{"type":"datetime"},"updatedAt":{"type":"datetime"},"createdBy":{"type":"relation","relation":"oneToOne","target":"admin::user","configurable":false,"writable":false,"visible":false,"useJoinTable":false,"private":true},"updatedBy":{"type":"relation","relation":"oneToOne","target":"admin::user","configurable":false,"writable":false,"visible":false,"useJoinTable":false,"private":true}},"indexes":[{"name":"upload_folders_path_id_index","columns":["path_id"],"type":"unique"},{"name":"upload_folders_path_index","columns":["path"],"type":"unique"}],"kind":"collectionType","__schema__":{"collectionName":"upload_folders","info":{"singularName":"folder","pluralName":"folders","displayName":"Folder"},"options":{},"pluginOptions":{"content-manager":{"visible":false},"content-type-builder":{"visible":false}},"attributes":{"name":{"type":"string","min":1,"required":true},"pathId":{"type":"integer","unique":true,"required":true},"parent":{"type":"relation","relation":"manyToOne","target":"plugin::upload.folder","inversedBy":"children"},"children":{"type":"relation","relation":"oneToMany","target":"plugin::upload.folder","mappedBy":"parent"},"files":{"type":"relation","relation":"oneToMany","target":"plugin::upload.file","mappedBy":"folder"},"path":{"type":"string","min":1,"required":true}},"kind":"collectionType"},"modelType":"contentType","modelName":"folder","connection":"default","uid":"plugin::upload.folder","plugin":"upload","globalId":"UploadFolder"},"plugin::i18n.locale":{"info":{"singularName":"locale","pluralName":"locales","collectionName":"locales","displayName":"Locale","description":""},"options":{"draftAndPublish":false},"pluginOptions":{"content-manager":{"visible":false},"content-type-builder":{"visible":false}},"attributes":{"name":{"type":"string","min":1,"max":50,"configurable":false},"code":{"type":"string","unique":true,"configurable":false},"createdAt":{"type":"datetime"},"updatedAt":{"type":"datetime"},"createdBy":{"type":"relation","relation":"oneToOne","target":"admin::user","configurable":false,"writable":false,"visible":false,"useJoinTable":false,"private":true},"updatedBy":{"type":"relation","relation":"oneToOne","target":"admin::user","configurable":false,"writable":false,"visible":false,"useJoinTable":false,"private":true}},"kind":"collectionType","__schema__":{"info":{"singularName":"locale","pluralName":"locales","collectionName":"locales","displayName":"Locale","description":""},"options":{"draftAndPublish":false},"pluginOptions":{"content-manager":{"visible":false},"content-type-builder":{"visible":false}},"attributes":{"name":{"type":"string","min":1,"max":50,"configurable":false},"code":{"type":"string","unique":true,"configurable":false}},"kind":"collectionType"},"modelType":"contentType","modelName":"locale","connection":"default","uid":"plugin::i18n.locale","plugin":"i18n","collectionName":"i18n_locale","globalId":"I18NLocale"},"plugin::users-permissions.permission":{"collectionName":"up_permissions","info":{"name":"permission","description":"","singularName":"permission","pluralName":"permissions","displayName":"Permission"},"pluginOptions":{"content-manager":{"visible":false},"content-type-builder":{"visible":false}},"attributes":{"action":{"type":"string","required":true,"configurable":false},"role":{"type":"relation","relation":"manyToOne","target":"plugin::users-permissions.role","inversedBy":"permissions","configurable":false},"createdAt":{"type":"datetime"},"updatedAt":{"type":"datetime"},"createdBy":{"type":"relation","relation":"oneToOne","target":"admin::user","configurable":false,"writable":false,"visible":false,"useJoinTable":false,"private":true},"updatedBy":{"type":"relation","relation":"oneToOne","target":"admin::user","configurable":false,"writable":false,"visible":false,"useJoinTable":false,"private":true}},"kind":"collectionType","__schema__":{"collectionName":"up_permissions","info":{"name":"permission","description":"","singularName":"permission","pluralName":"permissions","displayName":"Permission"},"pluginOptions":{"content-manager":{"visible":false},"content-type-builder":{"visible":false}},"attributes":{"action":{"type":"string","required":true,"configurable":false},"role":{"type":"relation","relation":"manyToOne","target":"plugin::users-permissions.role","inversedBy":"permissions","configurable":false}},"kind":"collectionType"},"modelType":"contentType","modelName":"permission","connection":"default","uid":"plugin::users-permissions.permission","plugin":"users-permissions","globalId":"UsersPermissionsPermission"},"plugin::users-permissions.role":{"collectionName":"up_roles","info":{"name":"role","description":"","singularName":"role","pluralName":"roles","displayName":"Role"},"pluginOptions":{"content-manager":{"visible":false},"content-type-builder":{"visible":false}},"attributes":{"name":{"type":"string","minLength":3,"required":true,"configurable":false},"description":{"type":"string","configurable":false},"type":{"type":"string","unique":true,"configurable":false},"permissions":{"type":"relation","relation":"oneToMany","target":"plugin::users-permissions.permission","mappedBy":"role","configurable":false},"users":{"type":"relation","relation":"oneToMany","target":"plugin::users-permissions.user","mappedBy":"role","configurable":false},"createdAt":{"type":"datetime"},"updatedAt":{"type":"datetime"},"createdBy":{"type":"relation","relation":"oneToOne","target":"admin::user","configurable":false,"writable":false,"visible":false,"useJoinTable":false,"private":true},"updatedBy":{"type":"relation","relation":"oneToOne","target":"admin::user","configurable":false,"writable":false,"visible":false,"useJoinTable":false,"private":true}},"kind":"collectionType","__schema__":{"collectionName":"up_roles","info":{"name":"role","description":"","singularName":"role","pluralName":"roles","displayName":"Role"},"pluginOptions":{"content-manager":{"visible":false},"content-type-builder":{"visible":false}},"attributes":{"name":{"type":"string","minLength":3,"required":true,"configurable":false},"description":{"type":"string","configurable":false},"type":{"type":"string","unique":true,"configurable":false},"permissions":{"type":"relation","relation":"oneToMany","target":"plugin::users-permissions.permission","mappedBy":"role","configurable":false},"users":{"type":"relation","relation":"oneToMany","target":"plugin::users-permissions.user","mappedBy":"role","configurable":false}},"kind":"collectionType"},"modelType":"contentType","modelName":"role","connection":"default","uid":"plugin::users-permissions.role","plugin":"users-permissions","globalId":"UsersPermissionsRole"},"plugin::users-permissions.user":{"collectionName":"up_users","info":{"name":"user","description":"","singularName":"user","pluralName":"users","displayName":"User"},"options":{"draftAndPublish":false,"timestamps":true},"attributes":{"username":{"type":"string","minLength":3,"unique":true,"configurable":false,"required":true},"email":{"type":"email","minLength":6,"configurable":false,"required":true},"provider":{"type":"string","configurable":false},"password":{"type":"password","minLength":6,"configurable":false,"private":true},"resetPasswordToken":{"type":"string","configurable":false,"private":true},"confirmationToken":{"type":"string","configurable":false,"private":true},"confirmed":{"type":"boolean","default":false,"configurable":false},"blocked":{"type":"boolean","default":false,"configurable":false},"role":{"type":"relation","relation":"manyToOne","target":"plugin::users-permissions.role","inversedBy":"users","configurable":false},"createdAt":{"type":"datetime"},"updatedAt":{"type":"datetime"},"createdBy":{"type":"relation","relation":"oneToOne","target":"admin::user","configurable":false,"writable":false,"visible":false,"useJoinTable":false,"private":true},"updatedBy":{"type":"relation","relation":"oneToOne","target":"admin::user","configurable":false,"writable":false,"visible":false,"useJoinTable":false,"private":true}},"config":{"attributes":{"resetPasswordToken":{"hidden":true},"confirmationToken":{"hidden":true},"provider":{"hidden":true}}},"kind":"collectionType","__schema__":{"collectionName":"up_users","info":{"name":"user","description":"","singularName":"user","pluralName":"users","displayName":"User"},"options":{"draftAndPublish":false,"timestamps":true},"attributes":{"username":{"type":"string","minLength":3,"unique":true,"configurable":false,"required":true},"email":{"type":"email","minLength":6,"configurable":false,"required":true},"provider":{"type":"string","configurable":false},"password":{"type":"password","minLength":6,"configurable":false,"private":true},"resetPasswordToken":{"type":"string","configurable":false,"private":true},"confirmationToken":{"type":"string","configurable":false,"private":true},"confirmed":{"type":"boolean","default":false,"configurable":false},"blocked":{"type":"boolean","default":false,"configurable":false},"role":{"type":"relation","relation":"manyToOne","target":"plugin::users-permissions.role","inversedBy":"users","configurable":false}},"kind":"collectionType"},"modelType":"contentType","modelName":"user","connection":"default","uid":"plugin::users-permissions.user","plugin":"users-permissions","globalId":"UsersPermissionsUser"},"api::about.about":{"kind":"singleType","collectionName":"abouts","info":{"singularName":"about","pluralName":"abouts","displayName":"About","description":""},"options":{"draftAndPublish":true},"pluginOptions":{},"attributes":{"header":{"type":"component","repeatable":false,"component":"header.header"},"titrePage":{"type":"string"},"binome":{"type":"component","repeatable":false,"component":"section.section"},"introPresentation":{"type":"component","repeatable":false,"component":"section.section"},"presentation":{"type":"component","repeatable":false,"component":"section.section"},"seo":{"type":"component","repeatable":false,"component":"shared.seo"},"createdAt":{"type":"datetime"},"updatedAt":{"type":"datetime"},"publishedAt":{"type":"datetime","configurable":false,"writable":true,"visible":false},"createdBy":{"type":"relation","relation":"oneToOne","target":"admin::user","configurable":false,"writable":false,"visible":false,"useJoinTable":false,"private":true},"updatedBy":{"type":"relation","relation":"oneToOne","target":"admin::user","configurable":false,"writable":false,"visible":false,"useJoinTable":false,"private":true}},"__schema__":{"collectionName":"abouts","info":{"singularName":"about","pluralName":"abouts","displayName":"About","description":""},"options":{"draftAndPublish":true},"pluginOptions":{},"attributes":{"header":{"type":"component","repeatable":false,"component":"header.header"},"titrePage":{"type":"string"},"binome":{"type":"component","repeatable":false,"component":"section.section"},"introPresentation":{"type":"component","repeatable":false,"component":"section.section"},"presentation":{"type":"component","repeatable":false,"component":"section.section"},"seo":{"type":"component","repeatable":false,"component":"shared.seo"}},"kind":"singleType"},"modelType":"contentType","modelName":"about","connection":"default","uid":"api::about.about","apiName":"about","globalId":"About","actions":{},"lifecycles":{}},"api::contact.contact":{"kind":"singleType","collectionName":"contacts","info":{"singularName":"contact","pluralName":"contacts","displayName":"Contact","description":""},"options":{"draftAndPublish":true},"pluginOptions":{},"attributes":{"titrePage":{"type":"string"},"header":{"type":"component","repeatable":false,"component":"header.header"},"informations":{"type":"component","repeatable":false,"component":"section.informations"},"contact":{"type":"component","repeatable":false,"component":"form.contact-form"},"seo":{"type":"component","repeatable":false,"component":"shared.seo"},"createdAt":{"type":"datetime"},"updatedAt":{"type":"datetime"},"publishedAt":{"type":"datetime","configurable":false,"writable":true,"visible":false},"createdBy":{"type":"relation","relation":"oneToOne","target":"admin::user","configurable":false,"writable":false,"visible":false,"useJoinTable":false,"private":true},"updatedBy":{"type":"relation","relation":"oneToOne","target":"admin::user","configurable":false,"writable":false,"visible":false,"useJoinTable":false,"private":true}},"__schema__":{"collectionName":"contacts","info":{"singularName":"contact","pluralName":"contacts","displayName":"Contact","description":""},"options":{"draftAndPublish":true},"pluginOptions":{},"attributes":{"titrePage":{"type":"string"},"header":{"type":"component","repeatable":false,"component":"header.header"},"informations":{"type":"component","repeatable":false,"component":"section.informations"},"contact":{"type":"component","repeatable":false,"component":"form.contact-form"},"seo":{"type":"component","repeatable":false,"component":"shared.seo"}},"kind":"singleType"},"modelType":"contentType","modelName":"contact","connection":"default","uid":"api::contact.contact","apiName":"contact","globalId":"Contact","actions":{},"lifecycles":{}},"api::contact-form.contact-form":{"kind":"collectionType","collectionName":"contact_forms","info":{"singularName":"contact-form","pluralName":"contact-forms","displayName":"ContactForm"},"options":{"draftAndPublish":true},"pluginOptions":{},"attributes":{"contact":{"type":"component","repeatable":false,"component":"form.contact-form"},"identifiant":{"type":"uid"},"createdAt":{"type":"datetime"},"updatedAt":{"type":"datetime"},"publishedAt":{"type":"datetime","configurable":false,"writable":true,"visible":false},"createdBy":{"type":"relation","relation":"oneToOne","target":"admin::user","configurable":false,"writable":false,"visible":false,"useJoinTable":false,"private":true},"updatedBy":{"type":"relation","relation":"oneToOne","target":"admin::user","configurable":false,"writable":false,"visible":false,"useJoinTable":false,"private":true}},"__schema__":{"collectionName":"contact_forms","info":{"singularName":"contact-form","pluralName":"contact-forms","displayName":"ContactForm"},"options":{"draftAndPublish":true},"pluginOptions":{},"attributes":{"contact":{"type":"component","repeatable":false,"component":"form.contact-form"},"identifiant":{"type":"uid"}},"kind":"collectionType"},"modelType":"contentType","modelName":"contact-form","connection":"default","uid":"api::contact-form.contact-form","apiName":"contact-form","globalId":"ContactForm","actions":{},"lifecycles":{}},"api::devi.devi":{"kind":"singleType","collectionName":"devis","info":{"singularName":"devi","pluralName":"devis","displayName":"Devi","description":""},"options":{"draftAndPublish":true},"pluginOptions":{},"attributes":{"header":{"type":"component","repeatable":false,"component":"header.header"},"titrePage":{"type":"string"},"preambule":{"type":"component","repeatable":false,"component":"section.section"},"devis":{"type":"component","repeatable":false,"component":"form.devis"},"seo":{"type":"component","repeatable":false,"component":"shared.seo"},"createdAt":{"type":"datetime"},"updatedAt":{"type":"datetime"},"publishedAt":{"type":"datetime","configurable":false,"writable":true,"visible":false},"createdBy":{"type":"relation","relation":"oneToOne","target":"admin::user","configurable":false,"writable":false,"visible":false,"useJoinTable":false,"private":true},"updatedBy":{"type":"relation","relation":"oneToOne","target":"admin::user","configurable":false,"writable":false,"visible":false,"useJoinTable":false,"private":true}},"__schema__":{"collectionName":"devis","info":{"singularName":"devi","pluralName":"devis","displayName":"Devi","description":""},"options":{"draftAndPublish":true},"pluginOptions":{},"attributes":{"header":{"type":"component","repeatable":false,"component":"header.header"},"titrePage":{"type":"string"},"preambule":{"type":"component","repeatable":false,"component":"section.section"},"devis":{"type":"component","repeatable":false,"component":"form.devis"},"seo":{"type":"component","repeatable":false,"component":"shared.seo"}},"kind":"singleType"},"modelType":"contentType","modelName":"devi","connection":"default","uid":"api::devi.devi","apiName":"devi","globalId":"Devi","actions":{},"lifecycles":{}},"api::error-page.error-page":{"kind":"singleType","collectionName":"error_pages","info":{"singularName":"error-page","pluralName":"error-pages","displayName":"ErrorPage","description":""},"options":{"draftAndPublish":true},"pluginOptions":{},"attributes":{"titrePage":{"type":"string"},"button":{"type":"string"},"titre":{"type":"richtext"},"paragraphe":{"type":"richtext"},"bg":{"type":"media","multiple":false,"required":false,"allowedTypes":["images"]},"seo":{"type":"component","repeatable":false,"component":"shared.seo"},"createdAt":{"type":"datetime"},"updatedAt":{"type":"datetime"},"publishedAt":{"type":"datetime","configurable":false,"writable":true,"visible":false},"createdBy":{"type":"relation","relation":"oneToOne","target":"admin::user","configurable":false,"writable":false,"visible":false,"useJoinTable":false,"private":true},"updatedBy":{"type":"relation","relation":"oneToOne","target":"admin::user","configurable":false,"writable":false,"visible":false,"useJoinTable":false,"private":true}},"__schema__":{"collectionName":"error_pages","info":{"singularName":"error-page","pluralName":"error-pages","displayName":"ErrorPage","description":""},"options":{"draftAndPublish":true},"pluginOptions":{},"attributes":{"titrePage":{"type":"string"},"button":{"type":"string"},"titre":{"type":"richtext"},"paragraphe":{"type":"richtext"},"bg":{"type":"media","multiple":false,"required":false,"allowedTypes":["images"]},"seo":{"type":"component","repeatable":false,"component":"shared.seo"}},"kind":"singleType"},"modelType":"contentType","modelName":"error-page","connection":"default","uid":"api::error-page.error-page","apiName":"error-page","globalId":"ErrorPage","actions":{},"lifecycles":{}},"api::footer.footer":{"kind":"singleType","collectionName":"footers","info":{"singularName":"footer","pluralName":"footers","displayName":"Footer","description":""},"options":{"draftAndPublish":true},"pluginOptions":{},"attributes":{"logo":{"type":"media","multiple":false,"required":false,"allowedTypes":["images"]},"paragraphe":{"type":"richtext"},"titre4":{"type":"richtext"},"button":{"type":"string"},"titre4bis":{"type":"richtext"},"nav":{"type":"component","repeatable":true,"component":"nav.nav"},"titre4tierce":{"type":"richtext"},"reseaux":{"type":"component","repeatable":true,"component":"utils.reseaux"},"titre4quarto":{"type":"richtext"},"copyright":{"type":"richtext"},"contact":{"type":"component","repeatable":false,"component":"utils.contact"},"navMobile":{"type":"component","repeatable":true,"component":"nav.nav"},"createdAt":{"type":"datetime"},"updatedAt":{"type":"datetime"},"publishedAt":{"type":"datetime","configurable":false,"writable":true,"visible":false},"createdBy":{"type":"relation","relation":"oneToOne","target":"admin::user","configurable":false,"writable":false,"visible":false,"useJoinTable":false,"private":true},"updatedBy":{"type":"relation","relation":"oneToOne","target":"admin::user","configurable":false,"writable":false,"visible":false,"useJoinTable":false,"private":true}},"__schema__":{"collectionName":"footers","info":{"singularName":"footer","pluralName":"footers","displayName":"Footer","description":""},"options":{"draftAndPublish":true},"pluginOptions":{},"attributes":{"logo":{"type":"media","multiple":false,"required":false,"allowedTypes":["images"]},"paragraphe":{"type":"richtext"},"titre4":{"type":"richtext"},"button":{"type":"string"},"titre4bis":{"type":"richtext"},"nav":{"type":"component","repeatable":true,"component":"nav.nav"},"titre4tierce":{"type":"richtext"},"reseaux":{"type":"component","repeatable":true,"component":"utils.reseaux"},"titre4quarto":{"type":"richtext"},"copyright":{"type":"richtext"},"contact":{"type":"component","repeatable":false,"component":"utils.contact"},"navMobile":{"type":"component","repeatable":true,"component":"nav.nav"}},"kind":"singleType"},"modelType":"contentType","modelName":"footer","connection":"default","uid":"api::footer.footer","apiName":"footer","globalId":"Footer","actions":{},"lifecycles":{}},"api::form-devi.form-devi":{"kind":"collectionType","collectionName":"form_devis","info":{"singularName":"form-devi","pluralName":"form-devis","displayName":" FormDevi"},"options":{"draftAndPublish":true},"pluginOptions":{},"attributes":{"identifiant":{"type":"uid"},"nomEntreprise":{"type":"component","repeatable":false,"component":"form.input"},"besoinsEntreprise":{"type":"component","repeatable":false,"component":"form.input"},"besoinsUn":{"type":"component","repeatable":false,"component":"form.checkbox"},"besoinsDeux":{"type":"component","repeatable":false,"component":"form.checkbox"},"besoinsTrois":{"type":"component","repeatable":false,"component":"form.checkbox"},"besoinsQuatre":{"type":"component","repeatable":false,"component":"form.checkbox"},"besoinsCinq":{"type":"component","repeatable":false,"component":"form.checkbox"},"besoinsSix":{"type":"component","repeatable":false,"component":"form.checkbox"},"besoinsSept":{"type":"component","repeatable":false,"component":"form.checkbox"},"besoinsHuit":{"type":"component","repeatable":false,"component":"form.checkbox"},"besoinsNeuf":{"type":"component","repeatable":false,"component":"form.checkbox"},"besoinsDix":{"type":"component","repeatable":false,"component":"form.checkbox"},"besoinsOnze":{"type":"component","repeatable":false,"component":"form.checkbox"},"besoinsDouze":{"type":"component","repeatable":false,"component":"form.checkbox"},"besoinsTreize":{"type":"component","repeatable":false,"component":"form.checkbox"},"besoinsQuatorze":{"type":"component","repeatable":false,"component":"form.checkbox"},"besoinsQuinze":{"type":"component","repeatable":false,"component":"form.checkbox"},"besoinsSeize":{"type":"component","repeatable":false,"component":"form.checkbox"},"besoinsDixSept":{"type":"component","repeatable":false,"component":"form.checkbox"},"besoinsDixHuit":{"type":"component","repeatable":false,"component":"form.checkbox"},"besoinsDixNeuf":{"type":"component","repeatable":false,"component":"form.checkbox"},"besoinsVingt":{"type":"component","repeatable":false,"component":"form.checkbox"},"budgetEntreprise":{"type":"component","repeatable":false,"component":"utils.range-slider"},"commentaireEntreprise":{"type":"component","repeatable":false,"component":"form.input"},"uploadFilesEntreprise":{"type":"component","repeatable":false,"component":"utils.upload-files"},"besoinTextUn":{"type":"component","repeatable":false,"component":"form.checkbox"},"besoinTextDeux":{"type":"component","repeatable":false,"component":"form.checkbox"},"personneEntreprise":{"type":"component","repeatable":false,"component":"utils.personne"},"activiteEntreprise":{"type":"component","repeatable":false,"component":"form.input"},"fonctionnalitesEntreprise":{"type":"component","repeatable":false,"component":"form.input"},"pourquoiProjetEntreprise":{"type":"component","repeatable":false,"component":"form.input"},"contraintesEntreprise":{"type":"component","repeatable":false,"component":"form.input"},"createdAt":{"type":"datetime"},"updatedAt":{"type":"datetime"},"publishedAt":{"type":"datetime","configurable":false,"writable":true,"visible":false},"createdBy":{"type":"relation","relation":"oneToOne","target":"admin::user","configurable":false,"writable":false,"visible":false,"useJoinTable":false,"private":true},"updatedBy":{"type":"relation","relation":"oneToOne","target":"admin::user","configurable":false,"writable":false,"visible":false,"useJoinTable":false,"private":true}},"__schema__":{"collectionName":"form_devis","info":{"singularName":"form-devi","pluralName":"form-devis","displayName":" FormDevi"},"options":{"draftAndPublish":true},"pluginOptions":{},"attributes":{"identifiant":{"type":"uid"},"nomEntreprise":{"type":"component","repeatable":false,"component":"form.input"},"besoinsEntreprise":{"type":"component","repeatable":false,"component":"form.input"},"besoinsUn":{"type":"component","repeatable":false,"component":"form.checkbox"},"besoinsDeux":{"type":"component","repeatable":false,"component":"form.checkbox"},"besoinsTrois":{"type":"component","repeatable":false,"component":"form.checkbox"},"besoinsQuatre":{"type":"component","repeatable":false,"component":"form.checkbox"},"besoinsCinq":{"type":"component","repeatable":false,"component":"form.checkbox"},"besoinsSix":{"type":"component","repeatable":false,"component":"form.checkbox"},"besoinsSept":{"type":"component","repeatable":false,"component":"form.checkbox"},"besoinsHuit":{"type":"component","repeatable":false,"component":"form.checkbox"},"besoinsNeuf":{"type":"component","repeatable":false,"component":"form.checkbox"},"besoinsDix":{"type":"component","repeatable":false,"component":"form.checkbox"},"besoinsOnze":{"type":"component","repeatable":false,"component":"form.checkbox"},"besoinsDouze":{"type":"component","repeatable":false,"component":"form.checkbox"},"besoinsTreize":{"type":"component","repeatable":false,"component":"form.checkbox"},"besoinsQuatorze":{"type":"component","repeatable":false,"component":"form.checkbox"},"besoinsQuinze":{"type":"component","repeatable":false,"component":"form.checkbox"},"besoinsSeize":{"type":"component","repeatable":false,"component":"form.checkbox"},"besoinsDixSept":{"type":"component","repeatable":false,"component":"form.checkbox"},"besoinsDixHuit":{"type":"component","repeatable":false,"component":"form.checkbox"},"besoinsDixNeuf":{"type":"component","repeatable":false,"component":"form.checkbox"},"besoinsVingt":{"type":"component","repeatable":false,"component":"form.checkbox"},"budgetEntreprise":{"type":"component","repeatable":false,"component":"utils.range-slider"},"commentaireEntreprise":{"type":"component","repeatable":false,"component":"form.input"},"uploadFilesEntreprise":{"type":"component","repeatable":false,"component":"utils.upload-files"},"besoinTextUn":{"type":"component","repeatable":false,"component":"form.checkbox"},"besoinTextDeux":{"type":"component","repeatable":false,"component":"form.checkbox"},"personneEntreprise":{"type":"component","repeatable":false,"component":"utils.personne"},"activiteEntreprise":{"type":"component","repeatable":false,"component":"form.input"},"fonctionnalitesEntreprise":{"type":"component","repeatable":false,"component":"form.input"},"pourquoiProjetEntreprise":{"type":"component","repeatable":false,"component":"form.input"},"contraintesEntreprise":{"type":"component","repeatable":false,"component":"form.input"}},"kind":"collectionType"},"modelType":"contentType","modelName":"form-devi","connection":"default","uid":"api::form-devi.form-devi","apiName":"form-devi","globalId":"FormDevi","actions":{},"lifecycles":{}},"api::hamburger.hamburger":{"kind":"singleType","collectionName":"hamburgers","info":{"singularName":"hamburger","pluralName":"hamburgers","displayName":"Hamburger"},"options":{"draftAndPublish":true},"pluginOptions":{},"attributes":{"hamburger":{"allowedTypes":["images"],"type":"media","multiple":true},"createdAt":{"type":"datetime"},"updatedAt":{"type":"datetime"},"publishedAt":{"type":"datetime","configurable":false,"writable":true,"visible":false},"createdBy":{"type":"relation","relation":"oneToOne","target":"admin::user","configurable":false,"writable":false,"visible":false,"useJoinTable":false,"private":true},"updatedBy":{"type":"relation","relation":"oneToOne","target":"admin::user","configurable":false,"writable":false,"visible":false,"useJoinTable":false,"private":true}},"__schema__":{"collectionName":"hamburgers","info":{"singularName":"hamburger","pluralName":"hamburgers","displayName":"Hamburger"},"options":{"draftAndPublish":true},"pluginOptions":{},"attributes":{"hamburger":{"allowedTypes":["images"],"type":"media","multiple":true}},"kind":"singleType"},"modelType":"contentType","modelName":"hamburger","connection":"default","uid":"api::hamburger.hamburger","apiName":"hamburger","globalId":"Hamburger","actions":{},"lifecycles":{}},"api::home.home":{"kind":"singleType","collectionName":"homes","info":{"singularName":"home","pluralName":"homes","displayName":"Home","description":""},"options":{"draftAndPublish":true},"pluginOptions":{},"attributes":{"header":{"type":"component","repeatable":false,"component":"header.header"},"nous":{"type":"component","repeatable":false,"component":"section.section"},"projet":{"type":"component","repeatable":false,"component":"section.section"},"pourquoi":{"type":"component","repeatable":false,"component":"section.section"},"valeurs":{"type":"component","repeatable":false,"component":"section.section"},"realisations":{"type":"component","repeatable":false,"component":"section.section"},"services":{"type":"component","repeatable":false,"component":"section.section"},"mission":{"type":"component","repeatable":false,"component":"section.section"},"titrePage":{"type":"string"},"seo":{"type":"component","repeatable":false,"component":"shared.seo"},"createdAt":{"type":"datetime"},"updatedAt":{"type":"datetime"},"publishedAt":{"type":"datetime","configurable":false,"writable":true,"visible":false},"createdBy":{"type":"relation","relation":"oneToOne","target":"admin::user","configurable":false,"writable":false,"visible":false,"useJoinTable":false,"private":true},"updatedBy":{"type":"relation","relation":"oneToOne","target":"admin::user","configurable":false,"writable":false,"visible":false,"useJoinTable":false,"private":true}},"__schema__":{"collectionName":"homes","info":{"singularName":"home","pluralName":"homes","displayName":"Home","description":""},"options":{"draftAndPublish":true},"pluginOptions":{},"attributes":{"header":{"type":"component","repeatable":false,"component":"header.header"},"nous":{"type":"component","repeatable":false,"component":"section.section"},"projet":{"type":"component","repeatable":false,"component":"section.section"},"pourquoi":{"type":"component","repeatable":false,"component":"section.section"},"valeurs":{"type":"component","repeatable":false,"component":"section.section"},"realisations":{"type":"component","repeatable":false,"component":"section.section"},"services":{"type":"component","repeatable":false,"component":"section.section"},"mission":{"type":"component","repeatable":false,"component":"section.section"},"titrePage":{"type":"string"},"seo":{"type":"component","repeatable":false,"component":"shared.seo"}},"kind":"singleType"},"modelType":"contentType","modelName":"home","connection":"default","uid":"api::home.home","apiName":"home","globalId":"Home","actions":{},"lifecycles":{}},"api::logo.logo":{"kind":"singleType","collectionName":"logos","info":{"singularName":"logo","pluralName":"logos","displayName":"Logo"},"options":{"draftAndPublish":true},"pluginOptions":{},"attributes":{"logo":{"allowedTypes":["images"],"type":"media","multiple":true},"createdAt":{"type":"datetime"},"updatedAt":{"type":"datetime"},"publishedAt":{"type":"datetime","configurable":false,"writable":true,"visible":false},"createdBy":{"type":"relation","relation":"oneToOne","target":"admin::user","configurable":false,"writable":false,"visible":false,"useJoinTable":false,"private":true},"updatedBy":{"type":"relation","relation":"oneToOne","target":"admin::user","configurable":false,"writable":false,"visible":false,"useJoinTable":false,"private":true}},"__schema__":{"collectionName":"logos","info":{"singularName":"logo","pluralName":"logos","displayName":"Logo"},"options":{"draftAndPublish":true},"pluginOptions":{},"attributes":{"logo":{"allowedTypes":["images"],"type":"media","multiple":true}},"kind":"singleType"},"modelType":"contentType","modelName":"logo","connection":"default","uid":"api::logo.logo","apiName":"logo","globalId":"Logo","actions":{},"lifecycles":{}},"api::maintenance.maintenance":{"kind":"singleType","collectionName":"maintenances","info":{"singularName":"maintenance","pluralName":"maintenances","displayName":"Maintenance","description":""},"options":{"draftAndPublish":true},"pluginOptions":{},"attributes":{"logo":{"type":"media","multiple":false,"required":false,"allowedTypes":["images"]},"bg":{"type":"media","multiple":false,"required":false,"allowedTypes":["images"]},"titre":{"type":"richtext"},"paragraphe":{"type":"richtext"},"seo":{"type":"component","repeatable":false,"component":"shared.seo"},"createdAt":{"type":"datetime"},"updatedAt":{"type":"datetime"},"publishedAt":{"type":"datetime","configurable":false,"writable":true,"visible":false},"createdBy":{"type":"relation","relation":"oneToOne","target":"admin::user","configurable":false,"writable":false,"visible":false,"useJoinTable":false,"private":true},"updatedBy":{"type":"relation","relation":"oneToOne","target":"admin::user","configurable":false,"writable":false,"visible":false,"useJoinTable":false,"private":true}},"__schema__":{"collectionName":"maintenances","info":{"singularName":"maintenance","pluralName":"maintenances","displayName":"Maintenance","description":""},"options":{"draftAndPublish":true},"pluginOptions":{},"attributes":{"logo":{"type":"media","multiple":false,"required":false,"allowedTypes":["images"]},"bg":{"type":"media","multiple":false,"required":false,"allowedTypes":["images"]},"titre":{"type":"richtext"},"paragraphe":{"type":"richtext"},"seo":{"type":"component","repeatable":false,"component":"shared.seo"}},"kind":"singleType"},"modelType":"contentType","modelName":"maintenance","connection":"default","uid":"api::maintenance.maintenance","apiName":"maintenance","globalId":"Maintenance","actions":{},"lifecycles":{}},"api::mentions-legale.mentions-legale":{"kind":"singleType","collectionName":"mentions_legales","info":{"singularName":"mentions-legale","pluralName":"mentions-legales","displayName":"MentionsLegale","description":""},"options":{"draftAndPublish":true},"pluginOptions":{},"attributes":{"titrePage":{"type":"string"},"titre":{"type":"richtext"},"titreUn":{"type":"richtext"},"paragrapheUn":{"type":"richtext"},"titreDeux":{"type":"richtext"},"paragrapheDeux":{"type":"richtext"},"titreTrois":{"type":"richtext"},"paragrapheTrois":{"type":"richtext"},"titreQuatre":{"type":"richtext"},"paragrapheQuatre":{"type":"richtext"},"titreCinq":{"type":"richtext"},"paragrapheCinq":{"type":"richtext"},"titreSix":{"type":"richtext"},"paragrapheSix":{"type":"richtext"},"titreSept":{"type":"richtext"},"paragrapheSept":{"type":"richtext"},"seo":{"type":"component","repeatable":false,"component":"shared.seo"},"createdAt":{"type":"datetime"},"updatedAt":{"type":"datetime"},"publishedAt":{"type":"datetime","configurable":false,"writable":true,"visible":false},"createdBy":{"type":"relation","relation":"oneToOne","target":"admin::user","configurable":false,"writable":false,"visible":false,"useJoinTable":false,"private":true},"updatedBy":{"type":"relation","relation":"oneToOne","target":"admin::user","configurable":false,"writable":false,"visible":false,"useJoinTable":false,"private":true}},"__schema__":{"collectionName":"mentions_legales","info":{"singularName":"mentions-legale","pluralName":"mentions-legales","displayName":"MentionsLegale","description":""},"options":{"draftAndPublish":true},"pluginOptions":{},"attributes":{"titrePage":{"type":"string"},"titre":{"type":"richtext"},"titreUn":{"type":"richtext"},"paragrapheUn":{"type":"richtext"},"titreDeux":{"type":"richtext"},"paragrapheDeux":{"type":"richtext"},"titreTrois":{"type":"richtext"},"paragrapheTrois":{"type":"richtext"},"titreQuatre":{"type":"richtext"},"paragrapheQuatre":{"type":"richtext"},"titreCinq":{"type":"richtext"},"paragrapheCinq":{"type":"richtext"},"titreSix":{"type":"richtext"},"paragrapheSix":{"type":"richtext"},"titreSept":{"type":"richtext"},"paragrapheSept":{"type":"richtext"},"seo":{"type":"component","repeatable":false,"component":"shared.seo"}},"kind":"singleType"},"modelType":"contentType","modelName":"mentions-legale","connection":"default","uid":"api::mentions-legale.mentions-legale","apiName":"mentions-legale","globalId":"MentionsLegale","actions":{},"lifecycles":{}},"api::prestation.prestation":{"kind":"singleType","collectionName":"prestations","info":{"singularName":"prestation","pluralName":"prestations","displayName":"Prestation","description":""},"options":{"draftAndPublish":true},"pluginOptions":{},"attributes":{"header":{"type":"component","repeatable":false,"component":"header.header"},"titrePage":{"type":"string"},"expertise":{"type":"component","repeatable":false,"component":"section.section"},"methodologie":{"type":"component","repeatable":false,"component":"section.section"},"seo":{"type":"component","repeatable":false,"component":"shared.seo"},"createdAt":{"type":"datetime"},"updatedAt":{"type":"datetime"},"publishedAt":{"type":"datetime","configurable":false,"writable":true,"visible":false},"createdBy":{"type":"relation","relation":"oneToOne","target":"admin::user","configurable":false,"writable":false,"visible":false,"useJoinTable":false,"private":true},"updatedBy":{"type":"relation","relation":"oneToOne","target":"admin::user","configurable":false,"writable":false,"visible":false,"useJoinTable":false,"private":true}},"__schema__":{"collectionName":"prestations","info":{"singularName":"prestation","pluralName":"prestations","displayName":"Prestation","description":""},"options":{"draftAndPublish":true},"pluginOptions":{},"attributes":{"header":{"type":"component","repeatable":false,"component":"header.header"},"titrePage":{"type":"string"},"expertise":{"type":"component","repeatable":false,"component":"section.section"},"methodologie":{"type":"component","repeatable":false,"component":"section.section"},"seo":{"type":"component","repeatable":false,"component":"shared.seo"}},"kind":"singleType"},"modelType":"contentType","modelName":"prestation","connection":"default","uid":"api::prestation.prestation","apiName":"prestation","globalId":"Prestation","actions":{},"lifecycles":{}},"api::realisation.realisation":{"kind":"singleType","collectionName":"realisations","info":{"singularName":"realisation","pluralName":"realisations","displayName":"Realisation","description":""},"options":{"draftAndPublish":true},"pluginOptions":{},"attributes":{"titrePage":{"type":"string"},"header":{"type":"component","repeatable":false,"component":"header.header"},"realisations":{"type":"component","repeatable":true,"component":"section.realisations"},"seo":{"type":"component","repeatable":false,"component":"shared.seo"},"createdAt":{"type":"datetime"},"updatedAt":{"type":"datetime"},"publishedAt":{"type":"datetime","configurable":false,"writable":true,"visible":false},"createdBy":{"type":"relation","relation":"oneToOne","target":"admin::user","configurable":false,"writable":false,"visible":false,"useJoinTable":false,"private":true},"updatedBy":{"type":"relation","relation":"oneToOne","target":"admin::user","configurable":false,"writable":false,"visible":false,"useJoinTable":false,"private":true}},"__schema__":{"collectionName":"realisations","info":{"singularName":"realisation","pluralName":"realisations","displayName":"Realisation","description":""},"options":{"draftAndPublish":true},"pluginOptions":{},"attributes":{"titrePage":{"type":"string"},"header":{"type":"component","repeatable":false,"component":"header.header"},"realisations":{"type":"component","repeatable":true,"component":"section.realisations"},"seo":{"type":"component","repeatable":false,"component":"shared.seo"}},"kind":"singleType"},"modelType":"contentType","modelName":"realisation","connection":"default","uid":"api::realisation.realisation","apiName":"realisation","globalId":"Realisation","actions":{},"lifecycles":{}},"api::scroll-top.scroll-top":{"kind":"singleType","collectionName":"scroll_tops","info":{"singularName":"scroll-top","pluralName":"scroll-tops","displayName":"ScrollTop","description":""},"options":{"draftAndPublish":true},"pluginOptions":{},"attributes":{"bg":{"type":"media","multiple":true,"required":false,"allowedTypes":["images"]},"createdAt":{"type":"datetime"},"updatedAt":{"type":"datetime"},"publishedAt":{"type":"datetime","configurable":false,"writable":true,"visible":false},"createdBy":{"type":"relation","relation":"oneToOne","target":"admin::user","configurable":false,"writable":false,"visible":false,"useJoinTable":false,"private":true},"updatedBy":{"type":"relation","relation":"oneToOne","target":"admin::user","configurable":false,"writable":false,"visible":false,"useJoinTable":false,"private":true}},"__schema__":{"collectionName":"scroll_tops","info":{"singularName":"scroll-top","pluralName":"scroll-tops","displayName":"ScrollTop","description":""},"options":{"draftAndPublish":true},"pluginOptions":{},"attributes":{"bg":{"type":"media","multiple":true,"required":false,"allowedTypes":["images"]}},"kind":"singleType"},"modelType":"contentType","modelName":"scroll-top","connection":"default","uid":"api::scroll-top.scroll-top","apiName":"scroll-top","globalId":"ScrollTop","actions":{},"lifecycles":{}},"api::success-form.success-form":{"kind":"singleType","collectionName":"success_forms","info":{"singularName":"success-form","pluralName":"success-forms","displayName":"SuccessForm","description":""},"options":{"draftAndPublish":true},"pluginOptions":{},"attributes":{"titrePage":{"type":"string"},"button":{"type":"string"},"titre":{"type":"richtext"},"paragraphe":{"type":"richtext"},"bg":{"type":"media","multiple":false,"required":false,"allowedTypes":["images","files","videos","audios"]},"seo":{"type":"component","repeatable":false,"component":"shared.seo"},"createdAt":{"type":"datetime"},"updatedAt":{"type":"datetime"},"publishedAt":{"type":"datetime","configurable":false,"writable":true,"visible":false},"createdBy":{"type":"relation","relation":"oneToOne","target":"admin::user","configurable":false,"writable":false,"visible":false,"useJoinTable":false,"private":true},"updatedBy":{"type":"relation","relation":"oneToOne","target":"admin::user","configurable":false,"writable":false,"visible":false,"useJoinTable":false,"private":true}},"__schema__":{"collectionName":"success_forms","info":{"singularName":"success-form","pluralName":"success-forms","displayName":"SuccessForm","description":""},"options":{"draftAndPublish":true},"pluginOptions":{},"attributes":{"titrePage":{"type":"string"},"button":{"type":"string"},"titre":{"type":"richtext"},"paragraphe":{"type":"richtext"},"bg":{"type":"media","multiple":false,"required":false,"allowedTypes":["images","files","videos","audios"]},"seo":{"type":"component","repeatable":false,"component":"shared.seo"}},"kind":"singleType"},"modelType":"contentType","modelName":"success-form","connection":"default","uid":"api::success-form.success-form","apiName":"success-form","globalId":"SuccessForm","actions":{},"lifecycles":{}}}	object	\N	\N
 18	core_admin_auth	{"providers":{"autoRegister":false,"defaultRole":null}}	object	\N	\N
-22	plugin_content_manager_configuration_components::utils.range-slider	{"uid":"utils.range-slider","settings":{"bulkable":true,"filterable":true,"searchable":true,"pageSize":10,"mainField":"titre","defaultSortBy":"titre","defaultSortOrder":"ASC"},"metadatas":{"id":{"edit":{},"list":{"label":"id","searchable":false,"sortable":false}},"titre":{"edit":{"label":"titre","description":"","placeholder":"","visible":true,"editable":true},"list":{"label":"titre","searchable":true,"sortable":true}},"minValue":{"edit":{"label":"minValue","description":"","placeholder":"","visible":true,"editable":true},"list":{"label":"minValue","searchable":true,"sortable":true}},"maxValue":{"edit":{"label":"maxValue","description":"","placeholder":"","visible":true,"editable":true},"list":{"label":"maxValue","searchable":true,"sortable":true}},"iconRange":{"edit":{"label":"iconRange","description":"","placeholder":"","visible":true,"editable":true},"list":{"label":"iconRange","searchable":false,"sortable":false}},"question":{"edit":{"label":"question","description":"","placeholder":"","visible":true,"editable":true},"list":{"label":"question","searchable":false,"sortable":false}},"legend":{"edit":{"label":"legend","description":"","placeholder":"","visible":true,"editable":true},"list":{"label":"legend","searchable":false,"sortable":false}},"questionDeux":{"edit":{"label":"questionDeux","description":"","placeholder":"","visible":true,"editable":true},"list":{"label":"questionDeux","searchable":false,"sortable":false}},"errorMessage":{"edit":{"label":"errorMessage","description":"","placeholder":"","visible":true,"editable":true},"list":{"label":"errorMessage","searchable":true,"sortable":true}}},"layouts":{"list":["id","titre","minValue","maxValue"],"edit":[[{"name":"titre","size":6},{"name":"minValue","size":4}],[{"name":"maxValue","size":4},{"name":"iconRange","size":6}],[{"name":"question","size":12}],[{"name":"legend","size":12}],[{"name":"questionDeux","size":12}],[{"name":"errorMessage","size":6}]],"editRelations":[]},"isComponent":true}	object	\N	\N
 21	plugin_content_manager_configuration_components::utils.reseaux	{"uid":"utils.reseaux","settings":{"bulkable":true,"filterable":true,"searchable":true,"pageSize":10,"mainField":"lien","defaultSortBy":"lien","defaultSortOrder":"ASC"},"metadatas":{"id":{"edit":{},"list":{"label":"id","searchable":false,"sortable":false}},"icon":{"edit":{"label":"icon","description":"","placeholder":"","visible":true,"editable":true},"list":{"label":"icon","searchable":false,"sortable":false}},"lien":{"edit":{"label":"lien","description":"","placeholder":"","visible":true,"editable":true},"list":{"label":"lien","searchable":true,"sortable":true}},"slug":{"edit":{"label":"slug","description":"","placeholder":"","visible":true,"editable":true},"list":{"label":"slug","searchable":true,"sortable":true}},"iconHover":{"edit":{"label":"iconHover","description":"","placeholder":"","visible":true,"editable":true},"list":{"label":"iconHover","searchable":false,"sortable":false}}},"layouts":{"list":["id","icon","lien","slug"],"edit":[[{"name":"icon","size":6},{"name":"lien","size":6}],[{"name":"slug","size":6},{"name":"iconHover","size":6}]],"editRelations":[]},"isComponent":true}	object	\N	\N
 23	plugin_content_manager_configuration_components::utils.personne	{"uid":"utils.personne","settings":{"bulkable":true,"filterable":true,"searchable":true,"pageSize":10,"mainField":"textUn","defaultSortBy":"textUn","defaultSortOrder":"ASC"},"metadatas":{"id":{"edit":{},"list":{"label":"id","searchable":false,"sortable":false}},"textUn":{"edit":{"label":"textUn","description":"","placeholder":"","visible":true,"editable":true},"list":{"label":"textUn","searchable":true,"sortable":true}},"textDeux":{"edit":{"label":"textDeux","description":"","placeholder":"","visible":true,"editable":true},"list":{"label":"textDeux","searchable":true,"sortable":true}},"textUnChecked":{"edit":{"label":"textUnChecked","description":"","placeholder":"","visible":true,"editable":true},"list":{"label":"textUnChecked","searchable":true,"sortable":true}},"textDeuxChecked":{"edit":{"label":"textDeuxChecked","description":"","placeholder":"","visible":true,"editable":true},"list":{"label":"textDeuxChecked","searchable":true,"sortable":true}},"titre":{"edit":{"label":"titre","description":"","placeholder":"","visible":true,"editable":true},"list":{"label":"titre","searchable":false,"sortable":false}},"inputNom":{"edit":{"label":"inputNom","description":"","placeholder":"","visible":true,"editable":true},"list":{"label":"inputNom","searchable":true,"sortable":true}},"inputPrenom":{"edit":{"label":"inputPrenom","description":"","placeholder":"","visible":true,"editable":true},"list":{"label":"inputPrenom","searchable":true,"sortable":true}},"inputMail":{"edit":{"label":"inputMail","description":"","placeholder":"","visible":true,"editable":true},"list":{"label":"inputMail","searchable":true,"sortable":true}},"placeholderNom":{"edit":{"label":"placeholderNom","description":"","placeholder":"","visible":true,"editable":true},"list":{"label":"placeholderNom","searchable":true,"sortable":true}},"placeholderMail":{"edit":{"label":"placeholderMail","description":"","placeholder":"","visible":true,"editable":true},"list":{"label":"placeholderMail","searchable":true,"sortable":true}},"icon":{"edit":{"label":"icon","description":"","placeholder":"","visible":true,"editable":true},"list":{"label":"icon","searchable":false,"sortable":false}},"errorMessage":{"edit":{"label":"errorMessage","description":"","placeholder":"","visible":true,"editable":true},"list":{"label":"errorMessage","searchable":true,"sortable":true}},"errorMessageInputNom":{"edit":{"label":"errorMessageInputNom","description":"","placeholder":"","visible":true,"editable":true},"list":{"label":"errorMessageInputNom","searchable":true,"sortable":true}},"errorMessageInputPrenom":{"edit":{"label":"errorMessageInputPrenom","description":"","placeholder":"","visible":true,"editable":true},"list":{"label":"errorMessageInputPrenom","searchable":true,"sortable":true}},"errorMessageInputMail":{"edit":{"label":"errorMessageInputMail","description":"","placeholder":"","visible":true,"editable":true},"list":{"label":"errorMessageInputMail","searchable":true,"sortable":true}},"errorMessageInputMailRegex":{"edit":{"label":"errorMessageInputMailRegex","description":"","placeholder":"","visible":true,"editable":true},"list":{"label":"errorMessageInputMailRegex","searchable":true,"sortable":true}},"inputMessage":{"edit":{"label":"inputMessage","description":"","placeholder":"","visible":true,"editable":true},"list":{"label":"inputMessage","searchable":true,"sortable":true}},"errorMessageInputMessage":{"edit":{"label":"errorMessageInputMessage","description":"","placeholder":"","visible":true,"editable":true},"list":{"label":"errorMessageInputMessage","searchable":true,"sortable":true}},"placeholderMessage":{"edit":{"label":"placeholderMessage","description":"","placeholder":"","visible":true,"editable":true},"list":{"label":"placeholderMessage","searchable":true,"sortable":true}},"placeholderPrenom":{"edit":{"label":"placeholderPrenom","description":"","placeholder":"","visible":true,"editable":true},"list":{"label":"placeholderPrenom","searchable":true,"sortable":true}}},"layouts":{"list":["id","textUn","textDeux","textUnChecked"],"edit":[[{"name":"textUn","size":6},{"name":"textDeux","size":6}],[{"name":"textUnChecked","size":4},{"name":"textDeuxChecked","size":4}],[{"name":"titre","size":12}],[{"name":"inputNom","size":6},{"name":"inputPrenom","size":6}],[{"name":"inputMail","size":6},{"name":"placeholderNom","size":6}],[{"name":"placeholderMail","size":6},{"name":"icon","size":6}],[{"name":"errorMessage","size":6},{"name":"errorMessageInputNom","size":6}],[{"name":"errorMessageInputPrenom","size":6},{"name":"errorMessageInputMail","size":6}],[{"name":"errorMessageInputMailRegex","size":6},{"name":"inputMessage","size":6}],[{"name":"errorMessageInputMessage","size":6},{"name":"placeholderMessage","size":6}],[{"name":"placeholderPrenom","size":6}]],"editRelations":[]},"isComponent":true}	object	\N	\N
 24	plugin_content_manager_configuration_components::utils.flip-card	{"uid":"utils.flip-card","settings":{"bulkable":true,"filterable":true,"searchable":true,"pageSize":10,"mainField":"id","defaultSortBy":"id","defaultSortOrder":"ASC"},"metadatas":{"id":{"edit":{},"list":{"label":"id","searchable":false,"sortable":false}},"front":{"edit":{"label":"front","description":"","placeholder":"","visible":true,"editable":true},"list":{"label":"front","searchable":false,"sortable":false}},"back":{"edit":{"label":"back","description":"","placeholder":"","visible":true,"editable":true},"list":{"label":"back","searchable":false,"sortable":false}},"icons":{"edit":{"label":"icons","description":"","placeholder":"","visible":true,"editable":true},"list":{"label":"icons","searchable":false,"sortable":false}}},"layouts":{"list":["id","icons"],"edit":[[{"name":"front","size":12}],[{"name":"back","size":12}],[{"name":"icons","size":6}]],"editRelations":[]},"isComponent":true}	object	\N	\N
@@ -10860,7 +10860,7 @@ COPY public.upload_folders_parent_links (id, folder_id, inv_folder_id) FROM stdi
 -- Name: abouts_components_id_seq; Type: SEQUENCE SET; Schema: public; Owner: db_user
 --
 
-SELECT pg_catalog.setval('public.abouts_components_id_seq', 156, true);
+SELECT pg_catalog.setval('public.abouts_components_id_seq', 161, true);
 
 
 --
@@ -10932,7 +10932,7 @@ SELECT pg_catalog.setval('public.components_form_checkboxes_id_seq', 2744, true)
 -- Name: components_form_contact_forms_components_id_seq; Type: SEQUENCE SET; Schema: public; Owner: db_user
 --
 
-SELECT pg_catalog.setval('public.components_form_contact_forms_components_id_seq', 348, true);
+SELECT pg_catalog.setval('public.components_form_contact_forms_components_id_seq', 350, true);
 
 
 --
@@ -10995,7 +10995,7 @@ SELECT pg_catalog.setval('public.components_header_en_savoir_pluses_id_seq', 6, 
 -- Name: components_header_headers_components_id_seq; Type: SEQUENCE SET; Schema: public; Owner: db_user
 --
 
-SELECT pg_catalog.setval('public.components_header_headers_components_id_seq', 201, true);
+SELECT pg_catalog.setval('public.components_header_headers_components_id_seq', 205, true);
 
 
 --
@@ -11049,7 +11049,7 @@ SELECT pg_catalog.setval('public.components_section_realisations_id_seq', 2, tru
 -- Name: components_section_sections_components_id_seq; Type: SEQUENCE SET; Schema: public; Owner: db_user
 --
 
-SELECT pg_catalog.setval('public.components_section_sections_components_id_seq', 1858, true);
+SELECT pg_catalog.setval('public.components_section_sections_components_id_seq', 1900, true);
 
 
 --
@@ -11076,7 +11076,7 @@ SELECT pg_catalog.setval('public.components_shared_meta_socials_id_seq', 7, true
 -- Name: components_shared_seos_components_id_seq; Type: SEQUENCE SET; Schema: public; Owner: db_user
 --
 
-SELECT pg_catalog.setval('public.components_shared_seos_components_id_seq', 110, true);
+SELECT pg_catalog.setval('public.components_shared_seos_components_id_seq', 116, true);
 
 
 --
@@ -11229,7 +11229,7 @@ SELECT pg_catalog.setval('public.contact_forms_id_seq', 310, true);
 -- Name: contacts_components_id_seq; Type: SEQUENCE SET; Schema: public; Owner: db_user
 --
 
-SELECT pg_catalog.setval('public.contacts_components_id_seq', 68, true);
+SELECT pg_catalog.setval('public.contacts_components_id_seq', 72, true);
 
 
 --
@@ -11265,7 +11265,7 @@ SELECT pg_catalog.setval('public.devis_id_seq', 1, true);
 -- Name: error_pages_components_id_seq; Type: SEQUENCE SET; Schema: public; Owner: db_user
 --
 
-SELECT pg_catalog.setval('public.error_pages_components_id_seq', 8, true);
+SELECT pg_catalog.setval('public.error_pages_components_id_seq', 9, true);
 
 
 --
@@ -11292,7 +11292,7 @@ SELECT pg_catalog.setval('public.files_folder_links_id_seq', 326, true);
 -- Name: files_id_seq; Type: SEQUENCE SET; Schema: public; Owner: db_user
 --
 
-SELECT pg_catalog.setval('public.files_id_seq', 519, true);
+SELECT pg_catalog.setval('public.files_id_seq', 542, true);
 
 
 --
@@ -11301,7 +11301,7 @@ SELECT pg_catalog.setval('public.files_id_seq', 519, true);
 -- Name: files_related_morphs_id_seq; Type: SEQUENCE SET; Schema: public; Owner: db_user
 --
 
-SELECT pg_catalog.setval('public.files_related_morphs_id_seq', 5090, true);
+SELECT pg_catalog.setval('public.files_related_morphs_id_seq', 5203, true);
 
 
 --
@@ -11310,7 +11310,7 @@ SELECT pg_catalog.setval('public.files_related_morphs_id_seq', 5090, true);
 -- Name: footers_components_id_seq; Type: SEQUENCE SET; Schema: public; Owner: db_user
 --
 
-SELECT pg_catalog.setval('public.footers_components_id_seq', 82, true);
+SELECT pg_catalog.setval('public.footers_components_id_seq', 94, true);
 
 
 --
@@ -11355,7 +11355,7 @@ SELECT pg_catalog.setval('public.hamburgers_id_seq', 1, true);
 -- Name: homes_components_id_seq; Type: SEQUENCE SET; Schema: public; Owner: db_user
 --
 
-SELECT pg_catalog.setval('public.homes_components_id_seq', 607, true);
+SELECT pg_catalog.setval('public.homes_components_id_seq', 625, true);
 
 
 --
@@ -14139,7 +14139,7 @@ ALTER TABLE ONLY public.upload_folders
     ADD CONSTRAINT upload_folders_updated_by_id_fk FOREIGN KEY (updated_by_id) REFERENCES public.admin_users(id) ON DELETE SET NULL;
 
 
--- Completed on 2022-12-05 22:31:45
+-- Completed on 2022-12-06 18:59:17
 
 --
 -- PostgreSQL database dump complete

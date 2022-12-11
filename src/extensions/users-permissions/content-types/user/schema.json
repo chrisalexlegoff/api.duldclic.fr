@@ -91,6 +91,15 @@
     "profile_slug": {
       "type": "uid",
       "targetField": "username"
+    },
+    "role_dashboard": {
+      "type": "enumeration",
+      "enum": [
+        "admin",
+        "user"
+      ],
+      "default": "user",
+      "required": true
     }
   }
 }
